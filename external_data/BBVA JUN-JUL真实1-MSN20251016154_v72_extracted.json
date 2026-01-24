@@ -1,0 +1,364 @@
+{
+  "source_file": "BBVA JUN-JUL真实1-MSN20251016154",
+  "document_type": "B",
+  "total_pages": 1,
+  "total_rows": 35,
+  "sessions": 1,
+  "pages": [
+    {
+      "page": 0,
+      "rows": [
+        {
+          "fecha_oper": "21/JUN",
+          "fecha_liq": "23/JUN",
+          "descripcion": "RETIRO CAJERO AUTOMATICO JUN21 11:25 BBVA 9340 FOLIO:8584",
+          "referencia": "Referencia ******6929",
+          "cargos": 7200.0,
+          "abonos": 0.0,
+          "saldo_operacion": 5183.2,
+          "saldo_liquidacion": 12383.2
+        },
+        {
+          "fecha_oper": "24/JUN",
+          "fecha_liq": "24/JUN",
+          "descripcion": "PAGO TARJETA DE CREDITO CUENTA: BMOV",
+          "referencia": "Referencia 9775061378",
+          "cargos": 500.0,
+          "abonos": 0.0,
+          "saldo_operacion": 4683.2,
+          "saldo_liquidacion": 4683.2
+        },
+        {
+          "fecha_oper": "26/JUN",
+          "fecha_liq": "26/JUN",
+          "descripcion": "SPEI RECIBIDOSANTANDER 5292262PAGO ALMA RUTH CORONA HUERTA 00014811655024495195 20250626400140BET0000452922620 AS INTERMODAL SA DE CV",
+          "referencia": "Referencia 0160544179 014",
+          "cargos": 0.0,
+          "abonos": 24360.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "26/JUN",
+          "fecha_liq": "26/JUN",
+          "descripcion": "PAGO TARJETA DE CREDITO CUENTA: BMOV",
+          "referencia": "Referencia 9955027492",
+          "cargos": 4000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 25043.2,
+          "saldo_liquidacion": 25043.2
+        },
+        {
+          "fecha_oper": "27/JUN",
+          "fecha_liq": "27/JUN",
+          "descripcion": "RETIRO CAJERO AUTOMATICO JUN27 10:24 BBVA 9340 FOLIO:1557",
+          "referencia": "Referencia ******6929",
+          "cargos": 12000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "27/JUN",
+          "fecha_liq": "27/JUN",
+          "descripcion": "PAGO TARJETA DE CREDITO CUENTA: BMOV",
+          "referencia": "Referencia 0018961449",
+          "cargos": 3000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "27/JUN",
+          "fecha_liq": "27/JUN",
+          "descripcion": "PAGO TARJETA DE CREDITO CUENTA: BMOV",
+          "referencia": "Referencia 0035796705",
+          "cargos": 300.0,
+          "abonos": 0.0,
+          "saldo_operacion": 9743.2,
+          "saldo_liquidacion": 9743.2
+        },
+        {
+          "fecha_oper": "28/JUN",
+          "fecha_liq": "30/JUN",
+          "descripcion": "RETIRO CAJERO AUTOMATICO JUN28 09:10 BBVA 6728 FOLIO:1767",
+          "referencia": "Referencia ******6929",
+          "cargos": 1700.0,
+          "abonos": 0.0,
+          "saldo_operacion": 8043.2,
+          "saldo_liquidacion": 9743.2
+        },
+        {
+          "fecha_oper": "02/JUL",
+          "fecha_liq": "02/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1500027883 letra carro",
+          "referencia": "Referencia 0053895165",
+          "cargos": 1500.0,
+          "abonos": 0.0,
+          "saldo_operacion": 6543.2,
+          "saldo_liquidacion": 6543.2
+        },
+        {
+          "fecha_oper": "03/JUL",
+          "fecha_liq": "03/JUL",
+          "descripcion": "SPEI RECIBIDOSANTANDER 4039985PAGO AS ALMA RUTH CORONA HUERT 00014811655024495195 20250703400140BET0000440399850 AS INTERMODAL SA DE CV",
+          "referencia": "Referencia 0198888927 014",
+          "cargos": 0.0,
+          "abonos": 24360.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "03/JUL",
+          "fecha_liq": "03/JUL",
+          "descripcion": "PAGO TARJETA DE CREDITO CUENTA: BMOV",
+          "referencia": "Referencia 0529581740",
+          "cargos": 1000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "03/JUL",
+          "fecha_liq": "03/JUL",
+          "descripcion": "RETIRO CAJERO AUTOMATICO JUL03 11:07 BBVA 4990 FOLIO:9573",
+          "referencia": "Referencia ******6929",
+          "cargos": 7000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "03/JUL",
+          "fecha_liq": "03/JUL",
+          "descripcion": "SPEI ENVIADO BANCOPPEL 0906250xx 00004169160884848251 MBAN01002507030050050219 Jose Luis Aguilar",
+          "referencia": "Referencia 0050050219 137",
+          "cargos": 2000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "03/JUL",
+          "fecha_liq": "03/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1503166940 xx",
+          "referencia": "Referencia 0036446594",
+          "cargos": 2500.0,
+          "abonos": 0.0,
+          "saldo_operacion": 18403.2,
+          "saldo_liquidacion": 18403.2
+        },
+        {
+          "fecha_oper": "04/JUL",
+          "fecha_liq": "04/JUL",
+          "descripcion": "RETIRO CAJERO AUTOMATICO JUL04 12:29 BBVA C516 FOLIO:3411",
+          "referencia": "Referencia ******6929",
+          "cargos": 11000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "04/JUL",
+          "fecha_liq": "04/JUL",
+          "descripcion": "PAGO TARJETA DE CREDITO CUENTA: BMOV",
+          "referencia": "Referencia 0628715706",
+          "cargos": 634.27,
+          "abonos": 0.0,
+          "saldo_operacion": 6768.93,
+          "saldo_liquidacion": 6768.93
+        },
+        {
+          "fecha_oper": "06/JUL",
+          "fecha_liq": "07/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1189291784 viaje",
+          "referencia": "Referencia 0072273083",
+          "cargos": 1000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "06/JUL",
+          "fecha_liq": "07/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1500027883 Tatis",
+          "referencia": "Referencia 0076733790",
+          "cargos": 535.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "06/JUL",
+          "fecha_liq": "07/JUL",
+          "descripcion": "SPEI ENVIADO BANCOPPEL 0906250xx 00004169160884848251 MBAN01002507070066119322 Jose Luis Aguilar",
+          "referencia": "Referencia 0066119322 137",
+          "cargos": 1000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 4233.93,
+          "saldo_liquidacion": 6768.93
+        },
+        {
+          "fecha_oper": "07/JUL",
+          "fecha_liq": "07/JUL",
+          "descripcion": "PAGO DE NOMINA 0000300047226CP000101400",
+          "referencia": "Referencia 148247",
+          "cargos": 0.0,
+          "abonos": 49618.72,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "07/JUL",
+          "fecha_liq": "07/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1523845844 Transf a JOSE ROBE",
+          "referencia": "Referencia 0068200392",
+          "cargos": 1000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "07/JUL",
+          "fecha_liq": "07/JUL",
+          "descripcion": "RETIRO CAJERO AUTOMATICO JUL07 15:01 BBVA 4990 FOLIO:1760",
+          "referencia": "Referencia ******6929",
+          "cargos": 1000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "07/JUL",
+          "fecha_liq": "07/JUL",
+          "descripcion": "SPEI ENVIADO BANAMEX 0906250xx 00002385701804309013 MBAN01002507070069476101 Luis Alberto Corona Huerta",
+          "referencia": "Referencia 0069476101 002",
+          "cargos": 20000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 31852.65,
+          "saldo_liquidacion": 31852.65
+        },
+        {
+          "fecha_oper": "08/JUL",
+          "fecha_liq": "08/JUL",
+          "descripcion": "SPEI ENVIADO BANORTE 0906250xx 00004189143112330074 MBAN01002507080072879181 Alma",
+          "referencia": "Referencia 0072879181 072",
+          "cargos": 23000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 8852.65,
+          "saldo_liquidacion": 8852.65
+        },
+        {
+          "fecha_oper": "09/JUL",
+          "fecha_liq": "09/JUL",
+          "descripcion": "SPEI ENVIADO BANCOPPEL 0906250xx 00004169160884848251 MBAN01002507090076354176 Jose Luis Aguilar",
+          "referencia": "Referencia 0076354176 137",
+          "cargos": 1400.0,
+          "abonos": 0.0,
+          "saldo_operacion": 7452.65,
+          "saldo_liquidacion": 7452.65
+        },
+        {
+          "fecha_oper": "10/JUL",
+          "fecha_liq": "10/JUL",
+          "descripcion": "SPEI RECIBIDOSANTANDER 6274788PAGO AS ALMA RUTH CORONA HUERT 00014811655024495195 20250710400140BET0000462747880 AS INTERMODAL SA DE CV",
+          "referencia": "Referencia 0134052632 014",
+          "cargos": 0.0,
+          "abonos": 24940.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "10/JUL",
+          "fecha_liq": "10/JUL",
+          "descripcion": "RETIRO CAJERO AUTOMATICO JUL10 20:05 BBVA E934 FOLIO:6021",
+          "referencia": "Referencia ******6929",
+          "cargos": 3200.0,
+          "abonos": 0.0,
+          "saldo_operacion": 29192.65,
+          "saldo_liquidacion": 29192.65
+        },
+        {
+          "fecha_oper": "11/JUL",
+          "fecha_liq": "11/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1189291784 xx",
+          "referencia": "Referencia 0078027605",
+          "cargos": 600.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "11/JUL",
+          "fecha_liq": "11/JUL",
+          "descripcion": "RETIRO CAJERO AUTOMATICO JUL11 21:00 BBVA 9340 FOLIO:8887",
+          "referencia": "Referencia ******6929",
+          "cargos": 11000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "11/JUL",
+          "fecha_liq": "14/JUL",
+          "descripcion": "RETIRO SIN TARJETA",
+          "referencia": "Referencia ******6929",
+          "cargos": 1000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 16592.65,
+          "saldo_liquidacion": 17592.65
+        },
+        {
+          "fecha_oper": "17/JUL",
+          "fecha_liq": "17/JUL",
+          "descripcion": "RETIRO CAJERO AUTOMATICO JUL17 12:46 BBVA 9340 FOLIO:1908",
+          "referencia": "Referencia ******6929",
+          "cargos": 1200.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "17/JUL",
+          "fecha_liq": "17/JUL",
+          "descripcion": "SPEI RECIBIDOSANTANDER 8409055PAGO AS ALMA RUTH CORONA HUERT 00014811655024495195 20250717400140BET0000484090550 AS INTERMODAL SA DE CV",
+          "referencia": "Referencia 0174950212 014",
+          "cargos": 0.0,
+          "abonos": 110490.0,
+          "saldo_operacion": 125882.65,
+          "saldo_liquidacion": 125882.65
+        },
+        {
+          "fecha_oper": "18/JUL",
+          "fecha_liq": "18/JUL",
+          "descripcion": "RETIRO CAJERO AUTOMATICO JUL18 10:23 BBVA 7690 FOLIO:3685",
+          "referencia": "Referencia ******6929",
+          "cargos": 12000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "18/JUL",
+          "fecha_liq": "18/JUL",
+          "descripcion": "SPEI ENVIADO BANAMEX 0906250xx 00002385701804309013 MBAN01002507180070127319 Luis Alberto Corona Huerta",
+          "referencia": "Referencia 0070127319 002",
+          "cargos": 5500.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "18/JUL",
+          "fecha_liq": "18/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1500027883 xx",
+          "referencia": "Referencia 0049205837",
+          "cargos": 2000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 106382.65,
+          "saldo_liquidacion": 106382.65
+        }
+      ]
+    }
+  ]
+}

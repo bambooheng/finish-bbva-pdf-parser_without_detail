@@ -1,0 +1,158 @@
+{
+  "original_pdf": "D:\\完成版_finish\\bbva-pdf-parser_除流水明细外其他部分\\inputs\\BBVA JUN-JUL真实1-MSN20251016154.pdf",
+  "structured_json": "output_strict_debug\\BBVA JUN-JUL真实1-MSN20251016154_structured.json",
+  "reconstructed_pdf": "output_strict_debug\\BBVA JUN-JUL真实1-MSN20251016154_reconstructed.pdf",
+  "validation_report": {
+    "pixel_accuracy": 78.3751924473493,
+    "semantic_accuracy": 100.0,
+    "discrepancies": [
+      {
+        "type": "pixel_difference",
+        "location": null,
+        "original_value": null,
+        "extracted_value": null,
+        "severity": "high",
+        "description": "Page 1 has 100.00% pixel differences"
+      },
+      {
+        "type": "pixel_difference",
+        "location": null,
+        "original_value": null,
+        "extracted_value": null,
+        "severity": "high",
+        "description": "Page 2 has 18.72% pixel differences"
+      },
+      {
+        "type": "pixel_difference",
+        "location": null,
+        "original_value": null,
+        "extracted_value": null,
+        "severity": "high",
+        "description": "Page 3 has 12.16% pixel differences"
+      },
+      {
+        "type": "pixel_difference",
+        "location": null,
+        "original_value": null,
+        "extracted_value": null,
+        "severity": "high",
+        "description": "Page 4 has 11.57% pixel differences"
+      },
+      {
+        "type": "pixel_difference",
+        "location": null,
+        "original_value": null,
+        "extracted_value": null,
+        "severity": "medium",
+        "description": "Page 5 has 3.66% pixel differences"
+      },
+      {
+        "type": "pixel_difference",
+        "location": null,
+        "original_value": null,
+        "extracted_value": null,
+        "severity": "high",
+        "description": "Page 6 has 10.88% pixel differences"
+      },
+      {
+        "type": "pixel_difference",
+        "location": null,
+        "original_value": null,
+        "extracted_value": null,
+        "severity": "high",
+        "description": "Page 7 has 15.00% pixel differences"
+      },
+      {
+        "type": "pixel_difference",
+        "location": null,
+        "original_value": null,
+        "extracted_value": null,
+        "severity": "high",
+        "description": "Page 8 has 11.40% pixel differences"
+      },
+      {
+        "type": "pixel_difference",
+        "location": null,
+        "original_value": null,
+        "extracted_value": null,
+        "severity": "high",
+        "description": "Page 9 has 11.22% pixel differences"
+      }
+    ],
+    "is_valid": false,
+    "critical_checks": {
+      "account_number_present": true,
+      "transactions_extracted": false,
+      "balances_present": false,
+      "page_count_matches": true
+    }
+  },
+  "layout_analysis": {
+    "total_elements": 0,
+    "elements_with_bbox": 0,
+    "bbox_coverage": 0,
+    "element_types": {}
+  },
+  "pixel_comparison": {
+    "pixel_accuracy": 78.3751924473493,
+    "total_diff_pixels": 4094387,
+    "total_pixels": 18933750,
+    "pages": [
+      {
+        "page": 1,
+        "diff_pixels": 2103741,
+        "total_pixels": 2103750,
+        "diff_percentage": 99.99957219251337
+      },
+      {
+        "page": 2,
+        "diff_pixels": 393877,
+        "total_pixels": 2103750,
+        "diff_percentage": 18.722614379084966
+      },
+      {
+        "page": 3,
+        "diff_pixels": 255772,
+        "total_pixels": 2103750,
+        "diff_percentage": 12.157908496732025
+      },
+      {
+        "page": 4,
+        "diff_pixels": 243455,
+        "total_pixels": 2103750,
+        "diff_percentage": 11.57243018419489
+      },
+      {
+        "page": 5,
+        "diff_pixels": 77090,
+        "total_pixels": 2103750,
+        "diff_percentage": 3.664408793820559
+      },
+      {
+        "page": 6,
+        "diff_pixels": 228984,
+        "total_pixels": 2103750,
+        "diff_percentage": 10.884563279857398
+      },
+      {
+        "page": 7,
+        "diff_pixels": 315667,
+        "total_pixels": 2103750,
+        "diff_percentage": 15.00496732026144
+      },
+      {
+        "page": 8,
+        "diff_pixels": 239824,
+        "total_pixels": 2103750,
+        "diff_percentage": 11.399833630421865
+      },
+      {
+        "page": 9,
+        "diff_pixels": 235977,
+        "total_pixels": 2103750,
+        "diff_percentage": 11.216969696969697
+      }
+    ],
+    "is_valid": false
+  }
+}

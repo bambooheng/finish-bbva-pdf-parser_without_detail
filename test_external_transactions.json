@@ -1,0 +1,44 @@
+{
+    "source_file": "BBVA JUN-JUL真实1-MSN20251016154",
+    "document_type": "B",
+    "total_pages": 1,
+    "total_rows": 35,
+    "sessions": 1,
+    "pages": [
+        {
+            "page": 0,
+            "rows": [
+                {
+                    "fecha_oper": "21/JUN",
+                    "fecha_liq": "23/JUN",
+                    "descripcion": "RETIRO CAJERO AUTOMATICO JUN21 11:25 BBVA 9340 FOLIO:8584",
+                    "referencia": "Referencia ******6929",
+                    "cargos": 7200.0,
+                    "abonos": 0.0,
+                    "saldo_operacion": 5183.2,
+                    "saldo_liquidacion": 12383.2
+                },
+                {
+                    "fecha_oper": "24/JUN",
+                    "fecha_liq": "24/JUN",
+                    "descripcion": "PAGO TARJETA DE CREDITO CUENTA: BMOV",
+                    "referencia": "Referencia 9775061378",
+                    "cargos": 500.0,
+                    "abonos": 0.0,
+                    "saldo_operacion": 4683.2,
+                    "saldo_liquidacion": 4683.2
+                },
+                {
+                    "fecha_oper": "26/JUN",
+                    "fecha_liq": "26/JUN",
+                    "descripcion": "SPEI RECIBIDOSANTANDER 5292262PAGO ALMA RUTH CORONA HUERTA 00014811655024495195 20250626400140BET0000452922620 AS INTERMODAL SA DE CV",
+                    "referencia": "Referencia 0160544179 014",
+                    "cargos": 0.0,
+                    "abonos": 24360.0,
+                    "saldo_operacion": 0.0,
+                    "saldo_liquidacion": 0.0
+                }
+            ]
+        }
+    ]
+}

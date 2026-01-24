@@ -1,0 +1,81 @@
+# BBVA PDF Parser Configuration
+
+# MinerU Configuration
+mineru:
+  python_path: "D:\\App\\Anaconda3\\python.exe"
+  mineru_path: ""  # Path to MinerU installation if needed
+  timeout: 300  # seconds
+
+# OCR Settings
+ocr:
+  primary_engine: "mineru"
+  fallback_engine: "tesseract"
+  confidence_threshold: 0.7
+  dual_verification_enabled: true
+  
+# LLM Configuration
+llm:
+  provider: "anthropic"  # anthropic or openai
+  model: "claude-3-opus-20240229"  # or gpt-4 for OpenAI
+  api_key_env: "ANTHROPIC_API_KEY"  # or OPENAI_API_KEY
+  temperature: 0.1
+  max_tokens: 4096
+
+# Validation Settings
+validation:
+  pixel_tolerance: 1  # pixels
+  enable_pdf_rebuild: true
+  enable_pixel_comparison: true
+  enable_semantic_validation: true
+  min_confidence: 0.8
+  
+# Bank Configuration Profiles (following prompt: avoid hardcoding, use dynamic adaptation)
+bank_profiles:
+  bbva_mexico:
+    name: "BBVA Mexico"
+    document_types: ["BBVA_STATEMENT", "BANK_STATEMENT"]
+    date_patterns:
+      - "DD/MON"  # e.g., 23/JUN
+      - "DD/MM/YYYY"
+      - "YYYY-MM-DD"
+    currency: "MXN"
+    currency_symbol: "$"
+    currency_format:
+      thousands_separator: ","  # For MXN, comma is thousands separator
+      decimal_separator: "."     # For MXN, dot is decimal separator
+      symbol_position: "before"  # $ before amount
+      symbol_spacing: false      # No space between $ and amount
+    account_number_pattern: "^[0-9]{10,18}$"
+    language: "es"
+    skip_keywords:
+      - "periodo"
+      - "fecha de corte"
+      - "no. de cuenta"
+      - "estado de cuenta"
+      - "bbva mexico"
+    transaction_keywords:
+      deposit: ["deposito", "abono", "deposit", "credit", "spei recibido"]
+      withdrawal: ["retiro", "cargo", "withdrawal", "debit", "pago", "spei enviado", "enviado"]
+      balance: ["saldo", "balance"]
+    header_keywords: ["bbva", "banco", "statement", "account"]
+    summary_keywords: ["saldo inicial", "saldo final", "resumen", "summary"]
+
+# Default bank profile
+default_bank_profile: "bbva_mexico"
+
+# Auto-detect bank from document (if True, tries to detect automatically)
+auto_detect_bank: true
+
+# Legacy BBVA settings (deprecated, use bank_profiles instead)
+bbva:
+  account_number_pattern: "^[0-9]{10,18}$"
+  date_format: "DD/MM/YYYY"
+  currency_symbol: "$"
+  currency_code: "MXN"
+  
+# Output Settings
+output:
+  save_intermediate_results: true
+  output_directory: "output"
+  detailed_reports: true
+

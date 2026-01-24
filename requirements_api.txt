@@ -1,0 +1,8 @@
+# FastAPI API Server额外依赖
+# 基础依赖已在requirements.txt中
+
+# FastAPI和服务器
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6  # 文件上传支持
+

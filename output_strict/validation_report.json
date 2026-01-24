@@ -1,0 +1,85 @@
+{
+  "pixel_accuracy": 78.3751924473493,
+  "semantic_accuracy": 100.0,
+  "discrepancies": [
+    {
+      "type": "pixel_difference",
+      "location": null,
+      "original_value": null,
+      "extracted_value": null,
+      "severity": "high",
+      "description": "Page 1 has 100.00% pixel differences"
+    },
+    {
+      "type": "pixel_difference",
+      "location": null,
+      "original_value": null,
+      "extracted_value": null,
+      "severity": "high",
+      "description": "Page 2 has 18.72% pixel differences"
+    },
+    {
+      "type": "pixel_difference",
+      "location": null,
+      "original_value": null,
+      "extracted_value": null,
+      "severity": "high",
+      "description": "Page 3 has 12.16% pixel differences"
+    },
+    {
+      "type": "pixel_difference",
+      "location": null,
+      "original_value": null,
+      "extracted_value": null,
+      "severity": "high",
+      "description": "Page 4 has 11.57% pixel differences"
+    },
+    {
+      "type": "pixel_difference",
+      "location": null,
+      "original_value": null,
+      "extracted_value": null,
+      "severity": "medium",
+      "description": "Page 5 has 3.66% pixel differences"
+    },
+    {
+      "type": "pixel_difference",
+      "location": null,
+      "original_value": null,
+      "extracted_value": null,
+      "severity": "high",
+      "description": "Page 6 has 10.88% pixel differences"
+    },
+    {
+      "type": "pixel_difference",
+      "location": null,
+      "original_value": null,
+      "extracted_value": null,
+      "severity": "high",
+      "description": "Page 7 has 15.00% pixel differences"
+    },
+    {
+      "type": "pixel_difference",
+      "location": null,
+      "original_value": null,
+      "extracted_value": null,
+      "severity": "high",
+      "description": "Page 8 has 11.40% pixel differences"
+    },
+    {
+      "type": "pixel_difference",
+      "location": null,
+      "original_value": null,
+      "extracted_value": null,
+      "severity": "high",
+      "description": "Page 9 has 11.22% pixel differences"
+    }
+  ],
+  "is_valid": false,
+  "critical_checks": {
+    "account_number_present": true,
+    "transactions_extracted": false,
+    "balances_present": false,
+    "page_count_matches": true
+  }
+}
