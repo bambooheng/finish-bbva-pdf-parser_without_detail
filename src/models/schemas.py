@@ -172,9 +172,11 @@ class AccountSummary(BaseModel):
     transaction_table_headers: Optional[List[str]] = None  # Original column headers from transaction table
     
     # 新增业务字段 - 从BBVA文档提取的额外信息
-    # total_movimientos: Optional[Dict[str, Any]] = None  # 已删除（用户反馈为冗余信息）
-    # apartados_vigentes: Optional[List[Dict[str, Any]]] = None  # 原文中不存在，已禁用
-    cuadro_resumen: Optional[List[Dict[str, Any]]] = None  # Cuadro resumen y gráfico
+    total_movimientos: Optional[Dict[str, Any]] = None  # (用户反馈重要，已恢复)
+    apartados_vigentes: Optional[List[Dict[str, Any]]] = None  # (用户反馈重要，已恢复)
+    branch_info: Optional[Dict[str, str]] = None  # 分支机构信息 (Screenshot 2)
+    pages_info: Optional[List[Dict[str, str]]] = None # 每页的头部信息
+    cuadro_resumen: Optional[List[Dict[str, Any]]] = None  # Cuadro resumen y gráfico (改为List以适应多行)
     informacion_financiera: Optional[Dict[str, Any]] = None  # Información Financiera表格
     comportamiento: Optional[Dict[str, Any]] = None  # Comportamiento表格
     customer_info: Optional[Dict[str, str]] = None  # Header info (Screenshot 1)
@@ -255,11 +257,19 @@ class BankDocument(BaseModel):
         
         account_summary = self.structured_data.account_summary
         
-        # Customer Info (Header)
+        # 1. Customer Info (Top of JSON)
         if account_summary.customer_info:
             simplified["structured_data"]["account_summary"]["customer_info"] = account_summary.customer_info
-        
-        # 余额信息: Only output if explicitly extracted
+            
+        # 2. Pages Info (Headers per page)
+        if account_summary.pages_info:
+            simplified["structured_data"]["account_summary"]["pages_info"] = account_summary.pages_info
+            
+        # 3. Branch Info
+        if account_summary.branch_info:
+            simplified["structured_data"]["account_summary"]["branch_info"] = account_summary.branch_info
+
+        # 4. Standard Balances
         if account_summary.initial_balance is not None:
              simplified["structured_data"]["account_summary"]["initial_balance"] = str(account_summary.initial_balance)
         if account_summary.deposits is not None:
@@ -268,15 +278,13 @@ class BankDocument(BaseModel):
             simplified["structured_data"]["account_summary"]["withdrawals"] = str(account_summary.withdrawals)
         if account_summary.final_balance is not None:
             simplified["structured_data"]["account_summary"]["final_balance"] = str(account_summary.final_balance)
-        
-        # 添加新的业务字段
-        # total_movimientos已删除（用户反馈为冗余信息）
-        # if account_summary.total_movimientos:
-        #     simplified["structured_data"]["account_summary"]["total_movimientos"] = account_summary.total_movimientos
-        
-        # apartados_vigentes已禁用（原文中不存在）
-        # if account_summary.apartados_vigentes:
-        #     simplified["structured_data"]["account_summary"]["apartados_vigentes"] = account_summary.apartados_vigentes
+            
+        # 5. Financial Info & Behavior (Summary Tables)
+        # User feedback: "Cuadro resumen... location wrong, should be at end"
+        # However, checking schemas.py current logic:
+        # Standard Balances -> Cuadro Resumen -> Informacion Financiera -> Comportamiento -> Otros Productos
+        # This seems to match the document flow (Body -> Bottom).
+        # We will keep it here but ensure fields inside are ordered.
         
         if account_summary.cuadro_resumen:
             simplified["structured_data"]["account_summary"]["cuadro_resumen"] = account_summary.cuadro_resumen
@@ -286,24 +294,28 @@ class BankDocument(BaseModel):
         
         if account_summary.comportamiento:
             simplified["structured_data"]["account_summary"]["comportamiento"] = account_summary.comportamiento
-        
-        # 新增：customer_info (Screenshot 1)
-        if account_summary.customer_info:
-            simplified["structured_data"]["account_summary"]["customer_info"] = account_summary.customer_info
-        
-        # 新增：截图3内容
+            
+        # 6. Other Products
         if account_summary.otros_productos:
             simplified["structured_data"]["account_summary"]["otros_productos"] = account_summary.otros_productos
         
-        # 添加交易表头（如果存在）
+        # 7. Transactions Header
         if account_summary.transaction_table_headers:
             simplified["structured_data"]["account_summary"]["transaction_table_headers"] = \
                 account_summary.transaction_table_headers
         
-        # 添加简化的交易记录
+        # 8. Transactions (Body)
         simplified["structured_data"]["account_summary"]["transactions"] = [
             t.to_simplified_dict() for t in account_summary.transactions
         ]
+        
+        # 9. Total Movimientos (Footer - AFTER transactions per User Request)
+        if account_summary.total_movimientos:
+             simplified["structured_data"]["account_summary"]["total_movimientos"] = account_summary.total_movimientos
+        
+        # 10. Apartados (Footer - AFTER Total Movimientos)
+        if account_summary.apartados_vigentes:
+             simplified["structured_data"]["account_summary"]["apartados_vigentes"] = account_summary.apartados_vigentes
         
         return simplified
 

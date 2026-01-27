@@ -132,21 +132,26 @@ class DataExtractor:
         account_summary.customer_info = self._extract_customer_info(ocr_data)
         if account_summary.customer_info:
             print(f"✓ Extracted Customer Info ({len(account_summary.customer_info)} fields)")
+            
+        # Pages Info (Headers per page - User Request)
+        account_summary.pages_info = self._extract_pages_info(ocr_data)
+        if account_summary.pages_info:
+            print(f"✓ Extracted Headers for {len(account_summary.pages_info)} pages")
         
-        # Total de Movimientos - 已删除（用户反馈为冗余信息）
-        # account_summary.total_movimientos = self._extract_total_movimientos(
-        #     ocr_data,
-        #     parsed_tables
-        # )
-        # if account_summary.total_movimientos:
-        #     print(f"✓ Extracted Total de Movimientos")
+        # Total de Movimientos - (用户反馈重要，已恢复)
+        account_summary.total_movimientos = self._extract_total_movimientos(
+            ocr_data,
+            parsed_tables
+        )
+        if account_summary.total_movimientos:
+            print(f"✓ Extracted Total de Movimientos")
         
-        # Apartados Vigentes - 原文中不存在，已禁用
-        # account_summary.apartados_vigentes = self._extract_apartados_vigentes(
-        #     ocr_data
-        # )
-        # if account_summary.apartados_vigentes:
-        #     print(f"✓ Extracted {len(account_summary.apartados_vigentes)} Apartados Vigentes")
+        # Apartados Vigentes - (用户反馈重要，已恢复)
+        account_summary.apartados_vigentes = self._extract_apartados_vigentes(
+            ocr_data
+        )
+        if account_summary.apartados_vigentes:
+            print(f"✓ Extracted {len(account_summary.apartados_vigentes)} Apartados Vigentes")
         
         # Cuadro resumen
         account_summary.cuadro_resumen = self._extract_cuadro_resumen(
@@ -174,6 +179,11 @@ class DataExtractor:
         account_summary.otros_productos = self._extract_otros_productos(ocr_data)
         if account_summary.otros_productos:
             print(f"✓ Extracted Otros productos")
+
+        # Branch Info (Screenshot 2)
+        account_summary.branch_info = self._extract_branch_info(ocr_data)
+        if account_summary.branch_info:
+            print(f"✓ Extracted Branch Info")
         
         return StructuredData(account_summary=account_summary)
 
@@ -1037,9 +1047,205 @@ class DataExtractor:
     ) -> Optional[List[Dict[str, Any]]]:
         """
         提取Cuadro resumen y gráfico de movimientos del período
-        注：在当前文本样本中未直接发现明确的'Cuadro resumen'标题，但保留此接口。
-        可能对应于 'Información Financiera' 或 'Comportamiento'，这里作为独立方法保留。
         """
+        cuadro_resumen = []
+        
+        # 1. 尝试从已解析的表格中寻找 (如果被识别为表格)
+        for table in parsed_tables:
+            # 检查表头或内容是否包含关键词
+            headers = [str(h).lower() for h in table.get("headers", [])]
+            if any("concepto" in h for h in headers) and any("cantidad" in h for h in headers):
+                # 这可能是Cuadro resumen
+                data = table.get("data", [])
+                if data:
+                    # 转换格式
+                    for row in data:
+                        item = {}
+                        for k, v in row.items():
+                            item[k] = str(v)
+                        cuadro_resumen.append(item)
+                    return cuadro_resumen
+
+    def _reconstruct_page_rows(self, page_data: Dict[str, Any]) -> List[str]:
+        """
+        Reconstruct strings component by component based on visual Y-alignment.
+        Solves issue where text blocks are columnar or out of order.
+        """
+        all_lines = []
+        
+        # Collect all lines with bbox
+        for block in page_data.get("text_blocks", []):
+            # If we have detailed line info (PyMuPDF fallback)
+            if "lines" in block:
+                for line in block["lines"]:
+                    bbox = line.get("bbox")
+                    text = line.get("text", "").strip()
+                    if text and bbox:
+                        all_lines.append({"text": text, "bbox": bbox, "y_center": (bbox[1] + bbox[3]) / 2})
+            # Fallback for standard blocks if no line info
+            elif "bbox" in block and "text" in block:
+                bbox = block["bbox"]
+                text = block["text"].strip()
+                if text:
+                    # Split block text by newlines if present, aiming to approximate lines
+                    # This is imperfect for blocks, but better than nothing
+                    # For strict table parsing, 'lines' presence is preferred
+                    all_lines.append({"text": text, "bbox": bbox, "y_center": (bbox[1] + bbox[3]) / 2})
+
+        # Sort by Y-coordinate
+        all_lines.sort(key=lambda x: x["y_center"])
+        
+        if not all_lines:
+            return []
+
+        # Group into visual rows
+        rows = []
+        current_row = [all_lines[0]]
+        # Use running average Y for better centering? Or just anchor. 
+        # Anchor is simple and predictable.
+        row_y = all_lines[0]["y_center"]
+        
+        # Tolerance increased to 10 (approx 1/3 to 1/2 line height) to match misaligned columns
+        # Previous value of 5 caused splitting of "Concepto" and "Cantidad" blocks
+        tolerance = 10 
+        
+        for line in all_lines[1:]:
+            if abs(line["y_center"] - row_y) < tolerance:
+                current_row.append(line)
+            else:
+                # Finish current row
+                # Sort by X coordinate
+                current_row.sort(key=lambda x: x["bbox"][0])
+                rows.append(" ".join([l["text"] for l in current_row]))
+                
+                # Start new row
+                current_row = [line]
+                row_y = line["y_center"]
+        
+        # Add last row
+        if current_row:
+            current_row.sort(key=lambda x: x["bbox"][0])
+            rows.append(" ".join([l["text"] for l in current_row]))
+            
+        return rows
+
+    def _extract_cuadro_resumen(self, ocr_data: Dict[str, Any], layout_structure: Any = None) -> Optional[List[Dict[str, str]]]:
+        """提取Cuadro Resumen表格 - 包含图表数据的摘要"""
+        cuadro_resumen = []
+        
+        # 1. 尝试从检测到的表格结构中提取
+        # (This part relies on upstream table detection which might fail)
+        if layout_structure:
+             # Just a placeholder for potential future usage
+             pass
+        
+        tables = ocr_data.get("tables", [])
+        # ... existing table logic skipped for brevity ...
+
+        # 2. Text-based extraction using Visual Row Reconstruction (Robust)
+        print("Debug: Attempting visual-row-based Cuadro Resumen extraction...")
+        
+        for i, page in enumerate(ocr_data.get("pages", [])):
+            # Reconstruct visual rows
+            rows = self._reconstruct_page_rows(page)
+            
+            in_table = False
+            for line in rows:
+                # Normalize line for robust matching (dashes, spaces)
+                clean_line = line.strip().replace("–", "-").replace("—", "-")
+                
+                # Check for table start triggers
+                
+                # TRIGGER 1: "Cuadro Resumen" Header
+                term = "CUADRO RESUMEN"
+                if term.replace(" ", "") in clean_line.upper().replace(" ", ""):
+                    print(f"Debug: Found '{clean_line}' (Header Trigger) on page {i+1}")
+                    in_table = True
+                    continue
+                
+                # TRIGGER 2: "Concepto" + "Cantidad" column headers
+                if "CONCEPTO" in clean_line.upper() and "CANTIDAD" in clean_line.upper():
+                     print(f"Debug: Found Column Headers '{clean_line}' (Table Start) on page {i+1}")
+                     in_table = True
+                     continue # Skip header row
+
+                # TRIGGER 3: Content fallback ("Saldo Inicial")
+                if not in_table and clean_line.upper().startswith("SALDO INICIAL"):
+                     print(f"Debug: Found Content Trigger '{clean_line}' (Implicit Table Start) on page {i+1}")
+                     in_table = True
+                     # Do not continue, process this line!
+
+                if in_table:
+                    print(f"Debug: Processing Row: '{clean_line}'")
+                    
+                    # Exit conditions
+                    if "TOTAL" in clean_line.upper():
+                        print(f"Debug: End of table (Total found)")
+                        break
+                    if "NOTA" in clean_line.upper() and ":" in clean_line:
+                        print(f"Debug: End of table (Note found)")
+                        break
+                    
+                    # Filter Headers/Noise
+                    if "PAGINA" in clean_line.upper() or "PAGE" in clean_line.upper(): continue
+                    # Filter header lines if they repeat
+                    if "CONCEPTO" in clean_line.upper() and "CANTIDAD" in clean_line.upper(): continue 
+                    
+                    # Soft filter for short lines - maybe too aggressive?
+                    # "Saldo Inicial" is > 10 chars. 
+                    if len(clean_line) < 5: 
+                         print(f"  -> Skipped (too short)")
+                         continue
+
+                    # Parse Row: Concepto | Cantidad | % | Columna
+                    # Regex strategy: Look for the structured suffix
+                    # Example: "Saldo Inicial 12,383.20 5.29% A"
+                    # Regex: [Concepto] [Amount] [Pct] [Col]
+                    
+                    import re
+                    # Match end of line: Amount Pct Col
+                    # Amount: 12,383.20 or -67,300.00
+                    # Pct: 5.29% or -28.78% or 100.00%
+                    # Col: A, B, C... or single char/word
+                    
+                    # 1. Extract Column (Last word)
+                    col_match = re.search(r'\s+([A-Z0-9]+)$', clean_line)
+                    if col_match:
+                        columna = col_match.group(1)
+                        remaining = clean_line[:col_match.start()].strip()
+                        
+                        # 2. Extract Percentage
+                        pct_match = re.search(r'\s+([-\d\.]+%)\s*$', remaining)
+                        if pct_match:
+                            pct = pct_match.group(1)
+                            remaining = remaining[:pct_match.start()].strip()
+                            
+                            # 3. Extract Amount
+                            amt_match = re.search(r'\s+([-\d,]+\.\d{2})\s*$', remaining)
+                            if amt_match:
+                                amount = amt_match.group(1)
+                                concepto = remaining[:amt_match.start()].strip()
+                                
+                                item = {
+                                    "Concepto": concepto,
+                                    "Cantidad": amount,
+                                    "Porcentaje": pct,
+                                    "Columna": columna
+                                }
+                                cuadro_resumen.append(item)
+                                print(f"  -> Extracted: {item}")
+                                continue
+                    
+                    # If regex failed, check if it's the "Saldo Final" row which might look differnet?
+                    # Screenshot: "Saldo Final 106,382.65 45.50% G" - Same format.
+                    
+                    # Fallback: maybe spaces are weird?
+                    # Just store raw if we are sure we are in table
+                    # cuadro_resumen.append({"raw_row": clean_line})
+
+            if cuadro_resumen:
+                return cuadro_resumen
+
         return None
     
     def _extract_informacion_financiera(self, ocr_data: Dict[str, Any]) -> Optional[Dict[str, Any]]:
@@ -1423,6 +1629,60 @@ class DataExtractor:
         
         return "\n".join(text_parts)
 
+    
+    def _extract_pages_info(self, ocr_data: Dict[str, Any]) -> List[Dict[str, str]]:
+        """提取每页的页眉信息 (Page No, Account No, Client No)."""
+        pages_info = []
+        
+        patterns = {
+            "No. de Cuenta": r"No\.\s+de\s+Cuenta\s+([\d]+)",
+            "No. de Cliente": r"No\.\s+de\s+Cliente\s+([\d]+)",
+            "PAGINA": r"PAGINA\s+(\d+\s*/\s*\d+)"
+        }
+        
+        for i, page in enumerate(ocr_data.get("pages", [])):
+            text = self._get_page_text(page)
+            # Limit header search to top of page to avoid false matches? 
+            # Actually standard headers are usually at top.
+            
+            page_info = {"page_index": str(i + 1)}
+            
+            for key, pattern in patterns.items():
+                match = re.search(pattern, text, re.IGNORECASE)
+                if match:
+                    page_info[key] = match.group(1).strip()
+            
+            # If we found at least one relevant field, add it
+            if len(page_info) > 1:
+                pages_info.append(page_info)
+                
+        return pages_info
+
+    def _extract_branch_info(self, ocr_data: Dict[str, Any]) -> Optional[Dict[str, str]]:
+        """提取分支机构信息 (Screenshot 2)"""
+        info = {}
+        # Uses negative lookahead to stop before the next keyword
+        patterns = {
+            "SUCURSAL": r"(?:SUCURSAL|Sucursal)[:\.]?\s*((?:(?!DIRECCION|Dirección|PLAZA|Plaza|TELEFONO|Teléfono).)*)",
+            "DIRECCION": r"(?:DIRECCION|Dirección)[:\.]?\s*((?:(?!SUCURSAL|Sucursal|PLAZA|Plaza|TELEFONO|Teléfono).)*)",
+            "PLAZA": r"(?:PLAZA|Plaza)[:\.]?\s*((?:(?!SUCURSAL|Sucursal|DIRECCION|Dirección|TELEFONO|Teléfono).)*)",
+            "TELEFONO": r"(?:TELEFONO|Teléfono|Tel)[:\.]?\s*([+\d\s\-\(\)]+)"
+        }
+        
+        for page in ocr_data.get("pages", []):
+            text = self._get_page_text(page)
+            if "SUCURSAL:" in text or "Sucursal:" in text:
+                for key, pattern in patterns.items():
+                    # Enable DOTALL to match across newlines
+                    match = re.search(pattern, text, re.IGNORECASE | re.DOTALL)
+                    if match:
+                        val = match.group(1).strip()
+                        info[key] = val
+                
+                if info:
+                    return info
+        return None
+
     def _extract_customer_info(self, ocr_data: Dict[str, Any]) -> Dict[str, str]:
         """Extract customer/account header information (screenshot 1 content) - 使用原文key."""
         info = {}
@@ -1436,25 +1696,144 @@ class DataExtractor:
             "No. Cuenta CLABE": r"No\.\s+Cuenta\s+CLABE\s+([\d\s]+)"
         }
         
-        for page in ocr_data.get("pages", []):
+        # 尝试提取客户地址 (Problem 1)
+        # 逻辑：查找前3页左上角的文本块，排除已知Header关键词
+        client_address = []
+        
+        for i, page in enumerate(ocr_data.get("pages", [])):
             text = self._get_page_text(page)
             if text:
+                # 1. 提取标准Header字段
                 for key, pattern in patterns.items():
                     if key not in info:
-                        import re
                         match = re.search(pattern, text, re.IGNORECASE)
                         if match:
                             if key == "Periodo":
-                                # 格式: "DEL dd/mm/yyyy AL dd/mm/yyyy"
                                 start = match.group(1).strip()
                                 end = match.group(2).strip()
                                 info[key] = f"DEL {start} AL {end}"
                             else:
-                                # 直接使用提取值，保留原始格式
                                 info[key] = match.group(1).strip()
+            
+            # 2. 提取客户地址 (Try first 3 pages, focusing on top-left under logo)
+            # User feedback: Page 1 might be cover/image. Address often on Page 2 or under BBVA logo.
+            current_page_num = page.get("page_number", i + 1)
+            if current_page_num <= 3 and not client_address:
                 
-                # 找到大部分字段后停止
-                if len(info) >= 4:
+                # Check raw page text first
+                page_raw_text = self._get_page_text(page)
+                # Only debug verify if empty
+                if len(page_raw_text) == 0:
+                     print(f"Debug: Page {current_page_num} has 0 text length (Image?). Skipping address search on this page.")
+                else:
+                    # 遍历文本块，寻找位于左上角且不是银行Logo/Headers的块
+                    blocks = page.get("text_blocks", [])
+                    page_width = page.get("width", 612)
+                    page_height = page.get("height", 792)
+                    
+                    print(f"Debug: Analyzing Page {current_page_num} blocks for Address. Page dim: {page_width}x{page_height}. Block Count: {len(blocks)}")
+                    
+                    # 定义左上角区域 (0-60% width, 0-50% height) - Broadened based on feedback
+                    candidates = []
+                    
+                    for i, block in enumerate(blocks):
+                        bbox = block.get("bbox", [0, 0, 0, 0])
+                        b_text = block.get("text", "").strip()
+                        
+                        # Log all blocks in top half to see what we are missing
+                        if bbox[1] < page_height * 0.5:
+                             print(f"Debug Block {i}: '{b_text[:20]}...' bbox={bbox}")
+                        
+                        # x < 60%, y < 50%
+                        if bbox[0] < page_width * 0.6 and bbox[1] < page_height * 0.5:
+                            
+                            # 过滤掉干扰项 (Basic filters)
+                            if len(b_text) < 5: 
+                                print(f"  -> Skipped (too short)")
+                                continue
+                            # Relaxed filters: Only exact matches or clear headers
+                            # Allow "BBVA" if it's potentially part of an address line, but skip isolated Logo text
+                            if b_text.strip() == "BBVA": 
+                                print(f"  -> Skipped (Exact BBVA)")
+                                continue
+                            if b_text.upper().startswith("BANCO BBVA"): 
+                                 print(f"  -> Skipped (BANCO BBVA)")
+                                 continue
+                            if "Estado de Cuenta" in b_text: 
+                                 print(f"  -> Skipped (Estado de Cuenta)")
+                                 continue 
+                            
+                            # Exclude standard headers
+                            if re.match(r'^Periodo\s+', b_text): 
+                                 print(f"  -> Skipped (Periodo)")
+                                 continue
+                            if re.match(r'^Fecha\s+de\s+Corte', b_text): 
+                                 print(f"  -> Skipped (Fecha de Corte)")
+                                 continue
+                            if re.match(r'^No\.\s+de\s+Cuenta', b_text): 
+                                 print(f"  -> Skipped (No. de Cuenta)")
+                                 continue
+                            # Explicitly exclude "No. de Cliente" which was being picked up
+                            if re.match(r'^No\.\s+de\s+Cliente', b_text): 
+                                 print(f"  -> Skipped (No. de Cliente)")
+                                 continue
+                            # Exclude other headers found in that area
+                            if re.match(r'^R\.F\.C', b_text): 
+                                 print(f"  -> Skipped (RFC)")
+                                 continue
+                            if re.match(r'^No\.\s+Cuenta\s+CLABE', b_text): 
+                                 print(f"  -> Skipped (CLABE)")
+                                 continue
+                            
+                            if re.match(r'^PAGINA', b_text, re.IGNORECASE): 
+                                 print(f"  -> Skipped (PAGINA)")
+                                 continue
+                            
+                            print(f"  -> CANDIDATE ADDED")
+                            candidates.append((bbox[1], b_text)) # 按y坐标排序
+                    
+                    print(f"Debug: Found {len(candidates)} address candidates on Page {current_page_num}")
+                    # 按Y坐标排序，取最上面的块，通常就是地址块
+                    candidates.sort(key=lambda x: x[0])
+                    if candidates:
+                        for idx, c in enumerate(candidates[:3]):
+                            print(f"Debug Candidate {idx}: {c[1][:50]}... at Y={c[0]}")
+                            
+                        # 取最上面的1-2个块作为地址
+                        # 假设最上面的候选块是地址
+                        addr_text = candidates[0][1]
+                        # 分割成行
+                        addr_lines = [l.strip() for l in addr_text.split('\n') if l.strip()]
+                        
+                        # User request: Split Name (first line) from Address
+                        if addr_lines:
+                            # CRITICAL FIX: If address block merged with Branch Info (SUCURSAL...), split it!
+                            full_addr_text = "\n".join(addr_lines)
+                            split_keywords = ["SUCURSAL:", "DIRECCION:", "PLAZA:", "TELEFONO:"]
+                            for kw in split_keywords:
+                                if kw in full_addr_text.upper(): # Check loose match
+                                     # Find exact match index to be safe, or just split by line
+                                     # Let's iterate lines and cut off when we see a keyword
+                                     clean_lines = []
+                                     for line in addr_lines:
+                                         if any(k in line.upper() for k in split_keywords):
+                                             break
+                                         clean_lines.append(line)
+                                     addr_lines = clean_lines
+                                     break
+                                     
+                            # Re-check after cleaning
+                            if addr_lines:
+                                info["Client Name"] = addr_lines[0]
+                                if len(addr_lines) > 1:
+                                    info["Client Address"] = "\n".join(addr_lines[1:])
+                                else:
+                                    info["Client Address"] = addr_lines[0] # Fallback if only 1 line
+                        
+                        client_address = addr_lines # Mark as found
+            
+                # 找到大部分Header字段后停止
+                if len(info) >= 5:
                     break
         
         return info

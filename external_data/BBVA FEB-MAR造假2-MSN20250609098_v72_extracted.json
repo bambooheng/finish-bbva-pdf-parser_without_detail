@@ -1,0 +1,294 @@
+{
+  "source_file": "BBVA FEB-MAR造假2-MSN20250609098",
+  "document_type": "B",
+  "total_pages": 1,
+  "total_rows": 28,
+  "sessions": 1,
+  "pages": [
+    {
+      "page": 0,
+      "rows": [
+        {
+          "fecha_oper": "13/FEB",
+          "fecha_liq": "13/FEB",
+          "descripcion": "FARM SAN PABLO RFC: PPL 961114GZ1 10:45 AUT: 534131",
+          "referencia": "Referencia ******4723",
+          "cargos": 222.0,
+          "abonos": 0.0,
+          "saldo_operacion": 4662.42,
+          "saldo_liquidacion": 4662.42
+        },
+        {
+          "fecha_oper": "15/FEB",
+          "fecha_liq": "17/FEB",
+          "descripcion": "RETIRO CAJERO AUTOMATICO FEB15 14:13 BBVA B023 FOLIO:8526",
+          "referencia": "Referencia ******4723",
+          "cargos": 800.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "15/FEB",
+          "fecha_liq": "17/FEB",
+          "descripcion": "RETIRO CAJERO AUTOMATICO FEB15 14:15 BBVA B023 FOLIO:8530",
+          "referencia": "Referencia ******4723",
+          "cargos": 300.0,
+          "abonos": 0.0,
+          "saldo_operacion": 3562.42,
+          "saldo_liquidacion": 3367.02
+        },
+        {
+          "fecha_oper": "17/FEB",
+          "fecha_liq": "14/FEB",
+          "descripcion": "FARM DEL AHORRO RFC: CFC 110121742 18:19 AUT: 619962",
+          "referencia": "Referencia ******4723",
+          "cargos": 122.4,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "17/FEB",
+          "fecha_liq": "14/FEB",
+          "descripcion": "MSFT STORE RFC: MME 910620Q85 17:08 AUT: 940435",
+          "referencia": "Referencia ******7906",
+          "cargos": 299.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "17/FEB",
+          "fecha_liq": "15/FEB",
+          "descripcion": "TOKS RC SAN MIGUEL RFC: RTO 840921RE4 16:51 AUT: 343999",
+          "referencia": "Referencia ******4723",
+          "cargos": 874.0,
+          "abonos": 0.0,
+          "saldo_operacion": 2267.02,
+          "saldo_liquidacion": 2267.02
+        },
+        {
+          "fecha_oper": "20/FEB",
+          "fecha_liq": "20/FEB",
+          "descripcion": "SPEI RECIBIDOMercado Pago 1234567MERCADO*PAGO 00722969010622928160 CPO102907595674 LUIS ALBERTO FERNANDEZ GARCIA",
+          "referencia": "Referencia 0128361434 722",
+          "cargos": 0.0,
+          "abonos": 2.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "20/FEB",
+          "fecha_liq": "20/FEB",
+          "descripcion": "SPEI RECIBIDOTRANSFER 0697909Payment 00684180093000000007 2025022090684AWS093B2257DF9B0C ATMX TECNOLOGIA S.A. DE C.V.",
+          "referencia": "Referencia 0128708899 684",
+          "cargos": 0.0,
+          "abonos": 600.0,
+          "saldo_operacion": 2869.02,
+          "saldo_liquidacion": 600.11
+        },
+        {
+          "fecha_oper": "21/FEB",
+          "fecha_liq": "21/FEB",
+          "descripcion": "SPEI ENVIADO AZTECA 0502250viaje 00004027665820229061 MBAN01002502210055790025 Fernando Trejo Peña",
+          "referencia": "Referencia 0055790025 127",
+          "cargos": 600.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "21/FEB",
+          "fecha_liq": "21/FEB",
+          "descripcion": "SPEI RECIBIDOAZTECA 2247230pago 00127180013023782852 250224070027657453I HERNANDEZ PALACIO OMAR EDGAR",
+          "referencia": "Referencia 0137749662 127",
+          "cargos": 0.0,
+          "abonos": 400.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "21/FEB",
+          "fecha_liq": "20/FEB",
+          "descripcion": "MI ATT A APP PS RFC: CNM 980114PI2 03:24 AUT: 277353",
+          "referencia": "Referencia ******7906",
+          "cargos": 2268.91,
+          "abonos": 0.0,
+          "saldo_operacion": 400.11,
+          "saldo_liquidacion": 400.11
+        },
+        {
+          "fecha_oper": "22/FEB",
+          "fecha_liq": "24/FEB",
+          "descripcion": "SPEI ENVIADO AZTECA 0502250m 00004027665873176359 MBAN01002502240062208836 Ofelia Alejandra Jimenez",
+          "referencia": "Referencia 0062208836 127",
+          "cargos": 400.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.11,
+          "saldo_liquidacion": 400.11
+        },
+        {
+          "fecha_oper": "25/FEB",
+          "fecha_liq": "25/FEB",
+          "descripcion": "SPEI RECIBIDOBANAMEX 0250225transf 00002180701851485541 085901592990305657 OMAR EDGAR,HERNANDEZ/PALACIO",
+          "referencia": "Referencia 0151035443 002",
+          "cargos": 0.0,
+          "abonos": 1000.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "25/FEB",
+          "fecha_liq": "25/FEB",
+          "descripcion": "SPEI ENVIADO TRANSFER 0502250pago prestamo 25 02 2025 00684180093021753922 MBAN01002502250071057470 Yeye Cash",
+          "referencia": "Referencia 0071057470 684",
+          "cargos": 1000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.11,
+          "saldo_liquidacion": 0.11
+        },
+        {
+          "fecha_oper": "27/FEB",
+          "fecha_liq": "27/FEB",
+          "descripcion": "SPEI RECIBIDOAZTECA 2247230acta 00127180013692821607 250227010109232653I JIMENEZ FERNANDEZ OFELIA ALEJANDRA",
+          "referencia": "Referencia 0162347518 127",
+          "cargos": 0.0,
+          "abonos": 200.0,
+          "saldo_operacion": 200.11,
+          "saldo_liquidacion": 200.11
+        },
+        {
+          "fecha_oper": "02/MAR",
+          "fecha_liq": "03/MAR",
+          "descripcion": "SPEI ENVIADO AZTECA 0502250prueba 00004831121200462522 MBAN01002503030098623680 Bruno Gabriel Garcia Solares",
+          "referencia": "Referencia 0098623680 127",
+          "cargos": 1.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "02/MAR",
+          "fecha_liq": "03/MAR",
+          "descripcion": "SPEI ENVIADO AZTECA 0502250brunito 00004831121200462522 MBAN01002503030098639775 Bruno Gabriel Garcia Solares",
+          "referencia": "Referencia 0098639775 127",
+          "cargos": 0.0,
+          "abonos": 199.0,
+          "saldo_operacion": 0.11,
+          "saldo_liquidacion": 200.11
+        },
+        {
+          "fecha_oper": "04/MAR",
+          "fecha_liq": "04/MAR",
+          "descripcion": "PAGO DE NOMINA PENSIONES BANCOMER SA DE CV GFB",
+          "referencia": "Referencia PA 4200104353",
+          "cargos": 0.0,
+          "abonos": 16000.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "04/MAR",
+          "fecha_liq": "04/MAR",
+          "descripcion": "SPEI ENVIADO BANORTE 0502250colegMar25AaronFdz5toAzul 00072180006515343764 MBAN01002503040055267526 Abraham Lincoln SC",
+          "referencia": "Referencia 0055267526 072",
+          "cargos": 0.0,
+          "abonos": 2100.0,
+          "saldo_operacion": 2719.31,
+          "saldo_liquidacion": 2719.31
+        },
+        {
+          "fecha_oper": "06/MAR",
+          "fecha_liq": "05/MAR",
+          "descripcion": "FARM SAN PABLO RFC: PPL 961114GZ1 14:04 AUT: 439763",
+          "referencia": "Referencia ******4723",
+          "cargos": 0.0,
+          "abonos": 454.0,
+          "saldo_operacion": 2265.31,
+          "saldo_liquidacion": 2265.31
+        },
+        {
+          "fecha_oper": "07/MAR",
+          "fecha_liq": "07/MAR",
+          "descripcion": "SPEI RECIBIDOSTP 0140714Prestamo Cozmo 0140714 00646180502800000008 Cozmo00294536 DIGITAL DECK SAPI DE CV SOFOM ENR",
+          "referencia": "Referencia 0103917612 646",
+          "cargos": 0.0,
+          "abonos": 350.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "07/MAR",
+          "fecha_liq": "07/MAR",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1526105946 viaje",
+          "referencia": "Referencia 0351817912",
+          "cargos": 0.0,
+          "abonos": 275.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "07/MAR",
+          "fecha_liq": "07/MAR",
+          "descripcion": "SPEI ENVIADO INBURSA 0502250viaje 00005399759406093376 MBAN01002503070069692550 Jorge Garcia",
+          "referencia": "Referencia 0069692550 036",
+          "cargos": 0.0,
+          "abonos": 120.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "07/MAR",
+          "fecha_liq": "07/MAR",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1598088118 viaje",
+          "referencia": "Referencia 0367875299",
+          "cargos": 0.0,
+          "abonos": 221.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "07/MAR",
+          "fecha_liq": "07/MAR",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1533862302 compra",
+          "referencia": "Referencia 0370102211",
+          "cargos": 0.0,
+          "abonos": 65.0,
+          "saldo_operacion": 1934.31,
+          "saldo_liquidacion": 1934.31
+        },
+        {
+          "fecha_oper": "08/MAR",
+          "fecha_liq": "10/MAR",
+          "descripcion": "SPEI ENVIADO AZTECA 0502250A 00004027665873176359 MBAN01002503100074029764 Ofelia Alejandra Jimenez",
+          "referencia": "Referencia 0074029764 127",
+          "cargos": 0.0,
+          "abonos": 100.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "08/MAR",
+          "fecha_liq": "10/MAR",
+          "descripcion": "SPEI ENVIADO AZTECA 0502250Bien 00004831121200462522 MBAN01002503100074422200 Bruno Gabriel Garcia Solares",
+          "referencia": "Referencia 0074422200 127",
+          "cargos": 0.0,
+          "abonos": 1000.0,
+          "saldo_operacion": 834.31,
+          "saldo_liquidacion": 1934.31
+        },
+        {
+          "fecha_oper": "10/MAR",
+          "fecha_liq": "10/MAR",
+          "descripcion": "SPEI ENVIADO STP 05022500140714 00646180502800713654 MBAN01002503110081925204 Digital Deck SAPI de CV SOFOM ENR",
+          "referencia": "Referencia 0081925204 646",
+          "cargos": 0.0,
+          "abonos": 808.0,
+          "saldo_operacion": 26.31,
+          "saldo_liquidacion": 26.31
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2174 @@
+{
+  "source_file": "MSN20251111122银行流水1",
+  "document_type": "A",
+  "total_pages": 19,
+  "total_rows": 216,
+  "sessions": 0,
+  "pages": [
+    {
+      "page": 0,
+      "rows": [
+        {
+          "fecha_oper": "01/OCT",
+          "fecha_liq": "01/OCT",
+          "descripcion": "SPEI ENVIADO Mercado Pago 0078103269 722 0109250pago 00722969020425915959 MBAN01002510010078103269 luis esteves",
+          "referencia": "",
+          "cargos": 2750.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "01/OCT",
+          "fecha_liq": "01/OCT",
+          "descripcion": "SPEI RECIBIDOBANAMEX 0180591651 002 0011025Bananos 00002180702004892236 085904725720327454 CARLO EMMANUEL,HERRERA SIERRA/CONT",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 4000.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "01/OCT",
+          "fecha_liq": "01/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0036721081 BNET 1525646137 pago",
+          "referencia": "",
+          "cargos": 7000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "01/OCT",
+          "fecha_liq": "01/OCT",
+          "descripcion": "RETIRO SIN TARJETA",
+          "referencia": "******8563",
+          "cargos": 1000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "01/OCT",
+          "fecha_liq": "01/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0000149368 BNET 1540477577 Transf a ADELAIDA",
+          "referencia": "",
+          "cargos": 350.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "01/OCT",
+          "fecha_liq": "01/OCT",
+          "descripcion": "SPEI ENVIADO SCOTIABANK 0081933618 044 0109250pago 00044180256003415270 MBAN01002510010081933618 alejandro gonzales",
+          "referencia": "",
+          "cargos": 650.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "01/OCT",
+          "fecha_liq": "01/OCT",
+          "descripcion": "SPEI ENVIADO AZTECA 0082061046 127 0109250pago 00004027665843114381 MBAN01002510010082061046 rosario olmos",
+          "referencia": "",
+          "cargos": 300.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "01/OCT",
+          "fecha_liq": "01/OCT",
+          "descripcion": "SPEI RECIBIDOBANORTE 0184968540 072 0251001Sin informaci n 00072180012943415038 38432P06202510014510625695 ARANTZA MELISSA RUIZ FLORES",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 2500.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "01/OCT",
+          "fecha_liq": "01/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0031892091 BNET 1554326060 pago",
+          "referencia": "",
+          "cargos": 800.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "01/OCT",
+          "fecha_liq": "01/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0031260379 BNET 1554326060 pago",
+          "referencia": "",
+          "cargos": 1500.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "01/OCT",
+          "fecha_liq": "01/OCT",
+          "descripcion": "SPEI ENVIADO SANTANDER 0083997078 014 0109250pago 00005579070147910585 MBAN01002510020083997078 daniel zarco",
+          "referencia": "",
+          "cargos": 2850.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "01/OCT",
+          "fecha_liq": "01/OCT",
+          "descripcion": "OXXO SANTA ISABEL MEX",
+          "referencia": "******4151 RFC: CCO 8605231N4 20:53 AUT: 400965",
+          "cargos": 140.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "01/OCT",
+          "fecha_liq": "01/OCT",
+          "descripcion": "OXXO RAMIRIQUI",
+          "referencia": "******4151 RFC: CCO 8605231N4 17:56 AUT: 747202",
+          "cargos": 187.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "01/OCT",
+          "fecha_liq": "01/OCT",
+          "descripcion": "AGUSTITO",
+          "referencia": "******4151 RFC: PECM850821EQ5 22:55 AUT: 817335",
+          "cargos": 1881.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "01/OCT",
+          "fecha_liq": "01/OCT",
+          "descripcion": "OXXO SANTA ISABEL MEX",
+          "referencia": "******4151 RFC: CCO 8605231N4 18:53 AUT: 972865",
+          "cargos": 134.0,
+          "abonos": 0.0,
+          "saldo_operacion": 10419.36,
+          "saldo_liquidacion": 9856.36
+        },
+        {
+          "fecha_oper": "02/OCT",
+          "fecha_liq": "02/OCT",
+          "descripcion": "EFECTIVO SEGURO BBVA P0A4KCES0061 RECIBO NO. * 00509659592 6001",
+          "referencia": "",
+          "cargos": 70.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "02/OCT",
+          "fecha_liq": "02/OCT",
+          "descripcion": "SPEI RECIBIDOAZTECA 0188253500 127 1988563banano 00127180013174132238 251002013729786550I HERRERA SIERRA CONTRERAS CARLO EMMANUEL",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 1500.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "02/OCT",
+          "fecha_liq": "02/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0037801201 BNET 1552212122 pago",
+          "referencia": "",
+          "cargos": 750.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "02/OCT",
+          "fecha_liq": "02/OCT",
+          "descripcion": "SPEI RECIBIDOSANTANDER 0188440457 014 6874478TRANSFERENCIA A CARLOS RODRIGU 00014180606207181647 2025100240014TRAPP020430700270 DANIEL YANNICK ZARCO VALDOVINOS",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 3900.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "02/OCT",
+          "fecha_liq": "02/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0014381989 BNET 1554326060 pago",
+          "referencia": "",
+          "cargos": 7800.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "02/OCT",
+          "fecha_liq": "02/OCT",
+          "descripcion": "SPEI RECIBIDOBANORTE 0188519504 072 0251002Bolsa YSL 00072180012943415038 38432P04202510024512792824 ARANTZA MELISSA RUIZ FLORES",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 20000.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "02/OCT",
+          "fecha_liq": "02/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0030911494 BNET 1554326060 pago",
+          "referencia": "",
+          "cargos": 7800.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "02/OCT",
+          "fecha_liq": "02/OCT",
+          "descripcion": "SPEI ENVIADO Mercado Pago 0087887034 722 0109250pago 00722969010375986187 MBAN01002510020087887034 genesis",
+          "referencia": "",
+          "cargos": 2120.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "02/OCT",
+          "fecha_liq": "02/OCT",
+          "descripcion": "SPEI RECIBIDOSCOTIABANK 0189672600 044 0021025Transferencia a Luis 00044180001014517561 2025100240044B36L0000405054287 AVILA SUAREZ OMAR",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 11000.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "02/OCT",
+          "fecha_liq": "02/OCT",
+          "descripcion": "SPEI ENVIADO SANTANDER 0089408192 014 0109250pago 00005579070147910585 MBAN01002510030089408192 daniel zarco",
+          "referencia": "",
+          "cargos": 3900.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "02/OCT",
+          "fecha_liq": "01/OCT",
+          "descripcion": "PMX*GAS VIAS TLANPNTLA",
+          "referencia": "******4151 RFC: AES 170727858 11:16 AUT: 717948",
+          "cargos": 300.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "02/OCT",
+          "fecha_liq": "03/OCT",
+          "descripcion": "SPEI ENVIADO SANTANDER 0090045803 014 0109250pago 00005579070147910585 MBAN01002510030090045803 daniel zarco",
+          "referencia": "",
+          "cargos": 1200.0,
+          "abonos": 0.0,
+          "saldo_operacion": 22879.36,
+          "saldo_liquidacion": 22370.86
+        },
+        {
+          "fecha_oper": "03/OCT",
+          "fecha_liq": "03/OCT",
+          "descripcion": "SPEI RECIBIDOAZTECA 0195914850 127 1988563transfer 00127180013581383968 251003013751612815I LOPEZ MARTINEZ ERIC",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 200.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "03/OCT",
+          "fecha_liq": "01/OCT",
+          "descripcion": "OXXO SANTA ISABEL MEX",
+          "referencia": "******4151 RFC: CCO 8605231N4 23:10 AUT: 448894",
+          "cargos": 263.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "03/OCT",
+          "fecha_liq": "02/OCT",
+          "descripcion": "GAS COGASA TEPEYAC MIT",
+          "referencia": "******4151 RFC: CGP 970522EE4 15:14 AUT: 103257",
+          "cargos": 300.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "03/OCT",
+          "fecha_liq": "02/OCT",
+          "descripcion": "MERPAGO*AGREGADOR",
+          "referencia": "******4151 RFC: MAG 2105031W3 05:03 AUT: 118975",
+          "cargos": 140.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "03/OCT",
+          "fecha_liq": "02/OCT",
+          "descripcion": "7 ELEVEN BUENO MONTEVI",
+          "referencia": "******4151 RFC: SEM 980701STA 22:41 AUT: 700270",
+          "cargos": 544.5,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "03/OCT",
+          "fecha_liq": "02/OCT",
+          "descripcion": "OXXO SANTA ISABEL MEX",
+          "referencia": "******4151 RFC: CCO 8605231N4 01:49 AUT: 885730",
+          "cargos": 61.0,
+          "abonos": 0.0,
+          "saldo_operacion": 21770.86,
+          "saldo_liquidacion": 21301.86
+        },
+        {
+          "fecha_oper": "04/OCT",
+          "fecha_liq": "06/OCT",
+          "descripcion": "SPEI ENVIADO Mercado Pago 0097254720 722 0109250pago 00722969020425915959 MBAN01002510060097254720 luis esteves",
+          "referencia": "",
+          "cargos": 1000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "04/OCT",
+          "fecha_liq": "06/OCT",
+          "descripcion": "SPEI ENVIADO BANCOPPEL 0097561246 137 0109250pago 00004169160447372781 MBAN01002510060097561246 Yahir",
+          "referencia": "",
+          "cargos": 1000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "04/OCT",
+          "fecha_liq": "06/OCT",
+          "descripcion": "SPEI RECIBIDOBANORTE 0101114278 072 0251004Corte 00072225010569555912 3843CP01202510044520728823 GUILLERMO MARTIN RAMIREZ MERCADO",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 160.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "04/OCT",
+          "fecha_liq": "06/OCT",
+          "descripcion": "SPEI ENVIADO SANTANDER 0099465151 014 0109250pago 00005579070147910585 MBAN01002510060099465151 daniel zarco",
+          "referencia": "",
+          "cargos": 5300.0,
+          "abonos": 0.0,
+          "saldo_operacion": 14630.86,
+          "saldo_liquidacion": 20993.86
+        },
+        {
+          "fecha_oper": "06/OCT",
+          "fecha_liq": "02/OCT",
+          "descripcion": "GASOL ES 03333",
+          "referencia": "******4151 RFC: ETN 8705253E7 22:32 AUT: 633111",
+          "cargos": 400.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "06/OCT",
+          "fecha_liq": "03/OCT",
+          "descripcion": "DIDI",
+          "referencia": "******4151 RFC: DMM 171208LT4 00:12 AUT: 146611",
+          "cargos": 69.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "06/OCT",
+          "fecha_liq": "04/OCT",
+          "descripcion": "LA RANA FELIZ",
+          "referencia": "******4151 RFC: IEPI761108MD6 14:44 AUT: 101024",
+          "cargos": 308.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "06/OCT",
+          "fecha_liq": "06/OCT",
+          "descripcion": "SPEI RECIBIDOSCOTIABANK 0111020335 044 0061025Transferencia a Luis 00044180001014517561 2025100640044B36L0000405978491 AVILA SUAREZ OMAR",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 6000.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "06/OCT",
+          "fecha_liq": "06/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0074269461 BNET 1553336824 pago corte",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 210.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "06/OCT",
+          "fecha_liq": "06/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0063682996 BNET 1505880237 Transf a LUIS CARL",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 160.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "06/OCT",
+          "fecha_liq": "06/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0068018402 BNET 1525646137 pago",
+          "referencia": "",
+          "cargos": 6700.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "06/OCT",
+          "fecha_liq": "06/OCT",
+          "descripcion": "SPEI RECIBIDOSANTANDER 0111806948 014 6393211LV 00014180606207181647 2025100640014TRAPP020453806080 DANIEL YANNICK ZARCO VALDOVINOS",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 3500.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "06/OCT",
+          "fecha_liq": "06/OCT",
+          "descripcion": "SPEI ENVIADO Mercado Pago 0059093129 722 0109250pago 00722969017740431367 MBAN01002510070059093129 edwin leon",
+          "referencia": "",
+          "cargos": 7000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 10023.86,
+          "saldo_liquidacion": 9343.86
+        },
+        {
+          "fecha_oper": "07/OCT",
+          "fecha_liq": "07/OCT",
+          "descripcion": "SPEI RECIBIDOSCOTIABANK 0114484904 044 0071025Bolsas 00044180001014517561 2025100740044B36L0000406124431 AVILA SUAREZ OMAR",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 23000.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "07/OCT",
+          "fecha_liq": "07/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0002812689 BNET 1555000121 corte",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 160.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "07/OCT",
+          "fecha_liq": "07/OCT",
+          "descripcion": "SPEI ENVIADO SANTANDER 0062847868 014 0109250pago 00005579070147910585 MBAN01002510070062847868 daniel zarco",
+          "referencia": "",
+          "cargos": 3500.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "07/OCT",
+          "fecha_liq": "07/OCT",
+          "descripcion": "SPEI ENVIADO AZTECA 0063283937 127 0109250pago 00004027665884285249 MBAN01002510070063283937 milly naomi",
+          "referencia": "",
+          "cargos": 2500.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "07/OCT",
+          "fecha_liq": "07/OCT",
+          "descripcion": "SPEI ENVIADO Mercado Pago 0063365993 722 0109250pago 00722969016801311479 MBAN01002510070063365993 emiliano lugo",
+          "referencia": "",
+          "cargos": 900.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "07/OCT",
+          "fecha_liq": "06/OCT",
+          "descripcion": "VILLA MASCOTAS",
+          "referencia": "******4151 RFC: MESM830101NN7 17:59 AUT: 721248",
+          "cargos": 500.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "07/OCT",
+          "fecha_liq": "06/OCT",
+          "descripcion": "FARM PROVIDENCIA",
+          "referencia": "******4151 RFC: GARA8809283P5 18:09 AUT: 907578",
+          "cargos": 180.0,
+          "abonos": 0.0,
+          "saldo_operacion": 25603.86,
+          "saldo_liquidacion": 25603.86
+        },
+        {
+          "fecha_oper": "08/OCT",
+          "fecha_liq": "08/OCT",
+          "descripcion": "SPEI ENVIADO NU MEXICO 0064940669 638 0109250pago 00005101257963533032 MBAN01002510080064940669 caros rodriguez",
+          "referencia": "",
+          "cargos": 1800.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "08/OCT",
+          "fecha_liq": "08/OCT",
+          "descripcion": "SPEI ENVIADO Mercado Pago 0066671185 722 0109250pago 00722969020425915959 MBAN01002510080066671185 luis esteves",
+          "referencia": "",
+          "cargos": 4500.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "08/OCT",
+          "fecha_liq": "08/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0007724657 BNET 1538210467 Transf a LUIS CARL",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 100.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "08/OCT",
+          "fecha_liq": "08/OCT",
+          "descripcion": "SPEI ENVIADO SANTANDER 0067416711 014 0109250pago 00005579070147910585 MBAN01002510080067416711 daniel zarco",
+          "referencia": "",
+          "cargos": 3150.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "08/OCT",
+          "fecha_liq": "08/OCT",
+          "descripcion": "SPEI RECIBIDOBANAMEX 0121590084 002 0081025X 00002180702004892236 085909792480328151 CARLO EMMANUEL,HERRERA SIERRA/CONT",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 5000.0,
+          "saldo_operacion": 21253.86,
+          "saldo_liquidacion": 19762.86
+        },
+        {
+          "fecha_oper": "09/OCT",
+          "fecha_liq": "09/OCT",
+          "descripcion": "SPEI RECIBIDOBANORTE 0124655629 072 0251009Sin informaci n 00072180012943415038 38432P06202510094534049840 ARANTZA MELISSA RUIZ FLORES",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 4500.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "09/OCT",
+          "fecha_liq": "09/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0032067844 BNET 1554326060 pago",
+          "referencia": "",
+          "cargos": 1700.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "09/OCT",
+          "fecha_liq": "09/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0044278842 BNET 1515750867 barberia",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 140.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "09/OCT",
+          "fecha_liq": "09/OCT",
+          "descripcion": "SPEI ENVIADO BANORTE 0072150267 072 0109250pago 00072180012493289798 MBAN01002510100072150267 fernanda m",
+          "referencia": "",
+          "cargos": 4400.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "09/OCT",
+          "fecha_liq": "09/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0054073544 BNET 1550988860 corte",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 320.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "09/OCT",
+          "fecha_liq": "09/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0053934630 BNET 1564213780 pago",
+          "referencia": "",
+          "cargos": 1000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "09/OCT",
+          "fecha_liq": "08/OCT",
+          "descripcion": "FARM SAN PABLO",
+          "referencia": "******8563 RFC: PPL 961114GZ1 19:45 AUT: 549116",
+          "cargos": 354.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "09/OCT",
+          "fecha_liq": "08/OCT",
+          "descripcion": "FARM SAN PABLO",
+          "referencia": "******4151 RFC: PPL 961114GZ1 20:06 AUT: 884077",
+          "cargos": 731.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "09/OCT",
+          "fecha_liq": "08/OCT",
+          "descripcion": "FARM SAN PABLO",
+          "referencia": "******4151 RFC: PPL 961114GZ1 20:07 AUT: 892870",
+          "cargos": 406.0,
+          "abonos": 0.0,
+          "saldo_operacion": 17622.86,
+          "saldo_liquidacion": 17051.86
+        },
+        {
+          "fecha_oper": "10/OCT",
+          "fecha_liq": "10/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0093751430 BNET 1562861593 grcaiasnpelu",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 50.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "10/OCT",
+          "fecha_liq": "10/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0042486738 BNET 1552212122 pago",
+          "referencia": "",
+          "cargos": 1800.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "10/OCT",
+          "fecha_liq": "10/OCT",
+          "descripcion": "SPEI RECIBIDOBANAMEX 0133964188 002 0101025X 00002180702004892236 085905748770328354 CARLO EMMANUEL,HERRERA SIERRA/CONT",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 8000.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "10/OCT",
+          "fecha_liq": "09/OCT",
+          "descripcion": "MERPAGO*LAREYNA",
+          "referencia": "******8563 RFC: NEMJ910619JJ6 14:54 AUT: 106105",
+          "cargos": 120.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "10/OCT",
+          "fecha_liq": "09/OCT",
+          "descripcion": "MISC LA VILLA DEL DULC",
+          "referencia": "******4151 RFC: FAGG5504115Q9 14:59 AUT: 184003",
+          "cargos": 176.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "10/OCT",
+          "fecha_liq": "09/OCT",
+          "descripcion": "COSMET D ALH CALZ GPE",
+          "referencia": "******4151 RFC: RARG6808087F9 14:08 AUT: 255487",
+          "cargos": 275.0,
+          "abonos": 0.0,
+          "saldo_operacion": 23301.86,
+          "saldo_liquidacion": 22887.86
+        },
+        {
+          "fecha_oper": "11/OCT",
+          "fecha_liq": "13/OCT",
+          "descripcion": "RECARGAS Y PAQUETES BMOV",
+          "referencia": "******3637 11/OCT 12:04 AUT:",
+          "cargos": 200.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "11/OCT",
+          "fecha_liq": "13/OCT",
+          "descripcion": "SPEI ENVIADO SANTANDER 0081010520 014 0109250pago 00005579070147910585 MBAN01002510130081010520 daniel zarco",
+          "referencia": "",
+          "cargos": 1180.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "11/OCT",
+          "fecha_liq": "13/OCT",
+          "descripcion": "RECARGAS Y PAQUETES BMOV",
+          "referencia": "******3192 11/OCT 17:58 AUT:",
+          "cargos": 200.0,
+          "abonos": 0.0,
+          "saldo_operacion": 21721.86,
+          "saldo_liquidacion": 21309.86
+        },
+        {
+          "fecha_oper": "12/OCT",
+          "fecha_liq": "13/OCT",
+          "descripcion": "SPEI ENVIADO BANAMEX 0086817528 002 0109250pago 00002180701987950364 MBAN01002510130086817528 erick resendiz sanchez",
+          "referencia": "",
+          "cargos": 2000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 19721.86,
+          "saldo_liquidacion": 21309.86
+        },
+        {
+          "fecha_oper": "13/OCT",
+          "fecha_liq": "10/OCT",
+          "descripcion": "7 ELEVEN T2328",
+          "referencia": "******4151 RFC: SEM 980701STA 16:54 AUT: 37UAUB",
+          "cargos": 67.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "13/OCT",
+          "fecha_liq": "10/OCT",
+          "descripcion": "KFC 534 GUADALUPE",
+          "referencia": "******4151 RFC: PRB 100802H20 15:16 AUT: 413360",
+          "cargos": 278.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "13/OCT",
+          "fecha_liq": "10/OCT",
+          "descripcion": "KFC 534 GUADALUPE",
+          "referencia": "******4151 RFC: PRB 100802H20 15:20 AUT: 483172",
+          "cargos": 69.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "13/OCT",
+          "fecha_liq": "11/OCT",
+          "descripcion": "ABTS G94 COLEGIO MILIT",
+          "referencia": "******4151 RFC: GMC 211013GP3 15:14 AUT: 3H7VG4",
+          "cargos": 78.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "13/OCT",
+          "fecha_liq": "11/OCT",
+          "descripcion": "SIDETRACK LIVE",
+          "referencia": "******4151 RFC: SAG 210903C80 19:39 AUT: 3KE2SG",
+          "cargos": 1500.0,
+          "abonos": 0.0,
+          "saldo_operacion": 17729.86,
+          "saldo_liquidacion": 17729.86
+        },
+        {
+          "fecha_oper": "14/OCT",
+          "fecha_liq": "14/OCT",
+          "descripcion": "SPEI ENVIADO AZTECA 0094384256 127 0810250pago 00004027664192188682 MBAN01002510140094384256 Martha sanchez",
+          "referencia": "",
+          "cargos": 240.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "14/OCT",
+          "fecha_liq": "14/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0013588751 BNET 1552212122 tanda",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 1000.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "14/OCT",
+          "fecha_liq": "14/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0012925329 BNET 1552212122 pago",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 100.0,
+          "saldo_operacion": 18589.86,
+          "saldo_liquidacion": 17956.86
+        },
+        {
+          "fecha_oper": "15/OCT",
+          "fecha_liq": "15/OCT",
+          "descripcion": "SPEI RECIBIDOMercado Pago 0158829352 722 2579000MERCADO*PAGO 00722969040882520941 CPO130062579000 VICENTE DAVID FLORES CEDILLO",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 160.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "15/OCT",
+          "fecha_liq": "15/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0053029189 BNET 1507378610 corte",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 80.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "15/OCT",
+          "fecha_liq": "15/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0017356584 BNET 1530238966 pago",
+          "referencia": "",
+          "cargos": 200.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "15/OCT",
+          "fecha_liq": "15/OCT",
+          "descripcion": "SPEI RECIBIDOBANORTE 0161701534 072 0251015YSL 00072180012943415038 38432P05202510154556677342 ARANTZA MELISSA RUIZ FLORES",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 5000.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "15/OCT",
+          "fecha_liq": "14/OCT",
+          "descripcion": "FARM SAN PABLO",
+          "referencia": "******4151 RFC: PPL 961114GZ1 11:29 AUT: 449WR4",
+          "cargos": 633.0,
+          "abonos": 0.0,
+          "saldo_operacion": 22996.86,
+          "saldo_liquidacion": 10059.86
+        },
+        {
+          "fecha_oper": "16/OCT",
+          "fecha_liq": "16/OCT",
+          "descripcion": "SPEI RECIBIDOBANORTE 0164325608 072 0251016Pants essentials 00072180012943415038 3843CP02202510164558258103 ARANTZA MELISSA RUIZ FLORES",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 2500.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "16/OCT",
+          "fecha_liq": "16/OCT",
+          "descripcion": "SPEI ENVIADO NU MEXICO 0056805528 638 0810250psgo 00005101257963533032 MBAN01002510160056805528 caros rodriguez",
+          "referencia": "",
+          "cargos": 250.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "16/OCT",
+          "fecha_liq": "16/OCT",
+          "descripcion": "SPEI ENVIADO Mercado Pago 0056863002 722 0810250pago 00722969028882688009 MBAN01002510160056863002 jahir bello",
+          "referencia": "",
+          "cargos": 1300.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "16/OCT",
+          "fecha_liq": "16/OCT",
+          "descripcion": "SPEI RECIBIDOSANTANDER 0165724884 014 6969488TRANSFERENCIA A CARLOS RODRIGU 00014180606207181647 2025101640014TRAPP020425026110 DANIEL YANNICK ZARCO VALDOVINOS",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 1150.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "16/OCT",
+          "fecha_liq": "16/OCT",
+          "descripcion": "RETIRO SIN TARJETA",
+          "referencia": "******8563",
+          "cargos": 2300.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "16/OCT",
+          "fecha_liq": "16/OCT",
+          "descripcion": "SPEI RECIBIDOBANORTE 0166503531 072 0251016Sin informaci n 00072180013320184088 38432P02202510164559669956 OMAR AVILA SUAREZ",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 6000.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "16/OCT",
+          "fecha_liq": "16/OCT",
+          "descripcion": "SPEI RECIBIDOBANORTE 0166515834 072 0251016Sin informaci n 00072180013320184088 38432P04202510164559677489 OMAR AVILA SUAREZ",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 5000.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "16/OCT",
+          "fecha_liq": "16/OCT",
+          "descripcion": "SPEI RECIBIDOSCOTIABANK 0166566220 044 0161025Transferencia a Luis 00044180001014517561 2025101640044B36L0000408362610 AVILA SUAREZ OMAR",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 1200.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "16/OCT",
+          "fecha_liq": "16/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0087934321 BNET 2944409930 pago",
+          "referencia": "",
+          "cargos": 920.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "16/OCT",
+          "fecha_liq": "16/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0012396665 BNET 1541354406 Transf a LUIS CARL",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 160.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "16/OCT",
+          "fecha_liq": "15/OCT",
+          "descripcion": "REST ECLIP",
+          "referencia": "******8563 RFC: GAP 200625GE7 04:24 AUT: 4BJPAW",
+          "cargos": 10758.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "16/OCT",
+          "fecha_liq": "15/OCT",
+          "descripcion": "REST ECLIP",
+          "referencia": "******4151 RFC: GAP 200625GE7 03:40 AUT: 4BIO1K",
+          "cargos": 2070.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "16/OCT",
+          "fecha_liq": "15/OCT",
+          "descripcion": "MERPAGO*ABARROTES",
+          "referencia": "******4151 RFC: MAG 2105031W3 19:47 AUT: 4JT1W3",
+          "cargos": 109.0,
+          "abonos": 0.0,
+          "saldo_operacion": 21299.86,
+          "saldo_liquidacion": 20026.06
+        },
+        {
+          "fecha_oper": "17/OCT",
+          "fecha_liq": "17/OCT",
+          "descripcion": "SPEI RECIBIDOSCOTIABANK 0173299085 044 0171025Transferencia a Luis 00044180001014517561 2025101740044B36L0000408650745 AVILA SUAREZ OMAR",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 7000.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "17/OCT",
+          "fecha_liq": "17/OCT",
+          "descripcion": "SPEI RECIBIDOBANORTE 0173314890 072 0251017Sin informaci n 00072180013320184088 3843CP03202510174564015784 OMAR AVILA SUAREZ",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 2000.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "17/OCT",
+          "fecha_liq": "17/OCT",
+          "descripcion": "SPEI RECIBIDOBANORTE 0173360987 072 0251017Sin informaci n 00072180013320184088 38432P04202510174564046718 OMAR AVILA SUAREZ",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 1000.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "17/OCT",
+          "fecha_liq": "17/OCT",
+          "descripcion": "SPEI ENVIADO AZTECA 0065686672 127 0810250pago 00004027665826012610 MBAN01002510200065686672 amaya",
+          "referencia": "",
+          "cargos": 3000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "17/OCT",
+          "fecha_liq": "16/OCT",
+          "descripcion": "D LOCAL*REST RAPPI MX",
+          "referencia": "******4151 RFC: TRA 150604TW1 08:51 AUT: 4MS72Q",
+          "cargos": 475.9,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "17/OCT",
+          "fecha_liq": "16/OCT",
+          "descripcion": "D LOCAL*REST RAPPI",
+          "referencia": "******4151 RFC: TRA 150604TW1 16:25 AUT: 4RHG1R",
+          "cargos": 797.9,
+          "abonos": 0.0,
+          "saldo_operacion": 27026.06,
+          "saldo_liquidacion": 24972.06
+        },
+        {
+          "fecha_oper": "18/OCT",
+          "fecha_liq": "20/OCT",
+          "descripcion": "RETIRO SIN TARJETA",
+          "referencia": "******8563",
+          "cargos": 12000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "18/OCT",
+          "fecha_liq": "20/OCT",
+          "descripcion": "SPEI ENVIADO SANTANDER 0068400258 014 0810250pago 00005579070147910585 MBAN01002510200068400258 daniel zarco",
+          "referencia": "",
+          "cargos": 4000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "18/OCT",
+          "fecha_liq": "20/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0098192563 BNET 1573500068 Transf a LUIS CARL",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 160.0,
+          "saldo_operacion": 11186.06,
+          "saldo_liquidacion": 23628.06
+        },
+        {
+          "fecha_oper": "19/OCT",
+          "fecha_liq": "20/OCT",
+          "descripcion": "SPEI ENVIADO BANORTE 0072193103 072 0810250pago",
+          "referencia": "",
+          "cargos": 4500.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "19/OCT",
+          "fecha_liq": "20/OCT",
+          "descripcion": "SPEI DEVUELTOBANORTE 0072193103 072 0810250pago",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 4500.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "19/OCT",
+          "fecha_liq": "20/OCT",
+          "descripcion": "SPEI ENVIADO BANORTE 0073498466 072 0810250pago 00005264246817766958 MBAN01002510200073498466 melissa ruiz",
+          "referencia": "",
+          "cargos": 4500.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "19/OCT",
+          "fecha_liq": "20/OCT",
+          "descripcion": "SPEI RECIBIDONU MEXICO 0183115468 638 0191025Transferencia 00638180010176749221 NU38ULFFR7458QM8AGOB3UEEENQS HIRAM ENRIQUE QUEZADA SORIA",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 160.0,
+          "saldo_operacion": 6846.06,
+          "saldo_liquidacion": 23118.06
+        },
+        {
+          "fecha_oper": "20/OCT",
+          "fecha_liq": "18/OCT",
+          "descripcion": "SEGBBVA TRANSAC SEGURA MP P0JC3E540YD4",
+          "referencia": "",
+          "cargos": 119.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "20/OCT",
+          "fecha_liq": "17/OCT",
+          "descripcion": "REST LAS GUACAMAYAS",
+          "referencia": "******8563 RFC: CUGI831209PS6 16:52 AUT: 52A1B5",
+          "cargos": 1344.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "20/OCT",
+          "fecha_liq": "17/OCT",
+          "descripcion": "MERPAGO*AGREGADOR",
+          "referencia": "******8563 RFC: MAG 2105031W3 22:59 AUT: 56AB30",
+          "cargos": 710.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "20/OCT",
+          "fecha_liq": "18/OCT",
+          "descripcion": "MERPAGO*AGREGADOR",
+          "referencia": "******4151 RFC: MAG 2105031W3 05:38 AUT: 099438",
+          "cargos": 351.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "20/OCT",
+          "fecha_liq": "18/OCT",
+          "descripcion": "7 ELEVEN BUENO MONTEVI",
+          "referencia": "******4151 RFC: SEM 980701STA 08:46 AUT: 218080",
+          "cargos": 427.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "20/OCT",
+          "fecha_liq": "18/OCT",
+          "descripcion": "OXXO TOLA II MEX",
+          "referencia": "******4151 RFC: CCO 8605231N4 14:15 AUT: 259746",
+          "cargos": 147.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "20/OCT",
+          "fecha_liq": "18/OCT",
+          "descripcion": "GASOL ES 03333",
+          "referencia": "******4151 RFC: ETN 8705253E7 07:41 AUT: 641324",
+          "cargos": 300.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "20/OCT",
+          "fecha_liq": "20/OCT",
+          "descripcion": "SEGBBVA TRANSAC SEGURA MP P0J61E540DZJ",
+          "referencia": "",
+          "cargos": 119.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "20/OCT",
+          "fecha_liq": "20/OCT",
+          "descripcion": "SPEI ENVIADO BANAMEX 0077395088 002 0810250pago 00005204166038257897 MBAN01002510200077395088 camilo",
+          "referencia": "",
+          "cargos": 102.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "20/OCT",
+          "fecha_liq": "20/OCT",
+          "descripcion": "RECARGAS Y PAQUETES BMOV",
+          "referencia": "******3192 20/OCT 15:06 AUT:",
+          "cargos": 200.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "20/OCT",
+          "fecha_liq": "20/OCT",
+          "descripcion": "SPEI RECIBIDOBANORTE 0188032150 072 0251020Corte cabello 00072180013260511960 3843CP03202510204572472648 CARLOS DANIEL CORDERO RIVERA",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 160.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "20/OCT",
+          "fecha_liq": "20/OCT",
+          "descripcion": "SPEI RECIBIDOSTP 0188688238 646 1045719X 00646180570100000028 T1045719 PW ONLINE MEXICO SAPI DE CV",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 4500.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "20/OCT",
+          "fecha_liq": "20/OCT",
+          "descripcion": "SPEI RECIBIDONU MEXICO 0189131110 638 0201025Transferencia 00638180010194491946 NU38URBBV1U09MI9UMSVJ0FLJ1KA AMBAR MOREIRA MONTES DE OCA",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 2000.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "20/OCT",
+          "fecha_liq": "20/OCT",
+          "descripcion": "SPEI RECIBIDOSCOTIABANK 0189475996 044 0201025Transferencia a Luis 00044180256057631644 2025102040044B36L0000409342308 MORALES BERMUDEZ ALAN PAUL",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 160.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "20/OCT",
+          "fecha_liq": "20/OCT",
+          "descripcion": "DEPOSITO EFECTIVO PRACTIC",
+          "referencia": "******9148 OCT20 19:59 PRAC 7392 FOLIO:6484",
+          "cargos": 0.0,
+          "abonos": 12000.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "20/OCT",
+          "fecha_liq": "20/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0015096023 BNET 1567101381 pago",
+          "referencia": "",
+          "cargos": 15000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "20/OCT",
+          "fecha_liq": "19/OCT",
+          "descripcion": "OXXO TOLA II MEX",
+          "referencia": "******8563 RFC: CCO 8605231N4 13:07 AUT: 048458",
+          "cargos": 42.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "20/OCT",
+          "fecha_liq": "19/OCT",
+          "descripcion": "NETFLIX",
+          "referencia": "******4151 RFC: NME 110513PI3 11:07 AUT: 016428",
+          "cargos": 329.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "20/OCT",
+          "fecha_liq": "19/OCT",
+          "descripcion": "D LOCAL*SPOTIFY",
+          "referencia": "******4151 RFC: RSM 160408CSA 00:17 AUT: 090550",
+          "cargos": 139.0,
+          "abonos": 0.0,
+          "saldo_operacion": 6337.06,
+          "saldo_liquidacion": 6238.06
+        },
+        {
+          "fecha_oper": "21/OCT",
+          "fecha_liq": "21/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0086622984 BNET 1588317958 pago",
+          "referencia": "",
+          "cargos": 590.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "21/OCT",
+          "fecha_liq": "21/OCT",
+          "descripcion": "SPEI RECIBIDOSTP 0193878928 646 0455891",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 5200.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "21/OCT",
+          "fecha_liq": "21/OCT",
+          "descripcion": "RETIRO CAJERO AUTOMATICO",
+          "referencia": "******8563 OCT21 17:24 BBVA 7392 FOLIO:7361",
+          "cargos": 5200.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "21/OCT",
+          "fecha_liq": "21/OCT",
+          "descripcion": "SPEI ENVIADO BANCOPPEL 0083907112 137 0810250pago 00004169160883923154 MBAN01002510220083907112 Cris",
+          "referencia": "",
+          "cargos": 2500.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "21/OCT",
+          "fecha_liq": "20/OCT",
+          "descripcion": "AMAZON PRIME",
+          "referencia": "******4151 RFC: ANE 140618P37 12:19 AUT: 248594",
+          "cargos": 99.0,
+          "abonos": 0.0,
+          "saldo_operacion": 3148.06,
+          "saldo_liquidacion": 3148.06
+        },
+        {
+          "fecha_oper": "22/OCT",
+          "fecha_liq": "22/OCT",
+          "descripcion": "SPEI RECIBIDOBANAMEX 0100051960 002 0221025Transferencia interbancaria 00002180702004892236 085902514030329552 CARLO EMMANUEL,HERRERA SIERRA/CONT",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 3500.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "22/OCT",
+          "fecha_liq": "23/OCT",
+          "descripcion": "RETIRO CAJERO AUTOMATICO",
+          "referencia": "******8563 OCT22 22:27 BBVA E812 FOLIO:4426",
+          "cargos": 2000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 4648.06,
+          "saldo_liquidacion": 6547.0
+        },
+        {
+          "fecha_oper": "23/OCT",
+          "fecha_liq": "22/OCT",
+          "descripcion": "PAGO TARJETA DE CREDITO 72913120791308 DOMICILIACION",
+          "referencia": "",
+          "cargos": 25.61,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "23/OCT",
+          "fecha_liq": "23/OCT",
+          "descripcion": "SPEI ENVIADO NU MEXICO 0091206241 638 0810250pago 00638180000119126808 MBAN01002510230091206241 ederth nuno",
+          "referencia": "",
+          "cargos": 1100.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "23/OCT",
+          "fecha_liq": "23/OCT",
+          "descripcion": "SPEI RECIBIDOBANAMEX 0103770765 002 0231025Transferencia interbancaria 00002180702004892236 085909086410329657 CARLO EMMANUEL,HERRERA SIERRA/CONT",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 13000.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "23/OCT",
+          "fecha_liq": "23/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0078545476 BNET 1560678810 pago",
+          "referencia": "",
+          "cargos": 800.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "23/OCT",
+          "fecha_liq": "23/OCT",
+          "descripcion": "SPEI RECIBIDOSCOTIABANK 0104648877 044 0231025Transferencia a Luis 00044180001014517561 2025102340044B36L0000409978315 AVILA SUAREZ OMAR",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 5900.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "23/OCT",
+          "fecha_liq": "23/OCT",
+          "descripcion": "SPEI RECIBIDOBANORTE 0105464975 072 0251023Sin informaci n 00072180013320184088 38432P01202510234582474996 OMAR AVILA SUAREZ",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 6000.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "23/OCT",
+          "fecha_liq": "22/OCT",
+          "descripcion": "DLO*DIDI RIDES",
+          "referencia": "******4151 RFC: DMM 171208LT4 21:55 AUT: 791363",
+          "cargos": 75.45,
+          "abonos": 0.0,
+          "saldo_operacion": 27547.0,
+          "saldo_liquidacion": 27547.0
+        },
+        {
+          "fecha_oper": "24/OCT",
+          "fecha_liq": "24/OCT",
+          "descripcion": "SPEI ENVIADO AZTECA 0093769129 127 0810250pago 00127180016202738174 MBAN01002510240093769129 Alison miroslava canseco",
+          "referencia": "",
+          "cargos": 600.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "24/OCT",
+          "fecha_liq": "24/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0074582942 BNET 1530238966 pago",
+          "referencia": "",
+          "cargos": 100.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "24/OCT",
+          "fecha_liq": "24/OCT",
+          "descripcion": "SPEI ENVIADO NU MEXICO 0094211090 638 0810250pago 00005101256233562524 MBAN01002510240094211090 itzel ortiz",
+          "referencia": "",
+          "cargos": 400.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "24/OCT",
+          "fecha_liq": "24/OCT",
+          "descripcion": "SPEI ENVIADO NU MEXICO 0094686405 638 0810250pago 00638180010194491946 MBAN01002510240094686405 ambar",
+          "referencia": "",
+          "cargos": 1500.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "24/OCT",
+          "fecha_liq": "24/OCT",
+          "descripcion": "SPEI ENVIADO SANTANDER 0095334831 014 0810250pago 00005579070164016910 MBAN01002510240095334831 emma torre",
+          "referencia": "",
+          "cargos": 500.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "24/OCT",
+          "fecha_liq": "24/OCT",
+          "descripcion": "SPEI ENVIADO AZTECA 0095536018 127 0810250pago 00004027665875744048 MBAN01002510240095536018 samuel",
+          "referencia": "",
+          "cargos": 500.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "24/OCT",
+          "fecha_liq": "24/OCT",
+          "descripcion": "SPEI ENVIADO SANTANDER 0095953253 014 0810250pago 00005579070164016910 MBAN01002510240095953253 emma torre",
+          "referencia": "",
+          "cargos": 3000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "24/OCT",
+          "fecha_liq": "24/OCT",
+          "descripcion": "PAGO TARJETA DE CREDITO TARJETA : 4772913120791308",
+          "referencia": "",
+          "cargos": 1370.62,
+          "abonos": 0.0,
+          "saldo_operacion": 19576.38,
+          "saldo_liquidacion": 14512.33
+        },
+        {
+          "fecha_oper": "25/OCT",
+          "fecha_liq": "27/OCT",
+          "descripcion": "SPEI RECIBIDOSCOTIABANK 0112743898 044 0251025Transferencia a Luis 00044180001014517561 2025102540044B36L0000410305157 AVILA SUAREZ OMAR",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 3100.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "25/OCT",
+          "fecha_liq": "27/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0072341587 BNET 1555390934 pago",
+          "referencia": "",
+          "cargos": 2300.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "25/OCT",
+          "fecha_liq": "27/OCT",
+          "descripcion": "SPEI ENVIADO SANTANDER 0051111704 014 0810250pago 00005579070147910585 MBAN01002510270051111704 daniel zarco",
+          "referencia": "",
+          "cargos": 5300.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "25/OCT",
+          "fecha_liq": "27/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0019173617 BNET 1543650466 barber",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 440.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "25/OCT",
+          "fecha_liq": "27/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0076484835 BNET 1558245153 Transf a LUIS CARL",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 210.0,
+          "saldo_operacion": 15726.38,
+          "saldo_liquidacion": 12885.83
+        },
+        {
+          "fecha_oper": "26/OCT",
+          "fecha_liq": "27/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0032992444 BNET 1573272628 Transf a LUIS CARL",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 1500.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "26/OCT",
+          "fecha_liq": "27/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0083976271 BNET 1552212122 pago",
+          "referencia": "",
+          "cargos": 430.0,
+          "abonos": 0.0,
+          "saldo_operacion": 16796.38,
+          "saldo_liquidacion": 9119.83
+        },
+        {
+          "fecha_oper": "27/OCT",
+          "fecha_liq": "24/OCT",
+          "descripcion": "MERPAGO*AGREGADOR",
+          "referencia": "******8563 RFC: MAG 2105031W3 04:25 AUT: 068680",
+          "cargos": 147.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "27/OCT",
+          "fecha_liq": "24/OCT",
+          "descripcion": "SARA HOTELERA",
+          "referencia": "******8563 RFC: HSA 040614LA0 05:14 AUT: 135097",
+          "cargos": 950.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "27/OCT",
+          "fecha_liq": "24/OCT",
+          "descripcion": "W MEXICO CITY",
+          "referencia": "******8563 RFC: TPO 970709429 01:32 AUT: 719218",
+          "cargos": 1167.25,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "27/OCT",
+          "fecha_liq": "24/OCT",
+          "descripcion": "SARA HOTELERA",
+          "referencia": "******8563 RFC: HSA 040614LA0 06:06 AUT: 273943",
+          "cargos": 230.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "27/OCT",
+          "fecha_liq": "24/OCT",
+          "descripcion": "SARA HOTELERA",
+          "referencia": "******8563 RFC: HSA 040614LA0 08:20 AUT: 300611",
+          "cargos": 500.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "27/OCT",
+          "fecha_liq": "24/OCT",
+          "descripcion": "SARA HOTELERA",
+          "referencia": "******8563 RFC: HSA 040614LA0 14:05 AUT: 873717",
+          "cargos": 180.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "27/OCT",
+          "fecha_liq": "24/OCT",
+          "descripcion": "SARA HOTELERA",
+          "referencia": "******8563 RFC: HSA 040614LA0 14:06 AUT: 896553",
+          "cargos": 1540.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "27/OCT",
+          "fecha_liq": "24/OCT",
+          "descripcion": "SARA HOTELERA",
+          "referencia": "******8563 RFC: HSA 040614LA0 11:26 AUT: 924809",
+          "cargos": 205.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "27/OCT",
+          "fecha_liq": "25/OCT",
+          "descripcion": "OXXO TOLA II MEX CASH",
+          "referencia": "******8563 RFC: CCO 8605231N4 13:44 AUT: 107468",
+          "cargos": 852.5,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "27/OCT",
+          "fecha_liq": "24/OCT",
+          "descripcion": "D LOCAL*REST RAPPI",
+          "referencia": "******4151 RFC: TRA 150604TW1 23:48 AUT: 110714",
+          "cargos": 144.8,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "27/OCT",
+          "fecha_liq": "25/OCT",
+          "descripcion": "AMAZON",
+          "referencia": "******4151 RFC: ANE 140618P37 09:04 AUT: 130946",
+          "cargos": 50.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "27/OCT",
+          "fecha_liq": "27/OCT",
+          "descripcion": "SPEI ENVIADO NU MEXICO 0057851770 638 0810250pgo 00005101257963533032 MBAN01002510270057851770 caros rodriguez",
+          "referencia": "",
+          "cargos": 299.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "27/OCT",
+          "fecha_liq": "27/OCT",
+          "descripcion": "SPEI ENVIADO NU MEXICO 0059148263 638 0810250pago 00005101257963533032 MBAN01002510270059148263 caros rodriguez",
+          "referencia": "",
+          "cargos": 200.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "27/OCT",
+          "fecha_liq": "27/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0010939401 BNET 0478822662 pago",
+          "referencia": "",
+          "cargos": 1000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "27/OCT",
+          "fecha_liq": "27/OCT",
+          "descripcion": "SPEI ENVIADO Mercado Pago 0061537296 722 0810250pago 00722969010815198626 MBAN01002510280061537296 miguel angel espinoza",
+          "referencia": "",
+          "cargos": 3040.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "27/OCT",
+          "fecha_liq": "27/OCT",
+          "descripcion": "SPEI RECIBIDOBANAMEX 0126109469 002 0271025APOYO PARA BOLSA DE MANO 00002180087369721916 085905754130330050 LUIS CARLOS,RODRIGUEZ/CERVANTES",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 10000.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "27/OCT",
+          "fecha_liq": "27/OCT",
+          "descripcion": "SPEI RECIBIDOBANAMEX 0126203892 002 0271025apoyo semanal 00002180087369721916 085905984660330054 LUIS CARLOS,RODRIGUEZ/CERVANTES",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 2000.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "27/OCT",
+          "fecha_liq": "25/OCT",
+          "descripcion": "MERPAGO*AGREGADOR",
+          "referencia": "******8563 RFC: MAG 2105031W3 21:18 AUT: 888471",
+          "cargos": 724.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "27/OCT",
+          "fecha_liq": "26/OCT",
+          "descripcion": "MOTEL SARA",
+          "referencia": "******8563 RFC: POT 04012887A 04:51 AUT: 870449",
+          "cargos": 3000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "27/OCT",
+          "fecha_liq": "26/OCT",
+          "descripcion": "MOTEL SARA",
+          "referencia": "******4151 RFC: POT 04012887A 06:52 AUT: 077775",
+          "cargos": 360.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "27/OCT",
+          "fecha_liq": "28/OCT",
+          "descripcion": "SPEI RECIBIDONU MEXICO 0126370441 638 0271025Transferencia 00638180010194491946 NU39011HKT858VUPCLICUFJQLKBD AMBAR MOREIRA MONTES DE OCA",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 1500.0,
+          "saldo_operacion": 15706.83,
+          "saldo_liquidacion": 13427.48
+        },
+        {
+          "fecha_oper": "28/OCT",
+          "fecha_liq": "28/OCT",
+          "descripcion": "SPEI ENVIADO BANCOPPEL 0065310052 137 1810250pago 00004169160447372781 MBAN01002510280065310052 Yahir",
+          "referencia": "",
+          "cargos": 500.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "28/OCT",
+          "fecha_liq": "28/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0046906450 BNET 1527766020 pago",
+          "referencia": "",
+          "cargos": 950.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "28/OCT",
+          "fecha_liq": "28/OCT",
+          "descripcion": "SPEI RECIBIDONU MEXICO 0130671587 638 0281025Transferencia 00638180010194491946 NU3905HVI1EI96PPNTRCS3JNF7Q1 AMBAR MOREIRA MONTES DE OCA",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 2000.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "28/OCT",
+          "fecha_liq": "28/OCT",
+          "descripcion": "SPEI RECIBIDONU MEXICO 0131125789 638 0281025Transferencia 00638180010194491946 NU3905SK8UVI8C48FOATB0LBK4SE AMBAR MOREIRA MONTES DE OCA",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 1000.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "28/OCT",
+          "fecha_liq": "26/OCT",
+          "descripcion": "MOTEL SARA",
+          "referencia": "******8563 RFC: POT 04012887A 09:48 AUT: 144748",
+          "cargos": 300.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "28/OCT",
+          "fecha_liq": "26/OCT",
+          "descripcion": "OXXO SANTA ISABEL MEX",
+          "referencia": "******8563 RFC: CCO 8605231N4 23:28 AUT: 268361",
+          "cargos": 82.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "28/OCT",
+          "fecha_liq": "26/OCT",
+          "descripcion": "OXXO SANTA ISABEL MEX",
+          "referencia": "******8563 RFC: CCO 8605231N4 23:30 AUT: 273415",
+          "cargos": 24.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "28/OCT",
+          "fecha_liq": "27/OCT",
+          "descripcion": "D LOCAL*DIDI RIDES",
+          "referencia": "******4151 RFC: DMM 171208LT4 17:49 AUT: 728288",
+          "cargos": 247.95,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "28/OCT",
+          "fecha_liq": "27/OCT",
+          "descripcion": "D LOCAL*DIDI RIDES",
+          "referencia": "******4151 RFC: DMM 171208LT4 17:50 AUT: 743929",
+          "cargos": 125.4,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "28/OCT",
+          "fecha_liq": "29/OCT",
+          "descripcion": "SPEI ENVIADO BANCOPPEL 0066888417 137 1810250pago 00004169160885387606 MBAN01002510290066888417 guadalupe aguilar tristan",
+          "referencia": "",
+          "cargos": 2000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 14477.48,
+          "saldo_liquidacion": 15832.48
+        },
+        {
+          "fecha_oper": "29/OCT",
+          "fecha_liq": "29/OCT",
+          "descripcion": "PAGO RETIRO EFECTIV X LB P0167ACM0F4U RECIBO NO. * 00515153512 6001",
+          "referencia": "",
+          "cargos": 50.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "29/OCT",
+          "fecha_liq": "29/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0008737286 BNET 1552212122 pago",
+          "referencia": "",
+          "cargos": 100.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "29/OCT",
+          "fecha_liq": "29/OCT",
+          "descripcion": "SPEI ENVIADO NU MEXICO 0070268185 638 1810250pago 00638180000119126808 MBAN01002510300070268185 ederth nuno",
+          "referencia": "",
+          "cargos": 850.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "29/OCT",
+          "fecha_liq": "29/OCT",
+          "descripcion": "SPEI ENVIADO STP 0070356667 646 1810250pago 00646180193600063997 MBAN01002510300070356667 marketmaniasrl",
+          "referencia": "",
+          "cargos": 250.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "29/OCT",
+          "fecha_liq": "28/OCT",
+          "descripcion": "FARM PROVIDENCIA",
+          "referencia": "******4151 RFC: GARA8809283P5 20:49 AUT: 742543",
+          "cargos": 645.0,
+          "abonos": 0.0,
+          "saldo_operacion": 12582.48,
+          "saldo_liquidacion": 11783.48
+        },
+        {
+          "fecha_oper": "30/OCT",
+          "fecha_liq": "30/OCT",
+          "descripcion": "PAGO SEGURO P0FA2723098N",
+          "referencia": "",
+          "cargos": 568.97,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "30/OCT",
+          "fecha_liq": "30/OCT",
+          "descripcion": "SPEI ENVIADO SANTANDER 0074142025 014 1810250pago 00005579070147910585 MBAN01002510300074142025 daniel zarco",
+          "referencia": "",
+          "cargos": 400.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "30/OCT",
+          "fecha_liq": "30/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0025850504 BNET 1552212122 pago",
+          "referencia": "",
+          "cargos": 1700.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "30/OCT",
+          "fecha_liq": "30/OCT",
+          "descripcion": "SPEI RECIBIDOSANTANDER 0142933118 014 7843632PUTITAS 00014180606207181647 2025103040014TRAPP020425188190 DANIEL YANNICK ZARCO VALDOVINOS",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 300.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "30/OCT",
+          "fecha_liq": "30/OCT",
+          "descripcion": "SPEI RECIBIDOAZTECA 0142997155 127 1988563banano 00127180013174132238 251031074208843096I HERRERA SIERRA CONTRERAS CARLO EMMANUEL",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 1500.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "30/OCT",
+          "fecha_liq": "30/OCT",
+          "descripcion": "SPEI ENVIADO NU MEXICO 0076188586 638 1810250pago 00638180010166322933 MBAN01002510310076188586 walter mendoza",
+          "referencia": "",
+          "cargos": 140.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "30/OCT",
+          "fecha_liq": "30/OCT",
+          "descripcion": "SPEI ENVIADO NU MEXICO 0076608892 638 1810250pago 00638180010166322933 MBAN01002510310076608892 walter mendoza",
+          "referencia": "",
+          "cargos": 140.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "30/OCT",
+          "fecha_liq": "29/OCT",
+          "descripcion": "OXXO ART 27 MEX CASH",
+          "referencia": "******8563 RFC: CCO 8605231N4 17:20 AUT: 858410",
+          "cargos": 620.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "30/OCT",
+          "fecha_liq": "29/OCT",
+          "descripcion": "AMAZON",
+          "referencia": "******4151 RFC: ANE 140618P37 14:58 AUT: 415945",
+          "cargos": 179.0,
+          "abonos": 0.0,
+          "saldo_operacion": 10634.51,
+          "saldo_liquidacion": 9965.71
+        },
+        {
+          "fecha_oper": "31/OCT",
+          "fecha_liq": "31/OCT",
+          "descripcion": "SPEI RECIBIDOSCOTIABANK 0148359531 044 0311025Transferencia a Luis 00044180001014517561 2025103140044B36L0000411782233 AVILA SUAREZ OMAR",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 15000.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "31/OCT",
+          "fecha_liq": "31/OCT",
+          "descripcion": "SPEI ENVIADO SANTANDER 0080482045 014 1810250pago 00005579070147910585 MBAN01002510310080482045 daniel zarco",
+          "referencia": "",
+          "cargos": 8000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "31/OCT",
+          "fecha_liq": "31/OCT",
+          "descripcion": "PAGO CUENTA DE TERCERO 0088914849 BNET 1562861593 peluqueria",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 190.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "31/OCT",
+          "fecha_liq": "31/OCT",
+          "descripcion": "SPEI RECIBIDOSCOTIABANK 0150716926 044 0311025Transferencia a Luis 00044180001014517561 2025103140044B36L0000411885008 AVILA SUAREZ OMAR",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 1100.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "31/OCT",
+          "fecha_liq": "31/OCT",
+          "descripcion": "SPEI ENVIADO BANCOPPEL 0082378511 137 1810250pago",
+          "referencia": "",
+          "cargos": 1000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "31/OCT",
+          "fecha_liq": "31/OCT",
+          "descripcion": "SPEI DEVUELTOBANCOPPEL 0082378511 137 1810250pago",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 1000.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "31/OCT",
+          "fecha_liq": "30/OCT",
+          "descripcion": "RESTAURANTS LAS GUACAM",
+          "referencia": "******8563 RFC: CUGN821007EJ7 18:45 AUT: 710220",
+          "cargos": 668.8,
+          "abonos": 0.0,
+          "saldo_operacion": 18255.71,
+          "saldo_liquidacion": 18255.71
+        }
+      ]
+    }
+  ]
+}
