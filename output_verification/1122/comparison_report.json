@@ -1,0 +1,29 @@
+{
+  "original_pdf": "D:\\Mstar\\银行审核要点\\BBVA银行流水\\银行流水\\MSN20251111122\\MSN20251111122银行流水1.pdf",
+  "structured_json": "output_verification\\1122\\MSN20251111122银行流水1_structured.json",
+  "reconstructed_pdf": null,
+  "validation_report": {
+    "skipped": true
+  },
+  "transactions_analysis": {
+    "total_transactions": 216,
+    "with_date": 216,
+    "date_coverage": 100.0,
+    "with_amount": 216,
+    "amount_coverage": 100.0,
+    "with_balance": 30,
+    "balance_coverage": 13.88888888888889,
+    "with_description": 206,
+    "description_coverage": 95.37037037037037
+  },
+  "layout_analysis": {
+    "total_elements": 0,
+    "elements_with_bbox": 0,
+    "bbox_coverage": 0,
+    "element_types": {}
+  },
+  "pixel_comparison": {
+    "skipped": true,
+    "reason": "Reconstructed PDF not found"
+  }
+}

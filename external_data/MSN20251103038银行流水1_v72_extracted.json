@@ -1,0 +1,1624 @@
+{
+  "source_file": "MSN20251103038银行流水1",
+  "document_type": "B",
+  "total_pages": 1,
+  "total_rows": 161,
+  "sessions": 3,
+  "pages": [
+    {
+      "page": 0,
+      "rows": [
+        {
+          "fecha_oper": "05/JUN",
+          "fecha_liq": "05/JUN",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1135064295 pago",
+          "referencia": "Referencia 8129505110",
+          "cargos": 0.0,
+          "abonos": 250.0,
+          "saldo_operacion": 4311.15,
+          "saldo_liquidacion": 4311.15
+        },
+        {
+          "fecha_oper": "07/JUN",
+          "fecha_liq": "09/JUN",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1585741650 gas",
+          "referencia": "Referencia 8297527239",
+          "cargos": 300.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "07/JUN",
+          "fecha_liq": "09/JUN",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1556086301 QLote",
+          "referencia": "Referencia 8300279328",
+          "cargos": 810.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "07/JUN",
+          "fecha_liq": "09/JUN",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1556086301 xguapo",
+          "referencia": "Referencia 8319115067",
+          "cargos": 0.0,
+          "abonos": 266.0,
+          "saldo_operacion": 3467.15,
+          "saldo_liquidacion": 4131.9
+        },
+        {
+          "fecha_oper": "08/JUN",
+          "fecha_liq": "09/JUN",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1556086301 xsereladmv",
+          "referencia": "Referencia 8406905307",
+          "cargos": 0.0,
+          "abonos": 600.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "08/JUN",
+          "fecha_liq": "09/JUN",
+          "descripcion": "RETIRO CAJERO AUTOMATICO JUN08 21:38 BBVA 5241 FOLIO:8348",
+          "referencia": "Referencia ******4427",
+          "cargos": 1200.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "08/JUN",
+          "fecha_liq": "09/JUN",
+          "descripcion": "RETIRO CAJERO AUTOMATICO JUN08 21:39 BBVA 5241 FOLIO:8349",
+          "referencia": "Referencia ******4427",
+          "cargos": 300.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "08/JUN",
+          "fecha_liq": "09/JUN",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1524115913 Transf a JIMENA F",
+          "referencia": "Referencia 8408512377",
+          "cargos": 300.0,
+          "abonos": 0.0,
+          "saldo_operacion": 2267.15,
+          "saldo_liquidacion": 4071.9
+        },
+        {
+          "fecha_oper": "09/JUN",
+          "fecha_liq": "06/JUN",
+          "descripcion": "STR*UBER EATS RFC: UPM 191014S31 11:35 AUT: 601399",
+          "referencia": "Referencia ******1184",
+          "cargos": 179.25,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "09/JUN",
+          "fecha_liq": "08/JUN",
+          "descripcion": "AMAZON MX RFC: ANE 140618P37 19:35 AUT: 604927",
+          "referencia": "Referencia ******1184",
+          "cargos": 60.0,
+          "abonos": 0.0,
+          "saldo_operacion": 2027.9,
+          "saldo_liquidacion": 2027.9
+        },
+        {
+          "fecha_oper": "12/JUN",
+          "fecha_liq": "12/JUN",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 2739112472 poncho",
+          "referencia": "Referencia 8712887672",
+          "cargos": 0.0,
+          "abonos": 500.0,
+          "saldo_operacion": 2527.9,
+          "saldo_liquidacion": 2037.9
+        },
+        {
+          "fecha_oper": "13/JUN",
+          "fecha_liq": "13/JUN",
+          "descripcion": "PAGO DE NOMINA AYALA HERRERA ALFREDO",
+          "referencia": "Referencia IN 4200371726",
+          "cargos": 0.0,
+          "abonos": 4337.26,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "13/JUN",
+          "fecha_liq": "13/JUN",
+          "descripcion": "RECARGAS Y PAQUETES BMOV 13/JUN 11:09 AUT:",
+          "referencia": "Referencia ******8471",
+          "cargos": 100.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "13/JUN",
+          "fecha_liq": "12/JUN",
+          "descripcion": "AMAZON MX MARKETPLACE RFC: ANE 140618P37 10:37 AUT: 759206",
+          "referencia": "Referencia ******1184",
+          "cargos": 490.0,
+          "abonos": 0.0,
+          "saldo_operacion": 6275.16,
+          "saldo_liquidacion": 6275.16
+        },
+        {
+          "fecha_oper": "15/JUN",
+          "fecha_liq": "16/JUN",
+          "descripcion": "DEPOSITO EFECTIVO PRACTIC JUN15 17:32 PRAC 4718 FOLIO:5757",
+          "referencia": "Referencia ******1050",
+          "cargos": 0.0,
+          "abonos": 8500.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "15/JUN",
+          "fecha_liq": "16/JUN",
+          "descripcion": "SPEI RECIBIDOAZTECA 4454427Gas e Internet 00127180013472002918 250616071874682390I GUADARRAMA PEREZ RODRIGO",
+          "referencia": "Referencia 0106808434 127",
+          "cargos": 0.0,
+          "abonos": 300.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "15/JUN",
+          "fecha_liq": "16/JUN",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1588517978 Perfume",
+          "referencia": "Referencia 8999107801",
+          "cargos": 500.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "15/JUN",
+          "fecha_liq": "16/JUN",
+          "descripcion": "SPEI RECIBIDOSCOTIABANK 0150625Transferencia a Ernesto 00044180256049647866 2025061540044B36L0000379945195 FLORES PEREZ JIMENA",
+          "referencia": "Referencia 0107063198 044",
+          "cargos": 0.0,
+          "abonos": 300.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "15/JUN",
+          "fecha_liq": "16/JUN",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1556086301 teamo",
+          "referencia": "Referencia 9016395613",
+          "cargos": 0.0,
+          "abonos": 397.0,
+          "saldo_operacion": 15272.16,
+          "saldo_liquidacion": 1671.83
+        },
+        {
+          "fecha_oper": "16/JUN",
+          "fecha_liq": "16/JUN",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1524115913 caja",
+          "referencia": "Referencia 9023171425",
+          "cargos": 500.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "16/JUN",
+          "fecha_liq": "15/JUN",
+          "descripcion": "LIVERPOOL POR INTERNET RFC: DLI 931201MI9 17:53 AUT: 607770",
+          "referencia": "Referencia ******1184",
+          "cargos": 2864.33,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "16/JUN",
+          "fecha_liq": "15/JUN",
+          "descripcion": "TOTALPLAY CAT RFC: TPT 890516JP5 17:55 AUT: 637103",
+          "referencia": "Referencia ******1184",
+          "cargos": 1190.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "16/JUN",
+          "fecha_liq": "15/JUN",
+          "descripcion": "TELCEL 018001200006 RFC: VPS 100716CK9 18:54 AUT: 620742",
+          "referencia": "Referencia ******1184",
+          "cargos": 549.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "16/JUN",
+          "fecha_liq": "17/JUN",
+          "descripcion": "SPEI ENVIADO NU MEXICO 0405250transferencia 00005101250094169438 MBAN01002506170074249900 Arturo Flores",
+          "referencia": "Referencia 0074249900 638",
+          "cargos": 500.0,
+          "abonos": 0.0,
+          "saldo_operacion": 9668.83,
+          "saldo_liquidacion": 9668.83
+        },
+        {
+          "fecha_oper": "17/JUN",
+          "fecha_liq": "17/JUN",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1585741650 Transf a ERNESTO F",
+          "referencia": "Referencia 0022954741",
+          "cargos": 0.0,
+          "abonos": 320.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "17/JUN",
+          "fecha_liq": "17/JUN",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 0450005096 TRAMITES",
+          "referencia": "Referencia 0085484013",
+          "cargos": 0.0,
+          "abonos": 700.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "17/JUN",
+          "fecha_liq": "16/JUN",
+          "descripcion": "GASOL CENTINELA RFC: CANL531213I98 18:23 AUT: 056321",
+          "referencia": "Referencia ******4427",
+          "cargos": 500.0,
+          "abonos": 0.0,
+          "saldo_operacion": 10188.83,
+          "saldo_liquidacion": 9748.84
+        },
+        {
+          "fecha_oper": "18/JUN",
+          "fecha_liq": "18/JUN",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1556086301 XsuQlote",
+          "referencia": "Referencia 0052959768",
+          "cargos": 500.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "18/JUN",
+          "fecha_liq": "17/JUN",
+          "descripcion": "AMAZON MX MARKETPLACE RFC: ANE 140618P37 13:24 AUT: 742537",
+          "referencia": "Referencia ******1184",
+          "cargos": 439.99,
+          "abonos": 0.0,
+          "saldo_operacion": 9248.84,
+          "saldo_liquidacion": 9248.84
+        },
+        {
+          "fecha_oper": "20/JUN",
+          "fecha_liq": "20/JUN",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1586538741 Transf a ERNESTO F",
+          "referencia": "Referencia 0079436861",
+          "cargos": 0.0,
+          "abonos": 320.0,
+          "saldo_operacion": 9568.84,
+          "saldo_liquidacion": 8731.34
+        },
+        {
+          "fecha_oper": "21/JUN",
+          "fecha_liq": "23/JUN",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1502659344 ConsultaMartin",
+          "referencia": "Referencia 0001886268",
+          "cargos": 500.0,
+          "abonos": 0.0,
+          "saldo_operacion": 9068.84,
+          "saldo_liquidacion": 8272.34
+        },
+        {
+          "fecha_oper": "22/JUN",
+          "fecha_liq": "23/JUN",
+          "descripcion": "RETIRO CAJERO AUTOMATICO JUN22 21:13 BBVA 5241 FOLIO:7494",
+          "referencia": "Referencia ******4427",
+          "cargos": 700.0,
+          "abonos": 0.0,
+          "saldo_operacion": 8368.84,
+          "saldo_liquidacion": 8272.34
+        },
+        {
+          "fecha_oper": "23/JUN",
+          "fecha_liq": "20/JUN",
+          "descripcion": "MERPAGO*CENTROSERENA RFC: MAG 2105031W3 15:02 AUT: 462131",
+          "referencia": "Referencia ******4427",
+          "cargos": 650.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "23/JUN",
+          "fecha_liq": "20/JUN",
+          "descripcion": "STRIPE *UBER EATS RFC: UPM 191014S31 08:27 AUT: 110745",
+          "referencia": "Referencia ******1184",
+          "cargos": 187.5,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "23/JUN",
+          "fecha_liq": "21/JUN",
+          "descripcion": "AMAZON MX MARKETPLACE RFC: ANE 140618P37 17:15 AUT: 851356",
+          "referencia": "Referencia ******1184",
+          "cargos": 459.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "23/JUN",
+          "fecha_liq": "23/JUN",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1526195291 Dimo-RUTINASPRO",
+          "referencia": "Referencia 0014849817",
+          "cargos": 800.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "23/JUN",
+          "fecha_liq": "23/JUN",
+          "descripcion": "RETIRO CAJERO AUTOMATICO JUN23 21:49 BBVA 5241 FOLIO:8754",
+          "referencia": "Referencia ******4427",
+          "cargos": 200.0,
+          "abonos": 0.0,
+          "saldo_operacion": 6072.34,
+          "saldo_liquidacion": 6072.34
+        },
+        {
+          "fecha_oper": "25/JUN",
+          "fecha_liq": "24/JUN",
+          "descripcion": "FARMACIA LUPITA RFC: SOZJ63031135A 21:36 AUT: 603389",
+          "referencia": "Referencia ******4427",
+          "cargos": 70.0,
+          "abonos": 0.0,
+          "saldo_operacion": 6002.34,
+          "saldo_liquidacion": 6002.34
+        },
+        {
+          "fecha_oper": "27/JUN",
+          "fecha_liq": "27/JUN",
+          "descripcion": "PAGO DE NOMINA AYALA HERRERA ALFREDO",
+          "referencia": "Referencia IN 4200371726",
+          "cargos": 0.0,
+          "abonos": 4344.85,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "27/JUN",
+          "fecha_liq": "27/JUN",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1585741650 Boletos",
+          "referencia": "Referencia 0042835787",
+          "cargos": 192.0,
+          "abonos": 0.0,
+          "saldo_operacion": 10155.19,
+          "saldo_liquidacion": 10155.19
+        },
+        {
+          "fecha_oper": "29/JUN",
+          "fecha_liq": "30/JUN",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1556086301 xpapasito",
+          "referencia": "Referencia 0068315478",
+          "cargos": 0.0,
+          "abonos": 4010.0,
+          "saldo_operacion": 14165.19,
+          "saldo_liquidacion": 9943.19
+        },
+        {
+          "fecha_oper": "30/JUN",
+          "fecha_liq": "28/JUN",
+          "descripcion": "CINEPOLIS APP TICKETS RFC: TCI 121023F10 16:06 AUT: 110610",
+          "referencia": "Referencia ******1184",
+          "cargos": 212.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "30/JUN",
+          "fecha_liq": "30/JUN",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1550181555 bad",
+          "referencia": "Referencia 0008709121",
+          "cargos": 0.0,
+          "abonos": 1622.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "30/JUN",
+          "fecha_liq": "30/JUN",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1556086301 tenismamapapajeje",
+          "referencia": "Referencia 0033740314",
+          "cargos": 0.0,
+          "abonos": 290.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "30/JUN",
+          "fecha_liq": "30/JUN",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 2842940345 Dimo-amazon perro",
+          "referencia": "Referencia 0016349224",
+          "cargos": 0.0,
+          "abonos": 174.0,
+          "saldo_operacion": 16039.19,
+          "saldo_liquidacion": 16039.19
+        },
+        {
+          "fecha_oper": "01/JUL",
+          "fecha_liq": "01/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1585741650 badboys",
+          "referencia": "Referencia 0035159071",
+          "cargos": 0.0,
+          "abonos": 811.83,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "01/JUL",
+          "fecha_liq": "01/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1519393071 bunny",
+          "referencia": "Referencia 0074686350",
+          "cargos": 0.0,
+          "abonos": 800.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "01/JUL",
+          "fecha_liq": "01/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1519393071 bas",
+          "referencia": "Referencia 0022682103",
+          "cargos": 0.0,
+          "abonos": 11.0,
+          "saldo_operacion": 17662.02,
+          "saldo_liquidacion": 17662.02
+        },
+        {
+          "fecha_oper": "02/JUL",
+          "fecha_liq": "02/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 2739252223 pago",
+          "referencia": "Referencia 0032008993",
+          "cargos": 0.0,
+          "abonos": 5664.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "02/JUL",
+          "fecha_liq": "02/JUL",
+          "descripcion": "SPEI ENVIADO BANAMEX 0405250TDC 00005256783864633095 MBAN01002507020094393359 Rodrigo Guadarrama",
+          "referencia": "Referencia 0094393359 002",
+          "cargos": 1112.5,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "02/JUL",
+          "fecha_liq": "02/JUL",
+          "descripcion": "SPEI ENVIADO BANAMEX 0405250TDC 00005256783864633095 MBAN01002507020094406823 Rodrigo Guadarrama",
+          "referencia": "Referencia 0094406823 002",
+          "cargos": 10000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "02/JUL",
+          "fecha_liq": "02/JUL",
+          "descripcion": "PAGO TARJETA DE CREDITO CUENTA: BMOV",
+          "referencia": "Referencia 0440213756",
+          "cargos": 7569.05,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "02/JUL",
+          "fecha_liq": "02/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1588517978 pago",
+          "referencia": "Referencia 0034986389",
+          "cargos": 0.0,
+          "abonos": 1888.0,
+          "saldo_operacion": 6532.47,
+          "saldo_liquidacion": 6532.47
+        },
+        {
+          "fecha_oper": "03/JUL",
+          "fecha_liq": "03/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1585741650 rastro",
+          "referencia": "Referencia 0035928264",
+          "cargos": 0.0,
+          "abonos": 175.0,
+          "saldo_operacion": 6707.47,
+          "saldo_liquidacion": 5539.55
+        },
+        {
+          "fecha_oper": "04/JUL",
+          "fecha_liq": "04/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1586538741 Transf a ERNESTO F",
+          "referencia": "Referencia 0010382592",
+          "cargos": 0.0,
+          "abonos": 500.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "04/JUL",
+          "fecha_liq": "03/JUL",
+          "descripcion": "CINEPOLIS APP TICKETS RFC: TCI 121023F10 14:22 AUT: 05CBYS",
+          "referencia": "Referencia ******1184",
+          "cargos": 784.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "04/JUL",
+          "fecha_liq": "03/JUL",
+          "descripcion": "MERPAGO*MERCADOLIBRE RFC: MER 991006JMA 14:04 AUT: 054WHH",
+          "referencia": "Referencia ******1184",
+          "cargos": 383.92,
+          "abonos": 0.0,
+          "saldo_operacion": 6039.55,
+          "saldo_liquidacion": 6039.55
+        },
+        {
+          "fecha_oper": "05/JUL",
+          "fecha_liq": "07/JUL",
+          "descripcion": "SPEI ENVIADO Mercado Pago 00722969010535812839 MBAN01002507070059642996 Randy Soto",
+          "referencia": "Referencia 0059642996 722",
+          "cargos": 140.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "05/JUL",
+          "fecha_liq": "07/JUL",
+          "descripcion": "SPEI ENVIADO Mercado Pago 04052502miches 00722969070955393347 MBAN01002507070062869066 Ariadna Palacios",
+          "referencia": "Referencia 0062869066 722",
+          "cargos": 270.0,
+          "abonos": 0.0,
+          "saldo_operacion": 5629.55,
+          "saldo_liquidacion": 6039.55
+        },
+        {
+          "fecha_oper": "06/JUL",
+          "fecha_liq": "07/JUL",
+          "descripcion": "SPEI RECIBIDOAZTECA 4454427Gas e Internet 00127180013472002918 250707072227943071I GUADARRAMA PEREZ RODRIGO",
+          "referencia": "Referencia 0115549161 127",
+          "cargos": 0.0,
+          "abonos": 500.0,
+          "saldo_operacion": 6129.55,
+          "saldo_liquidacion": 6039.55
+        },
+        {
+          "fecha_oper": "07/JUL",
+          "fecha_liq": "07/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 0450005096 TRAMITES",
+          "referencia": "Referencia 0000785033",
+          "cargos": 0.0,
+          "abonos": 690.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "07/JUL",
+          "fecha_liq": "08/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1556086301 gym",
+          "referencia": "Referencia 0099345648",
+          "cargos": 0.0,
+          "abonos": 100.0,
+          "saldo_operacion": 6919.55,
+          "saldo_liquidacion": 6067.05
+        },
+        {
+          "fecha_oper": "08/JUL",
+          "fecha_liq": "08/JUL",
+          "descripcion": "SPEI ENVIADO SANTANDER 0405250INGM10AAH34446809266 00014470655087190043 MBAN01002507080072097660 Instituto CDEFIS SC",
+          "referencia": "Referencia 0072097660 014",
+          "cargos": 2625.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "08/JUL",
+          "fecha_liq": "07/JUL",
+          "descripcion": "MERPAGO*AGREGADOR RFC: MAG 2105031W3 12:59 AUT: 163PIY",
+          "referencia": "Referencia ******1184",
+          "cargos": 689.5,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "08/JUL",
+          "fecha_liq": "07/JUL",
+          "descripcion": "CFE SUM SERV BAS CR MU RFC: CSS 160330CP7 16:31 AUT: 18BY2C",
+          "referencia": "Referencia ******1184",
+          "cargos": 63.0,
+          "abonos": 0.0,
+          "saldo_operacion": 3542.05,
+          "saldo_liquidacion": 3542.05
+        },
+        {
+          "fecha_oper": "09/JUL",
+          "fecha_liq": "09/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 2739112472 Transf a ERNESTO F",
+          "referencia": "Referencia 0081128067",
+          "cargos": 0.0,
+          "abonos": 1317.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "09/JUL",
+          "fecha_liq": "09/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1556086301 xprecioso",
+          "referencia": "Referencia 0075119846",
+          "cargos": 0.0,
+          "abonos": 337.8,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "09/JUL",
+          "fecha_liq": "09/JUL",
+          "descripcion": "SPEI ENVIADO BANAMEX 0405250TDCesca 00005256783864633095 MBAN01002507090077280237 Rodrigo Guadarrama",
+          "referencia": "Referencia 0077280237 002",
+          "cargos": 676.0,
+          "abonos": 0.0,
+          "saldo_operacion": 4520.85,
+          "saldo_liquidacion": 4520.85
+        },
+        {
+          "fecha_oper": "12/JUL",
+          "fecha_liq": "14/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1556086301 bolsa1",
+          "referencia": "Referencia 0014246389",
+          "cargos": 0.0,
+          "abonos": 400.0,
+          "saldo_operacion": 4920.85,
+          "saldo_liquidacion": 3204.48
+        },
+        {
+          "fecha_oper": "14/JUL",
+          "fecha_liq": "10/JUL",
+          "descripcion": "AMAZON MX MARKETPLACE RFC: ANE 140618P37 02:28 AUT: 1SVS51",
+          "referencia": "Referencia ******1184",
+          "cargos": 1316.37,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "14/JUL",
+          "fecha_liq": "14/JUL",
+          "descripcion": "PAGO DE NOMINA AYALA HERRERA ALFREDO",
+          "referencia": "Referencia IN 4200371726",
+          "cargos": 0.0,
+          "abonos": 4344.85,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "14/JUL",
+          "fecha_liq": "14/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1515465135 Bolsa1",
+          "referencia": "Referencia 0029339060",
+          "cargos": 400.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "14/JUL",
+          "fecha_liq": "14/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1556086301 xsuqloteyico",
+          "referencia": "Referencia 0087299486",
+          "cargos": 500.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "14/JUL",
+          "fecha_liq": "14/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1556086301 x preciosoteee",
+          "referencia": "Referencia 0059336861",
+          "cargos": 0.0,
+          "abonos": 1063.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "14/JUL",
+          "fecha_liq": "14/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1550181555 liverpool",
+          "referencia": "Referencia 0045842871",
+          "cargos": 0.0,
+          "abonos": 880.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "14/JUL",
+          "fecha_liq": "14/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1585741650 gas",
+          "referencia": "Referencia 0051537524",
+          "cargos": 0.0,
+          "abonos": 250.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "14/JUL",
+          "fecha_liq": "14/JUL",
+          "descripcion": "DEPOSITO EFECTIVO PRACTIC JUL14 18:36 PRAC 3052 FOLIO:1538",
+          "referencia": "Referencia ******1050",
+          "cargos": 0.0,
+          "abonos": 5000.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "14/JUL",
+          "fecha_liq": "14/JUL",
+          "descripcion": "DEPOSITO EFECTIVO PRACTIC JUL14 18:38 PRAC 3052 FOLIO:1540",
+          "referencia": "Referencia ******1050",
+          "cargos": 0.0,
+          "abonos": 15000.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "14/JUL",
+          "fecha_liq": "13/JUL",
+          "descripcion": "STRIPE *UBER TRIP RFC: UPM 200220LK5 13:21 AUT: 968079",
+          "referencia": "Referencia ******1184",
+          "cargos": 90.22,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "14/JUL",
+          "fecha_liq": "15/JUL",
+          "descripcion": "SPEI RECIBIDOSCOTIABANK 0140725Transferencia a Ernesto 00044180256049647866 2025071440044B36L0000386495489 FLORES PEREZ JIMENA",
+          "referencia": "Referencia 0158134373 044",
+          "cargos": 0.0,
+          "abonos": 300.0,
+          "saldo_operacion": 29452.11,
+          "saldo_liquidacion": 24316.4
+        },
+        {
+          "fecha_oper": "15/JUL",
+          "fecha_liq": "14/JUL",
+          "descripcion": "LIVERPOOL POR INTERNET RFC: DLI 931201MI9 19:39 AUT: 502892",
+          "referencia": "Referencia ******1184",
+          "cargos": 4187.7,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "15/JUL",
+          "fecha_liq": "16/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1556086301 Majo",
+          "referencia": "Referencia 0096138899",
+          "cargos": 0.0,
+          "abonos": 1616.0,
+          "saldo_operacion": 26880.41,
+          "saldo_liquidacion": 24616.4
+        },
+        {
+          "fecha_oper": "16/JUL",
+          "fecha_liq": "14/JUL",
+          "descripcion": "TELCEL 018001200006 RFC: VPS 100716CK9 21:16 AUT: 198873",
+          "referencia": "Referencia ******1184",
+          "cargos": 648.01,
+          "abonos": 0.0,
+          "saldo_operacion": 26232.4,
+          "saldo_liquidacion": 24962.39
+        },
+        {
+          "fecha_oper": "17/JUL",
+          "fecha_liq": "17/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1585741650 gas internet",
+          "referencia": "Referencia 0057528445",
+          "cargos": 0.0,
+          "abonos": 320.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "17/JUL",
+          "fecha_liq": "16/JUL",
+          "descripcion": "TOTALPLAY CAT RFC: TPT 890516JP5 14:25 AUT: 698764",
+          "referencia": "Referencia ******1184",
+          "cargos": 1270.01,
+          "abonos": 0.0,
+          "saldo_operacion": 25282.39,
+          "saldo_liquidacion": 25282.39
+        },
+        {
+          "fecha_oper": "18/JUL",
+          "fecha_liq": "18/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1586538741 Transf a ERNESTO F",
+          "referencia": "Referencia 0024290623",
+          "cargos": 0.0,
+          "abonos": 320.0,
+          "saldo_operacion": 25602.39,
+          "saldo_liquidacion": 25602.39
+        },
+        {
+          "fecha_oper": "20/JUL",
+          "fecha_liq": "21/JUL",
+          "descripcion": "SPEI ENVIADO HSBC 0405250playera",
+          "referencia": "Referencia 0080896493 021",
+          "cargos": 970.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "20/JUL",
+          "fecha_liq": "21/JUL",
+          "descripcion": "SPEI DEVUELTOHSBC 0405250playera",
+          "referencia": "Referencia 0080896493 021",
+          "cargos": 0.0,
+          "abonos": 970.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "20/JUL",
+          "fecha_liq": "21/JUL",
+          "descripcion": "SPEI ENVIADO HSBC 0405250playera 00004213166023970514 MBAN01002507210081343988 Arturo Flores Perez",
+          "referencia": "Referencia 0081343988 021",
+          "cargos": 970.0,
+          "abonos": 0.0,
+          "saldo_operacion": 24632.39,
+          "saldo_liquidacion": 25602.39
+        },
+        {
+          "fecha_oper": "21/JUL",
+          "fecha_liq": "22/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1527390099 Aretes",
+          "referencia": "Referencia 0079557149",
+          "cargos": 289.0,
+          "abonos": 0.0,
+          "saldo_operacion": 24343.39,
+          "saldo_liquidacion": 24632.39
+        },
+        {
+          "fecha_oper": "22/JUL",
+          "fecha_liq": "22/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1556086301 teamoprecioso",
+          "referencia": "Referencia 0081694633",
+          "cargos": 0.0,
+          "abonos": 209.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "22/JUL",
+          "fecha_liq": "22/JUL",
+          "descripcion": "CINEPOLIS APP TICKETS RFC: TCI 121023F10 20:17 AUT: 791480",
+          "referencia": "Referencia ******1184",
+          "cargos": 784.0,
+          "abonos": 0.0,
+          "saldo_operacion": 23768.39,
+          "saldo_liquidacion": 23563.8
+        },
+        {
+          "fecha_oper": "23/JUL",
+          "fecha_liq": "22/JUL",
+          "descripcion": "AMAZON MX MARKETPLACE RFC: ANE 140618P37 21:44 AUT: 062197",
+          "referencia": "Referencia ******1184",
+          "cargos": 204.59,
+          "abonos": 0.0,
+          "saldo_operacion": 23563.8,
+          "saldo_liquidacion": 23563.8
+        },
+        {
+          "fecha_oper": "25/JUL",
+          "fecha_liq": "24/JUL",
+          "descripcion": "AMAZON MX MARKETPLACE RFC: ANE 140618P37 00:46 AUT: 349689",
+          "referencia": "Referencia ******1184",
+          "cargos": 1090.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "25/JUL",
+          "fecha_liq": "24/JUL",
+          "descripcion": "STR*UBER EATS RFC: UPM 191014S31 10:22 AUT: 833561",
+          "referencia": "Referencia ******1184",
+          "cargos": 249.44,
+          "abonos": 0.0,
+          "saldo_operacion": 22224.36,
+          "saldo_liquidacion": 20424.56
+        },
+        {
+          "fecha_oper": "27/JUL",
+          "fecha_liq": "28/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1586538741 Transf a ERNESTO F",
+          "referencia": "Referencia 0061567979",
+          "cargos": 0.0,
+          "abonos": 500.0,
+          "saldo_operacion": 22724.36,
+          "saldo_liquidacion": 20424.56
+        },
+        {
+          "fecha_oper": "28/JUL",
+          "fecha_liq": "25/JUL",
+          "descripcion": "STRIPE *UBER EATS RFC: UPM 191014S31 08:27 AUT: 403606",
+          "referencia": "Referencia ******1184",
+          "cargos": 299.8,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "28/JUL",
+          "fecha_liq": "25/JUL",
+          "descripcion": "GDF SRIA FINANZAS MU RFC: GDF 9712054NA 16:26 AUT: 459490",
+          "referencia": "Referencia ******1184",
+          "cargos": 1500.0,
+          "abonos": 0.0,
+          "saldo_operacion": 20924.56,
+          "saldo_liquidacion": 20924.56
+        },
+        {
+          "fecha_oper": "30/JUL",
+          "fecha_liq": "30/JUL",
+          "descripcion": "PAGO DE NOMINA AYALA HERRERA ALFREDO",
+          "referencia": "Referencia IN 4200371726",
+          "cargos": 0.0,
+          "abonos": 4337.26,
+          "saldo_operacion": 25261.82,
+          "saldo_liquidacion": 25261.82
+        },
+        {
+          "fecha_oper": "31/JUL",
+          "fecha_liq": "31/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 2739252223 pago",
+          "referencia": "Referencia 0011046855",
+          "cargos": 0.0,
+          "abonos": 2177.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "31/JUL",
+          "fecha_liq": "31/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1550181555 bb",
+          "referencia": "Referencia 0066842304",
+          "cargos": 0.0,
+          "abonos": 1622.0,
+          "saldo_operacion": 29060.82,
+          "saldo_liquidacion": 29060.82
+        },
+        {
+          "fecha_oper": "02/AGO",
+          "fecha_liq": "04/AGO",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1519424817 kendrick1",
+          "referencia": "Referencia 0063064340",
+          "cargos": 1962.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "02/AGO",
+          "fecha_liq": "04/AGO",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1585741650 boletos",
+          "referencia": "Referencia 0015372193",
+          "cargos": 0.0,
+          "abonos": 1860.0,
+          "saldo_operacion": 28958.82,
+          "saldo_liquidacion": 27087.82
+        },
+        {
+          "fecha_oper": "03/AGO",
+          "fecha_liq": "04/AGO",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1586538741 Transf a ERNESTO F",
+          "referencia": "Referencia 0028669512",
+          "cargos": 0.0,
+          "abonos": 520.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "03/AGO",
+          "fecha_liq": "04/AGO",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1519393071 bad bunny",
+          "referencia": "Referencia 0070514281",
+          "cargos": 0.0,
+          "abonos": 811.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "03/AGO",
+          "fecha_liq": "04/AGO",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1556086301 Xsuqlito",
+          "referencia": "Referencia 0061685082",
+          "cargos": 1175.0,
+          "abonos": 0.0,
+          "saldo_operacion": 29114.82,
+          "saldo_liquidacion": 26112.82
+        },
+        {
+          "fecha_oper": "04/AGO",
+          "fecha_liq": "02/AGO",
+          "descripcion": "MERPAGO*TRAD RFC: MAG 2105031W3 17:18 AUT: 655709",
+          "referencia": "Referencia ******1184",
+          "cargos": 1973.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "04/AGO",
+          "fecha_liq": "04/AGO",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1556086301 bolsa2",
+          "referencia": "Referencia 0075924915",
+          "cargos": 0.0,
+          "abonos": 400.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "04/AGO",
+          "fecha_liq": "04/AGO",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1515465135 bolsa2",
+          "referencia": "Referencia 0086384144",
+          "cargos": 400.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "04/AGO",
+          "fecha_liq": "04/AGO",
+          "descripcion": "SPEI ENVIADO BANAMEX 0405250TDC 00005256783864633095 MBAN01002508040099905845 Rodrigo Guadarrama",
+          "referencia": "Referencia 0099905845 002",
+          "cargos": 9575.5,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "04/AGO",
+          "fecha_liq": "04/AGO",
+          "descripcion": "PAGO TARJETA DE CREDITO CUENTA: BMOV",
+          "referencia": "Referencia 3302263825",
+          "cargos": 6776.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "04/AGO",
+          "fecha_liq": "03/AGO",
+          "descripcion": "AMAZON RFC: ANE 140618P37 00:09 AUT: 461996",
+          "referencia": "Referencia ******1184",
+          "cargos": 698.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "04/AGO",
+          "fecha_liq": "03/AGO",
+          "descripcion": "AMAZON MEXICO RFC: ANE 140618P37 01:44 AUT: 762464",
+          "referencia": "Referencia ******1184",
+          "cargos": 277.0,
+          "abonos": 0.0,
+          "saldo_operacion": 9815.32,
+          "saldo_liquidacion": 9815.32
+        },
+        {
+          "fecha_oper": "07/AGO",
+          "fecha_liq": "07/AGO",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 2739112472 pago",
+          "referencia": "Referencia 0003330556",
+          "cargos": 0.0,
+          "abonos": 920.0,
+          "saldo_operacion": 10735.32,
+          "saldo_liquidacion": 9815.32
+        },
+        {
+          "fecha_oper": "08/AGO",
+          "fecha_liq": "08/AGO",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1526195291 Dimo-Sin concepto",
+          "referencia": "Referencia 0010088102",
+          "cargos": 0.0,
+          "abonos": 200.0,
+          "saldo_operacion": 10935.32,
+          "saldo_liquidacion": 10015.32
+        },
+        {
+          "fecha_oper": "10/AGO",
+          "fecha_liq": "11/AGO",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1556086301 teamo",
+          "referencia": "Referencia 0068478887",
+          "cargos": 0.0,
+          "abonos": 337.8,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "10/AGO",
+          "fecha_liq": "11/AGO",
+          "descripcion": "SPEI ENVIADO BANAMEX 0405250TDCesca 00005256783864633095 MBAN01002508110079343139 Rodrigo Guadarrama",
+          "referencia": "Referencia 0079343139 002",
+          "cargos": 2453.0,
+          "abonos": 0.0,
+          "saldo_operacion": 8820.12,
+          "saldo_liquidacion": 9938.34
+        },
+        {
+          "fecha_oper": "11/AGO",
+          "fecha_liq": "07/AGO",
+          "descripcion": "AMAZON MEXICO RFC: ANE 140618P37 17:36 AUT: 836547",
+          "referencia": "Referencia ******1184",
+          "cargos": 920.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "11/AGO",
+          "fecha_liq": "09/AGO",
+          "descripcion": "STRIPE *UBER TRIP RFC: UPM 200220LK5 13:09 AUT: 156760",
+          "referencia": "Referencia ******1184",
+          "cargos": 76.98,
+          "abonos": 0.0,
+          "saldo_operacion": 7823.14,
+          "saldo_liquidacion": 7823.14
+        },
+        {
+          "fecha_oper": "13/AGO",
+          "fecha_liq": "13/AGO",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1556086301 majo",
+          "referencia": "Referencia 0064961789",
+          "cargos": 0.0,
+          "abonos": 1616.0,
+          "saldo_operacion": 9439.14,
+          "saldo_liquidacion": 9439.14
+        },
+        {
+          "fecha_oper": "14/AGO",
+          "fecha_liq": "14/AGO",
+          "descripcion": "PAGO DE NOMINA AYALA HERRERA ALFREDO",
+          "referencia": "Referencia IN 4200371726",
+          "cargos": 0.0,
+          "abonos": 4344.85,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "14/AGO",
+          "fecha_liq": "14/AGO",
+          "descripcion": "SPEI RECIBIDOSCOTIABANK 0140825Transferencia a Ernesto 00044180256049647866 2025081440044B36L0000393423593 FLORES PEREZ JIMENA",
+          "referencia": "Referencia 0118517795 044",
+          "cargos": 0.0,
+          "abonos": 300.0,
+          "saldo_operacion": 14083.99,
+          "saldo_liquidacion": 8557.1
+        },
+        {
+          "fecha_oper": "15/AGO",
+          "fecha_liq": "14/AGO",
+          "descripcion": "TOTALPLAY CAT RFC: TPT 890516JP5 11:26 AUT: 672366",
+          "referencia": "Referencia ******1184",
+          "cargos": 1190.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "15/AGO",
+          "fecha_liq": "14/AGO",
+          "descripcion": "TELCEL 018001200006 RFC: VPS 100716CK9 12:28 AUT: 705926",
+          "referencia": "Referencia ******1184",
+          "cargos": 549.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "15/AGO",
+          "fecha_liq": "14/AGO",
+          "descripcion": "LIVERPOOL POR INTERNET RFC: DLI 931201MI9 11:30 AUT: 731182",
+          "referencia": "Referencia ******1184",
+          "cargos": 3787.89,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "15/AGO",
+          "fecha_liq": "18/AGO",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1586538741 Transf a ERNESTO F",
+          "referencia": "Referencia 0025665423",
+          "cargos": 0.0,
+          "abonos": 320.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "15/AGO",
+          "fecha_liq": "18/AGO",
+          "descripcion": "SPEI RECIBIDOAZTECA 4454427Gas e Internet 00127180013472002918 250818072905111344I GUADARRAMA PEREZ RODRIGO",
+          "referencia": "Referencia 0129726252 127",
+          "cargos": 0.0,
+          "abonos": 300.0,
+          "saldo_operacion": 9177.1,
+          "saldo_liquidacion": 8557.1
+        },
+        {
+          "fecha_oper": "16/AGO",
+          "fecha_liq": "18/AGO",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1556086301 tiamo",
+          "referencia": "Referencia 0026322941",
+          "cargos": 0.0,
+          "abonos": 813.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "16/AGO",
+          "fecha_liq": "18/AGO",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1556086301 bolsa 3",
+          "referencia": "Referencia 0073940797",
+          "cargos": 0.0,
+          "abonos": 400.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "16/AGO",
+          "fecha_liq": "18/AGO",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1515465135 Bolsa3",
+          "referencia": "Referencia 0083072472",
+          "cargos": 400.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "16/AGO",
+          "fecha_liq": "18/AGO",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1550181555 Transf a Ernesto F",
+          "referencia": "Referencia 0044609841",
+          "cargos": 0.0,
+          "abonos": 880.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "16/AGO",
+          "fecha_liq": "18/AGO",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1585741650 gas internet",
+          "referencia": "Referencia 0095543631",
+          "cargos": 0.0,
+          "abonos": 320.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "16/AGO",
+          "fecha_liq": "18/AGO",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1556086301 Labial",
+          "referencia": "Referencia 0048669932",
+          "cargos": 70.0,
+          "abonos": 0.0,
+          "saldo_operacion": 11120.1,
+          "saldo_liquidacion": 5437.1
+        },
+        {
+          "fecha_oper": "18/AGO",
+          "fecha_liq": "16/AGO",
+          "descripcion": "MIT*INST CDEFIS RFC: ICD 2103223Y0 12:34 AUT: 570819",
+          "referencia": "Referencia ******1184",
+          "cargos": 3120.0,
+          "abonos": 0.0,
+          "saldo_operacion": 8000.1,
+          "saldo_liquidacion": 8000.1
+        },
+        {
+          "fecha_oper": "25/AGO",
+          "fecha_liq": "22/AGO",
+          "descripcion": "MERPAGO*AGREGADOR RFC: MAG 2105031W3 16:02 AUT: 152804",
+          "referencia": "Referencia ******4427",
+          "cargos": 650.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "25/AGO",
+          "fecha_liq": "21/AGO",
+          "descripcion": "AMAZON MEXICO RFC: ANE 140618P37 22:58 AUT: 313973",
+          "referencia": "Referencia ******1184",
+          "cargos": 171.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "25/AGO",
+          "fecha_liq": "21/AGO",
+          "descripcion": "AMAZON RFC: ANE 140618P37 22:58 AUT: 314497",
+          "referencia": "Referencia ******1184",
+          "cargos": 683.1,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "25/AGO",
+          "fecha_liq": "23/AGO",
+          "descripcion": "AMAZON MEXICO RFC: ANE 140618P37 11:33 AUT: 969437",
+          "referencia": "Referencia ******1184",
+          "cargos": 199.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "25/AGO",
+          "fecha_liq": "23/AGO",
+          "descripcion": "AMAZON MEXICO RFC: ANE 140618P37 11:33 AUT: 971056",
+          "referencia": "Referencia ******1184",
+          "cargos": 199.0,
+          "abonos": 0.0,
+          "saldo_operacion": 6098.0,
+          "saldo_liquidacion": 6098.0
+        },
+        {
+          "fecha_oper": "29/AGO",
+          "fecha_liq": "29/AGO",
+          "descripcion": "PAGO DE NOMINA AYALA HERRERA ALFREDO",
+          "referencia": "Referencia IN 4200371726",
+          "cargos": 0.0,
+          "abonos": 4337.25,
+          "saldo_operacion": 10435.25,
+          "saldo_liquidacion": 10435.25
+        },
+        {
+          "fecha_oper": "30/AGO",
+          "fecha_liq": "01/SEP",
+          "descripcion": "SPEI RECIBIDOHSBC 0004447Pago Tanda 00021180065153320678 HSBC336735 ANGEL HUMBERTO AGUILAR SALAS",
+          "referencia": "Referencia 0105429100 021",
+          "cargos": 0.0,
+          "abonos": 14000.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "30/AGO",
+          "fecha_liq": "01/SEP",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1556086301 boletos majo bad",
+          "referencia": "Referencia 0071774574",
+          "cargos": 0.0,
+          "abonos": 1622.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "30/AGO",
+          "fecha_liq": "01/SEP",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1556086301 papa medi tenis",
+          "referencia": "Referencia 0046413277",
+          "cargos": 0.0,
+          "abonos": 1155.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "30/AGO",
+          "fecha_liq": "01/SEP",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1556086301 TC ESCA",
+          "referencia": "Referencia 0075727357",
+          "cargos": 0.0,
+          "abonos": 4430.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "30/AGO",
+          "fecha_liq": "01/SEP",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1519393071 bad",
+          "referencia": "Referencia 0070746388",
+          "cargos": 0.0,
+          "abonos": 811.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "30/AGO",
+          "fecha_liq": "01/SEP",
+          "descripcion": "PAGO TARJETA DE CREDITO CUENTA: BMOV",
+          "referencia": "Referencia 5550806945",
+          "cargos": 9793.16,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "30/AGO",
+          "fecha_liq": "01/SEP",
+          "descripcion": "SPEI ENVIADO BANAMEX 2307250TDC 00005256783864633095 MBAN01002509010073890935 Rodrigo Guadarrama",
+          "referencia": "Referencia 0073890935 002",
+          "cargos": 9576.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "30/AGO",
+          "fecha_liq": "01/SEP",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1556086301 TC COSMETICOS",
+          "referencia": "Referencia 0021723299",
+          "cargos": 0.0,
+          "abonos": 3021.0,
+          "saldo_operacion": 16105.09,
+          "saldo_liquidacion": 10435.25
+        },
+        {
+          "fecha_oper": "31/AGO",
+          "fecha_liq": "01/SEP",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1586538741 Transf a ERNESTO F",
+          "referencia": "Referencia 0004009886",
+          "cargos": 0.0,
+          "abonos": 520.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "31/AGO",
+          "fecha_liq": "01/SEP",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1556086301 Xsuqloterico",
+          "referencia": "Referencia 0044154528",
+          "cargos": 610.0,
+          "abonos": 0.0,
+          "saldo_operacion": 16015.09,
+          "saldo_liquidacion": 10435.25
+        },
+        {
+          "fecha_oper": "01/SEP",
+          "fecha_liq": "01/SEP",
+          "descripcion": "MERPAGO*AGREGADOR RFC: MAG 2105031W3 14:56 AUT: 046454",
+          "referencia": "Referencia ******4427",
+          "cargos": 650.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "01/SEP",
+          "fecha_liq": "01/SEP",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1585741650 boletos",
+          "referencia": "Referencia 0012874504",
+          "cargos": 0.0,
+          "abonos": 1860.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "01/SEP",
+          "fecha_liq": "01/SEP",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1519424817 kendrick2",
+          "referencia": "Referencia 0009741042",
+          "cargos": 1962.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "01/SEP",
+          "fecha_liq": "01/SEP",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1507438373 Anillo",
+          "referencia": "Referencia 0075037454",
+          "cargos": 370.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "01/SEP",
+          "fecha_liq": "01/SEP",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1524115913 Caja",
+          "referencia": "Referencia 0040056330",
+          "cargos": 700.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "01/SEP",
+          "fecha_liq": "02/SEP",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1556086301 xprecioso",
+          "referencia": "Referencia 0025729751",
+          "cargos": 0.0,
+          "abonos": 250.0,
+          "saldo_operacion": 14443.09,
+          "saldo_liquidacion": 13693.09
+        },
+        {
+          "fecha_oper": "02/SEP",
+          "fecha_liq": "02/SEP",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1585741650 Transf a ESAU F",
+          "referencia": "Referencia 0096782019",
+          "cargos": 300.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "02/SEP",
+          "fecha_liq": "01/SEP",
+          "descripcion": "GASOL CENTINELA RFC: CANL531213I98 18:18 AUT: 192793",
+          "referencia": "Referencia ******4427",
+          "cargos": 500.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "02/SEP",
+          "fecha_liq": "03/SEP",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1585741650 cambio",
+          "referencia": "Referencia 0051102647",
+          "cargos": 0.0,
+          "abonos": 100.0,
+          "saldo_operacion": 13743.09,
+          "saldo_liquidacion": 11033.09
+        },
+        {
+          "fecha_oper": "03/SEP",
+          "fecha_liq": "03/SEP",
+          "descripcion": "OPENAI *CHATGPT SUBSCR USD 20.00TC018.8005AUT: 387681",
+          "referencia": "Referencia ******1184",
+          "cargos": 376.01,
+          "abonos": 0.0,
+          "saldo_operacion": 13367.08,
+          "saldo_liquidacion": 10757.08
+        },
+        {
+          "fecha_oper": "04/SEP",
+          "fecha_liq": "02/SEP",
+          "descripcion": "MIT*INST CDEFIS RFC: ICD 2103223Y0 22:57 AUT: 725597",
+          "referencia": "Referencia ******1184",
+          "cargos": 2610.0,
+          "abonos": 0.0,
+          "saldo_operacion": 10757.08,
+          "saldo_liquidacion": 10757.08
+        }
+      ]
+    }
+  ]
+}

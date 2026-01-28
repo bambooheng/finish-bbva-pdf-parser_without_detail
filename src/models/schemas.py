@@ -286,9 +286,6 @@ class BankDocument(BaseModel):
         # This seems to match the document flow (Body -> Bottom).
         # We will keep it here but ensure fields inside are ordered.
         
-        if account_summary.cuadro_resumen:
-            simplified["structured_data"]["account_summary"]["cuadro_resumen"] = account_summary.cuadro_resumen
-        
         if account_summary.informacion_financiera:
             simplified["structured_data"]["account_summary"]["informacion_financiera"] = account_summary.informacion_financiera
         
@@ -316,6 +313,10 @@ class BankDocument(BaseModel):
         # 10. Apartados (Footer - AFTER Total Movimientos)
         if account_summary.apartados_vigentes:
              simplified["structured_data"]["account_summary"]["apartados_vigentes"] = account_summary.apartados_vigentes
+        
+        # 11. Cuadro Resumen (Moved to end per user request)
+        if account_summary.cuadro_resumen:
+            simplified["structured_data"]["account_summary"]["cuadro_resumen"] = account_summary.cuadro_resumen
         
         return simplified
 

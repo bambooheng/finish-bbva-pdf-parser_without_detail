@@ -1,0 +1,514 @@
+{
+  "source_file": "MSN20250923030银行流水1",
+  "document_type": "A",
+  "total_pages": 8,
+  "total_rows": 50,
+  "sessions": 0,
+  "pages": [
+    {
+      "page": 0,
+      "rows": [
+        {
+          "fecha_oper": "23/AGO",
+          "fecha_liq": "25/AGO",
+          "descripcion": "PAGO CUENTA DE TERCERO 0080647918 BNET 1115207142 luna",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 175.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "23/AGO",
+          "fecha_liq": "25/AGO",
+          "descripcion": "SPEI ENVIADO BANORTE 0089829299 072 22072501 00004189143098150983 MBAN01002508250089829299 Yarazet banorte",
+          "referencia": "",
+          "cargos": 60.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "23/AGO",
+          "fecha_liq": "25/AGO",
+          "descripcion": "SPEI ENVIADO NU MEXICO 0089842812 638 22072501 00638180000157531138 MBAN01002508250089842812 Bruno Adair",
+          "referencia": "",
+          "cargos": 9.0,
+          "abonos": 0.0,
+          "saldo_operacion": 224.79,
+          "saldo_liquidacion": 68.79
+        },
+        {
+          "fecha_oper": "24/AGO",
+          "fecha_liq": "25/AGO",
+          "descripcion": "DEPOSITO EFECTIVO PRACTIC",
+          "referencia": "******7808 AGO24 12:03 PRAC A901 FOLIO:2588",
+          "cargos": 0.0,
+          "abonos": 50.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "24/AGO",
+          "fecha_liq": "25/AGO",
+          "descripcion": "RETIRO CAJERO AUTOMATICO",
+          "referencia": "******5656 AGO24 12:04 BBVA A820 FOLIO:8523",
+          "cargos": 200.0,
+          "abonos": 0.0,
+          "saldo_operacion": 74.79,
+          "saldo_liquidacion": 68.79
+        },
+        {
+          "fecha_oper": "25/AGO",
+          "fecha_liq": "23/AGO",
+          "descripcion": "CHEVRON",
+          "referencia": "******5656 RFC: ESL 1009023R6 10:56 AUT: 281132",
+          "cargos": 50.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "25/AGO",
+          "fecha_liq": "26/AGO",
+          "descripcion": "PAGO CUENTA DE TERCERO 0047734601 BNET 1511433268 transferencia",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 1360.0,
+          "saldo_operacion": 1384.79,
+          "saldo_liquidacion": 24.79
+        },
+        {
+          "fecha_oper": "26/AGO",
+          "fecha_liq": "26/AGO",
+          "descripcion": "SPEI RECIBIDOSANTANDER 0180414675 014 6129457TRANSFERENCIA A ARTURO BBVA 00014225569256479373 2025082640014TRAP0020485294180 CYNTHIA YARAZET HERNANDEZ VALDOVINO",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 150.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "26/AGO",
+          "fecha_liq": "26/AGO",
+          "descripcion": "RETIRO CAJERO AUTOMATICO",
+          "referencia": "******5656 AGO26 07:21 BBVA 8570 FOLIO:7675",
+          "cargos": 1400.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "26/AGO",
+          "fecha_liq": "26/AGO",
+          "descripcion": "SPEI RECIBIDOSANTANDER 0182740580 014 1718066TRANSFERENCIA A PAPA BBVA 00014225569256479373 2025082640014TRAPP020418741920 CYNTHIA YARAZET HERNANDEZ VALDOVINO",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 250.0,
+          "saldo_operacion": 384.79,
+          "saldo_liquidacion": 284.79
+        },
+        {
+          "fecha_oper": "27/AGO",
+          "fecha_liq": "27/AGO",
+          "descripcion": "SPEI RECIBIDOSANTANDER 0189452126 014 0000002TRANSFERENCIA A ARTURO BBVABBV 00014225569256479373 2025082740014TRAPP020408449340 CYNTHIA YARAZET HERNANDEZ VALDOVINO",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 400.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "27/AGO",
+          "fecha_liq": "26/AGO",
+          "descripcion": "CHEVRON",
+          "referencia": "******5656 RFC: ESP 080211R43 07:17 AUT: 457142",
+          "cargos": 100.0,
+          "abonos": 0.0,
+          "saldo_operacion": 684.79,
+          "saldo_liquidacion": 484.79
+        },
+        {
+          "fecha_oper": "28/AGO",
+          "fecha_liq": "28/AGO",
+          "descripcion": "RETIRO CAJERO AUTOMATICO",
+          "referencia": "******5656 AGO28 07:28 BBVA 8570 FOLIO:9415",
+          "cargos": 400.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "28/AGO",
+          "fecha_liq": "27/AGO",
+          "descripcion": "SUPERCENTER BLVD DELT",
+          "referencia": "******5656 RFC: NWM 9709244W4 17:55 AUT: 365454",
+          "cargos": 200.0,
+          "abonos": 0.0,
+          "saldo_operacion": 84.79,
+          "saldo_liquidacion": 4.79
+        },
+        {
+          "fecha_oper": "29/AGO",
+          "fecha_liq": "28/AGO",
+          "descripcion": "GASO PEDREGAL",
+          "referencia": "******5656 RFC: SPC 061218GD6 21:55 AUT: 968994",
+          "cargos": 80.0,
+          "abonos": 0.0,
+          "saldo_operacion": 4.79,
+          "saldo_liquidacion": 4.79
+        },
+        {
+          "fecha_oper": "30/AGO",
+          "fecha_liq": "01/SEP",
+          "descripcion": "SPEI RECIBIDOSANTANDER 0105704940 014 0000002TRANSFERENCIA A ARTURO HERNAND 00014225569256479373 2025083040014TRAPP020453533080 CYNTHIA YARAZET HERNANDEZ VALDOVINO",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 2000.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "30/AGO",
+          "fecha_liq": "01/SEP",
+          "descripcion": "PAGO CUENTA DE TERCERO 0062173270 BNET 1115207142 luna",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 175.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "30/AGO",
+          "fecha_liq": "01/SEP",
+          "descripcion": "DEPOSITO EFECTIVO PRACTIC",
+          "referencia": "******7808 AGO30 17:59 PRAC A901 FOLIO:6100",
+          "cargos": 0.0,
+          "abonos": 50.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "30/AGO",
+          "fecha_liq": "01/SEP",
+          "descripcion": "RETIRO CAJERO AUTOMATICO",
+          "referencia": "******5656 AGO30 18:00 BBVA A901 FOLIO:6102",
+          "cargos": 2200.0,
+          "abonos": 0.0,
+          "saldo_operacion": 29.79,
+          "saldo_liquidacion": 4.79
+        },
+        {
+          "fecha_oper": "31/AGO",
+          "fecha_liq": "01/SEP",
+          "descripcion": "PAGO CUENTA DE TERCERO 0063199956 BNET 1564625069 f",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 1000.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "31/AGO",
+          "fecha_liq": "01/SEP",
+          "descripcion": "RETIRO CAJERO AUTOMATICO",
+          "referencia": "******5656 AGO31 12:27 BBVA A939 FOLIO:1412",
+          "cargos": 1000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "31/AGO",
+          "fecha_liq": "01/SEP",
+          "descripcion": "PAGO CUENTA DE TERCERO 0042105686 BNET 1564625069 Transf a Arturo H",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 200.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "31/AGO",
+          "fecha_liq": "01/SEP",
+          "descripcion": "SPEI ENVIADO BANORTE 0081409262 072 19082501 00004189143098150983 MBAN01002509010081409262 Yarazet banorte",
+          "referencia": "",
+          "cargos": 200.0,
+          "abonos": 0.0,
+          "saldo_operacion": 29.79,
+          "saldo_liquidacion": 4.79
+        },
+        {
+          "fecha_oper": "02/SEP",
+          "fecha_liq": "01/SEP",
+          "descripcion": "ESTACION GAS POMPA",
+          "referencia": "******5656 RFC: CCP 981009LH7 13:36 AUT: 664784",
+          "cargos": 29.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.79,
+          "saldo_liquidacion": 0.79
+        },
+        {
+          "fecha_oper": "05/SEP",
+          "fecha_liq": "05/SEP",
+          "descripcion": "SPEI RECIBIDOBANAMEX 0142678443 002 0000001Pago 00002225905156737082 085903466380324851 CYNTHIA YARAZET,HERNANDEZ/VALDOVIN",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 200.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "05/SEP",
+          "fecha_liq": "05/SEP",
+          "descripcion": "RETIRO CAJERO AUTOMATICO",
+          "referencia": "******5656 SEP05 18:33 BBVA A849 FOLIO:4267",
+          "cargos": 200.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.79,
+          "saldo_liquidacion": 0.79
+        },
+        {
+          "fecha_oper": "11/SEP",
+          "fecha_liq": "12/SEP",
+          "descripcion": "SPEI RECIBIDOBANAMEX 0173590673 002 0110925Comidas 00002225905156737082 085903988950325455 CYNTHIA YARAZET,HERNANDEZ/VALDOVIN",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 260.0,
+          "saldo_operacion": 260.79,
+          "saldo_liquidacion": 0.79
+        },
+        {
+          "fecha_oper": "12/SEP",
+          "fecha_liq": "12/SEP",
+          "descripcion": "RETIRO CAJERO AUTOMATICO",
+          "referencia": "******5656 SEP12 07:34 BBVA A238 FOLIO:1536",
+          "cargos": 200.0,
+          "abonos": 0.0,
+          "saldo_operacion": 60.79,
+          "saldo_liquidacion": 60.79
+        },
+        {
+          "fecha_oper": "13/SEP",
+          "fecha_liq": "15/SEP",
+          "descripcion": "PAGO CUENTA DE TERCERO 0001027137 BNET 1115207142 luna",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 125.0,
+          "saldo_operacion": 185.79,
+          "saldo_liquidacion": -115.11
+        },
+        {
+          "fecha_oper": "15/SEP",
+          "fecha_liq": "13/SEP",
+          "descripcion": "FARM GUAD 1373",
+          "referencia": "******5656 RFC: FGU 830930PD3 08:34 AUT: 039049",
+          "cargos": 21.9,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "15/SEP",
+          "fecha_liq": "13/SEP",
+          "descripcion": "SUPERCENTER BLVD DELT",
+          "referencia": "******5656 RFC: NWM 9709244W4 19:43 AUT: 058892",
+          "cargos": 56.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "15/SEP",
+          "fecha_liq": "13/SEP",
+          "descripcion": "MAGANA SERVICIOS GAS",
+          "referencia": "******5656 RFC: MSG 111221RB6 09:10 AUT: 452281",
+          "cargos": 35.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "15/SEP",
+          "fecha_liq": "13/SEP",
+          "descripcion": "MERPAGO*AGREGADOR",
+          "referencia": "******5656 RFC: MAG 2105031W3 11:19 AUT: 511836",
+          "cargos": 63.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "15/SEP",
+          "fecha_liq": "15/SEP",
+          "descripcion": "SPEI RECIBIDOBANORTE 0195260481 072 0250915Sin informaci n 00072225012671979374 38432P05202509154456333946 CYNTHIA YARAZET HERNANDEZ VALDOVINO",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 2000.0,
+          "saldo_operacion": 2009.89,
+          "saldo_liquidacion": 2009.89
+        },
+        {
+          "fecha_oper": "16/SEP",
+          "fecha_liq": "17/SEP",
+          "descripcion": "RETIRO CAJERO AUTOMATICO",
+          "referencia": "******5656 SEP16 10:35 BBVA A820 FOLIO:8079",
+          "cargos": 1900.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "16/SEP",
+          "fecha_liq": "17/SEP",
+          "descripcion": "SPEI RECIBIDOBANAMEX 0198960041 002 0160925Transferencia interbancaria 00002225905329870828 085903297440325953 BRUNO ADAIR,HERNANDEZ/VALDOVINO",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 3000.0,
+          "saldo_operacion": 3109.89,
+          "saldo_liquidacion": 1959.89
+        },
+        {
+          "fecha_oper": "17/SEP",
+          "fecha_liq": "17/SEP",
+          "descripcion": "RETIRO CAJERO AUTOMATICO",
+          "referencia": "******5656 SEP17 12:14 BBVA A820 FOLIO:9133",
+          "cargos": 3000.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "17/SEP",
+          "fecha_liq": "17/SEP",
+          "descripcion": "DEPOSITO EFECTIVO PRACTIC",
+          "referencia": "******7808 SEP17 14:50 PRAC D220 FOLIO:6905",
+          "cargos": 0.0,
+          "abonos": 300.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "17/SEP",
+          "fecha_liq": "17/SEP",
+          "descripcion": "CARGO META CARGO METAS2326107834",
+          "referencia": "",
+          "cargos": 5.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "17/SEP",
+          "fecha_liq": "16/SEP",
+          "descripcion": "ESTACION GAS POMPA",
+          "referencia": "******5656 RFC: CCP 981009LH7 10:02 AUT: 365697",
+          "cargos": 50.0,
+          "abonos": 0.0,
+          "saldo_operacion": 354.89,
+          "saldo_liquidacion": 354.89
+        },
+        {
+          "fecha_oper": "18/SEP",
+          "fecha_liq": "18/SEP",
+          "descripcion": "SPEI ENVIADO NU MEXICO 0066383061 638 0109250gasto 00638180000157531138 MBAN01002509180066383061 Bruno Adair",
+          "referencia": "",
+          "cargos": 300.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "18/SEP",
+          "fecha_liq": "18/SEP",
+          "descripcion": "CARGO META CARGO METAS2326107834",
+          "referencia": "",
+          "cargos": 5.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "18/SEP",
+          "fecha_liq": "18/SEP",
+          "descripcion": "DEPOSITO EFECTIVO PRACTIC",
+          "referencia": "******7808 SEP18 16:48 PRAC D221 FOLIO:9231",
+          "cargos": 0.0,
+          "abonos": 300.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "18/SEP",
+          "fecha_liq": "18/SEP",
+          "descripcion": "CARGO META CARGO METAS2326107834",
+          "referencia": "",
+          "cargos": 5.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "18/SEP",
+          "fecha_liq": "18/SEP",
+          "descripcion": "CARGO META 1 Trp redondeo de tarjeta0488677808",
+          "referencia": "",
+          "cargos": 10.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "18/SEP",
+          "fecha_liq": "18/SEP",
+          "descripcion": "ABONO META 1 Trp redondeo de tarjeta0488677808",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 10.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "18/SEP",
+          "fecha_liq": "18/SEP",
+          "descripcion": "SPEI ENVIADO AZTECA 0069520926 127 0109250pago 00127180013720906630 MBAN01002509190069520926 Cynthia Yarazet",
+          "referencia": "",
+          "cargos": 1.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "18/SEP",
+          "fecha_liq": "18/SEP",
+          "descripcion": "SPEI ENVIADO AZTECA 0069525102 127 0109250pago 00127180013720906630 MBAN01002509190069525102 Cynthia Yarazet",
+          "referencia": "",
+          "cargos": 306.0,
+          "abonos": 0.0,
+          "saldo_operacion": 37.89,
+          "saldo_liquidacion": 37.89
+        },
+        {
+          "fecha_oper": "19/SEP",
+          "fecha_liq": "19/SEP",
+          "descripcion": "CARGO META CARGO METAS2326107834",
+          "referencia": "",
+          "cargos": 5.0,
+          "abonos": 0.0,
+          "saldo_operacion": 32.89,
+          "saldo_liquidacion": 32.89
+        },
+        {
+          "fecha_oper": "20/SEP",
+          "fecha_liq": "22/SEP",
+          "descripcion": "PAGO CUENTA DE TERCERO 0050421156 BNET 1115207142 luna",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 150.0,
+          "saldo_operacion": 182.89,
+          "saldo_liquidacion": 32.89
+        }
+      ]
+    }
+  ]
+}

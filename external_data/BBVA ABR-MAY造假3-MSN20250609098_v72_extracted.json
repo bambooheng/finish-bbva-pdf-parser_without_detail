@@ -1,0 +1,484 @@
+{
+  "source_file": "BBVA ABR-MAY造假3-MSN20250609098",
+  "document_type": "B",
+  "total_pages": 1,
+  "total_rows": 47,
+  "sessions": 1,
+  "pages": [
+    {
+      "page": 0,
+      "rows": [
+        {
+          "fecha_oper": "13/ABR",
+          "fecha_liq": "14/ABR",
+          "descripcion": "SPEI RECIBIDOAZTECA 2247230acta 00127180013692821607 250414070826764002I JIMENEZ FERNANDEZ OFELIA ALEJANDRA",
+          "referencia": "Referencia 0182019749 127",
+          "cargos": 0.0,
+          "abonos": 1000.0,
+          "saldo_operacion": 2421.23,
+          "saldo_liquidacion": 1421.23
+        },
+        {
+          "fecha_oper": "15/ABR",
+          "fecha_liq": "15/ABR",
+          "descripcion": "SPEI ENVIADO Mercado Pago 0903250tacos 00722969010852750496 MBAN01002504160090839425 Oscar Quiroz",
+          "referencia": "Referencia 0090839425 722",
+          "cargos": 111.0,
+          "abonos": 0.0,
+          "saldo_operacion": 2310.23,
+          "saldo_liquidacion": 1898.23
+        },
+        {
+          "fecha_oper": "16/ABR",
+          "fecha_liq": "16/ABR",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1533862302 compra",
+          "referencia": "Referencia 3790960813",
+          "cargos": 66.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "16/ABR",
+          "fecha_liq": "16/ABR",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1513464829 viaje",
+          "referencia": "Referencia 3813796279",
+          "cargos": 50.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "16/ABR",
+          "fecha_liq": "16/ABR",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1540109476 viaje",
+          "referencia": "Referencia 3819252455",
+          "cargos": 50.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "16/ABR",
+          "fecha_liq": "16/ABR",
+          "descripcion": "SPEI RECIBIDOSANTANDER 8358522COMPRA MERCA 00014180569180292305 2025041640014TRAP0020431631810 ELI RAZIEL GUZMAN GARCIA",
+          "referencia": "Referencia 0104149655 014",
+          "cargos": 0.0,
+          "abonos": 385.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "16/ABR",
+          "fecha_liq": "16/ABR",
+          "descripcion": "SPEI RECIBIDOSANTANDER 7887701COMPRA 00014180569180292305 2025041640014BMOV0020432106910 ELI RAZIEL GUZMAN GARCIA",
+          "referencia": "Referencia 0104223275 014",
+          "cargos": 0.0,
+          "abonos": 174.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "16/ABR",
+          "fecha_liq": "16/ABR",
+          "descripcion": "SPEI RECIBIDOSANTANDER 6106997COMPLETA 00014180569180292305 2025041640014BMOV0020432161520 ELI RAZIEL GUZMAN GARCIA",
+          "referencia": "Referencia 0104231055 014",
+          "cargos": 0.0,
+          "abonos": 2.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "16/ABR",
+          "fecha_liq": "15/ABR",
+          "descripcion": "CINEMEX TECAMAC RFC: OCI 970818KX9 13:02 AUT: 068400",
+          "referencia": "Referencia ******4723",
+          "cargos": 194.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "16/ABR",
+          "fecha_liq": "15/ABR",
+          "descripcion": "ENTRET TOP JUMP RFC: TJO 181220RX8 16:55 AUT: 634367",
+          "referencia": "Referencia ******4723",
+          "cargos": 218.0,
+          "abonos": 0.0,
+          "saldo_operacion": 2293.23,
+          "saldo_liquidacion": 1732.2
+        },
+        {
+          "fecha_oper": "17/ABR",
+          "fecha_liq": "21/ABR",
+          "descripcion": "SPEI ENVIADO Mercado Pago 0903250compra 00722969010297468725 MBAN01002504210050088952 Ezequiel Quiroz",
+          "referencia": "Referencia 0050088952 722",
+          "cargos": 107.0,
+          "abonos": 0.0,
+          "saldo_operacion": 2186.23,
+          "saldo_liquidacion": 1732.2
+        },
+        {
+          "fecha_oper": "18/ABR",
+          "fecha_liq": "21/ABR",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 2961521195 Dimo-viaje",
+          "referencia": "Referencia 3968723337",
+          "cargos": 40.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "18/ABR",
+          "fecha_liq": "21/ABR",
+          "descripcion": "DEPOSITO DE TERCERO API APIC KUES0BB52EC21BF6FD",
+          "referencia": "Referencia CTOAPIC00000016",
+          "cargos": 0.0,
+          "abonos": 500.0,
+          "saldo_operacion": 2646.23,
+          "saldo_liquidacion": 1015.07
+        },
+        {
+          "fecha_oper": "20/ABR",
+          "fecha_liq": "21/ABR",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1557719361 Personal",
+          "referencia": "Referencia 4157352956",
+          "cargos": 0.0,
+          "abonos": 300.0,
+          "saldo_operacion": 2946.23,
+          "saldo_liquidacion": 1015.07
+        },
+        {
+          "fecha_oper": "21/ABR",
+          "fecha_liq": "16/ABR",
+          "descripcion": "MERCADO PAGO RFC: MAG 2105031W3 20:12 AUT: 849670",
+          "referencia": "Referencia ******7906",
+          "cargos": 561.03,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "21/ABR",
+          "fecha_liq": "18/ABR",
+          "descripcion": "CINEMEX TECAMAC RFC: OCI 970818KX9 12:52 AUT: 223109",
+          "referencia": "Referencia ******4723",
+          "cargos": 191.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "21/ABR",
+          "fecha_liq": "18/ABR",
+          "descripcion": "WAL MART MACRO PZA H CASH RFC: NWM 9709244W4 15:55 AUT: 262419",
+          "referencia": "Referencia ******4723",
+          "cargos": 526.13,
+          "abonos": 0.0,
+          "saldo_operacion": 1668.07,
+          "saldo_liquidacion": 87.29
+        },
+        {
+          "fecha_oper": "22/ABR",
+          "fecha_liq": "22/ABR",
+          "descripcion": "SPEI ENVIADO Mercado Pago 0903250Luis 00722969010622928160 MBAN01002504220066209187 Luis Alberto Fernandez Garcia",
+          "referencia": "Referencia 0066209187 722",
+          "cargos": 87.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "22/ABR",
+          "fecha_liq": "21/ABR",
+          "descripcion": "MI ATT A APP PS RFC: CNM 980114PI2 09:47 AUT: 762695",
+          "referencia": "Referencia ******7906",
+          "cargos": 1580.78,
+          "abonos": 0.0,
+          "saldo_operacion": 0.29,
+          "saldo_liquidacion": 0.29
+        },
+        {
+          "fecha_oper": "28/ABR",
+          "fecha_liq": "28/ABR",
+          "descripcion": "SPEI RECIBIDONU MEXICO 0280425Transferencia 00638180010143624887 NU381V8155AB8N6BPO6GAKATHQI7 LUIS ALBERTO FERNANDEZ GARCIA",
+          "referencia": "Referencia 0152917602 638",
+          "cargos": 0.0,
+          "abonos": 130.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "28/ABR",
+          "fecha_liq": "28/ABR",
+          "descripcion": "SPEI ENVIADO BANORTE 1204250EVEN 30 ABRIL AARON FDEZ 00072180006515343764 MBAN01002504280091589180 Abraham Lincoln SC",
+          "referencia": "Referencia 0091589180 072",
+          "cargos": 0.0,
+          "abonos": 50.0,
+          "saldo_operacion": 80.29,
+          "saldo_liquidacion": 80.29
+        },
+        {
+          "fecha_oper": "30/ABR",
+          "fecha_liq": "30/ABR",
+          "descripcion": "PAGO DE NOMINA PENSIONES BANCOMER SA DE CV GFB",
+          "referencia": "Referencia PA 4200104353",
+          "cargos": 0.0,
+          "abonos": 16000.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "30/ABR",
+          "fecha_liq": "30/ABR",
+          "descripcion": "KUESKI REF:FEGL8605250CKIAN6 CIE:1356976",
+          "referencia": "Referencia GUIA:5329186",
+          "cargos": 0.0,
+          "abonos": 591.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "30/ABR",
+          "fecha_liq": "02/MAY",
+          "descripcion": "SPEI ENVIADO BANORTE 1204250viaje 00004189143117077597 MBAN01002505020053783314 Fernando Trejo",
+          "referencia": "Referencia 0053783314 072",
+          "cargos": 0.0,
+          "abonos": 250.0,
+          "saldo_operacion": 4072.06,
+          "saldo_liquidacion": 4322.06
+        },
+        {
+          "fecha_oper": "01/MAY",
+          "fecha_liq": "02/MAY",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1526105946 cosmopol",
+          "referencia": "Referencia 5099593945",
+          "cargos": 0.0,
+          "abonos": 140.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "01/MAY",
+          "fecha_liq": "02/MAY",
+          "descripcion": "RETIRO CAJERO AUTOMATICO MAY01 15:39 BBVA 8144 FOLIO:6589",
+          "referencia": "Referencia ******4723",
+          "cargos": 0.0,
+          "abonos": 500.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "01/MAY",
+          "fecha_liq": "02/MAY",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1512099106 cel lore",
+          "referencia": "Referencia 5128382381",
+          "cargos": 0.0,
+          "abonos": 770.0,
+          "saldo_operacion": 4202.06,
+          "saldo_liquidacion": 2694.86
+        },
+        {
+          "fecha_oper": "02/MAY",
+          "fecha_liq": "02/MAY",
+          "descripcion": "SPEI ENVIADO BANORTE 1204250colegMayo25AaronFdz5toAzul 00072180006515343764 MBAN01002505020059908556 Abraham Lincoln SC",
+          "referencia": "Referencia 0059908556 072",
+          "cargos": 2100.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "02/MAY",
+          "fecha_liq": "02/MAY",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1557719361 gracias",
+          "referencia": "Referencia 5171355515",
+          "cargos": 300.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "02/MAY",
+          "fecha_liq": "01/MAY",
+          "descripcion": "10294 LEFTIES COSMOPOL RFC: BME 0004112J6 16:41 AUT: 267529",
+          "referencia": "Referencia ******4723",
+          "cargos": 333.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "02/MAY",
+          "fecha_liq": "01/MAY",
+          "descripcion": "TUNEL SPORT COSMOPOL RFC: TSP 1204177H5 17:02 AUT: 666756",
+          "referencia": "Referencia ******4723",
+          "cargos": 1294.2,
+          "abonos": 0.0,
+          "saldo_operacion": 174.86,
+          "saldo_liquidacion": 174.86
+        },
+        {
+          "fecha_oper": "05/MAY",
+          "fecha_liq": "05/MAY",
+          "descripcion": "SPEI ENVIADO STP 1204250compra 00646016206803523059 MBAN01002505050075899759 Ricardo Axel Guterrez Salinas",
+          "referencia": "Referencia 0075899759 646",
+          "cargos": 72.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "05/MAY",
+          "fecha_liq": "05/MAY",
+          "descripcion": "SPEI ENVIADO BANREGIO 1204250Pago para prestamo 00004741742908926382 MBAN01002505050076029132 Agustin del Moral Gar",
+          "referencia": "Referencia 0076029132 058",
+          "cargos": 89.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "05/MAY",
+          "fecha_liq": "05/MAY",
+          "descripcion": "DEPOSITO DE TERCERO API APIC KUES0BB045FB192B85",
+          "referencia": "Referencia CTOAPIC00000016",
+          "cargos": 0.0,
+          "abonos": 300.0,
+          "saldo_operacion": 313.86,
+          "saldo_liquidacion": 313.86
+        },
+        {
+          "fecha_oper": "06/MAY",
+          "fecha_liq": "06/MAY",
+          "descripcion": "SPEI ENVIADO AZTECA 1204250viaje y caseta 00005512382423245648 MBAN01002505060078195152 Jhonatan gonzalez",
+          "referencia": "Referencia 0078195152 127",
+          "cargos": 305.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "06/MAY",
+          "fecha_liq": "06/MAY",
+          "descripcion": "SPEI RECIBIDOARCUS FI 2468255G2025051919847760942727168 00706180314184605587 20250506907062PBT2XZX6CS1NCWZ RAINBOW BRIDGE TECHNOLOGY S.A. de C.V.",
+          "referencia": "Referencia 0196851243 706",
+          "cargos": 0.0,
+          "abonos": 325.0,
+          "saldo_operacion": 333.86,
+          "saldo_liquidacion": 333.86
+        },
+        {
+          "fecha_oper": "07/MAY",
+          "fecha_liq": "07/MAY",
+          "descripcion": "SPEI RECIBIDOSTP 0986990Payout 00646180547300000000 zj2ybdwtus9i LENDTOP SA DE CV",
+          "referencia": "Referencia 0100310670 646",
+          "cargos": 0.0,
+          "abonos": 400.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "07/MAY",
+          "fecha_liq": "07/MAY",
+          "descripcion": "SPEI ENVIADO ARCUS FI 1204250 1311907957 00706969140639034894 MBAN01002505070083170796 Unlimit",
+          "referencia": "Referencia 0083170796 706",
+          "cargos": 463.0,
+          "abonos": 0.0,
+          "saldo_operacion": 270.86,
+          "saldo_liquidacion": 270.86
+        },
+        {
+          "fecha_oper": "08/MAY",
+          "fecha_liq": "08/MAY",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1533862302 retiro",
+          "referencia": "Referencia 5706375926",
+          "cargos": 212.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "08/MAY",
+          "fecha_liq": "08/MAY",
+          "descripcion": "SPEI RECIBIDOSTP 0485872Verification 00646180547300000000 vd73umjakw98 LENDTOP SA DE CV",
+          "referencia": "Referencia 0108698442 646",
+          "cargos": 0.0,
+          "abonos": 0.01,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "08/MAY",
+          "fecha_liq": "08/MAY",
+          "descripcion": "SPEI RECIBIDOSTP 0331431Payout 00646180547300000000 9xnru5ojdqec LENDTOP SA DE CV",
+          "referencia": "Referencia 0108728490 646",
+          "cargos": 0.0,
+          "abonos": 600.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "08/MAY",
+          "fecha_liq": "09/MAY",
+          "descripcion": "RETIRO CAJERO AUTOMATICO MAY08 22:34 BBVA B023 FOLIO:1009",
+          "referencia": "Referencia ******4723",
+          "cargos": 600.0,
+          "abonos": 0.0,
+          "saldo_operacion": 58.87,
+          "saldo_liquidacion": 658.87
+        },
+        {
+          "fecha_oper": "09/MAY",
+          "fecha_liq": "09/MAY",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1521680606 Pago",
+          "referencia": "Referencia 5767222428",
+          "cargos": 0.0,
+          "abonos": 1500.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "09/MAY",
+          "fecha_liq": "09/MAY",
+          "descripcion": "PAGO CUENTA DE TERCERO BNET 1101710036 Inna",
+          "referencia": "Referencia 5785616010",
+          "cargos": 0.0,
+          "abonos": 500.0,
+          "saldo_operacion": 2058.87,
+          "saldo_liquidacion": 1088.87
+        },
+        {
+          "fecha_oper": "10/MAY",
+          "fecha_liq": "12/MAY",
+          "descripcion": "SPEI ENVIADO ARCUS FI 1204250Pago 00706969113070779761 MBAN01002505120096348843 Bee credito",
+          "referencia": "Referencia 0096348843 706",
+          "cargos": 500.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "10/MAY",
+          "fecha_liq": "12/MAY",
+          "descripcion": "KUESKI REF:FEGL8605250CKIAN6 CIE:1356976",
+          "referencia": "Referencia GUIA:9531202",
+          "cargos": 323.0,
+          "abonos": 0.0,
+          "saldo_operacion": 1235.87,
+          "saldo_liquidacion": 1088.87
+        },
+        {
+          "fecha_oper": "12/MAY",
+          "fecha_liq": "09/MAY",
+          "descripcion": "DTM TEPOTZOTLAN RFC: DTM 220801HV9 08:26 AUT: 671294",
+          "referencia": "Referencia ******4723",
+          "cargos": 970.0,
+          "abonos": 0.0,
+          "saldo_operacion": 265.87,
+          "saldo_liquidacion": 265.87
+        }
+      ]
+    }
+  ]
+}

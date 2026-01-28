@@ -52,6 +52,7 @@ def inject_external_transactions_to_output(
     # Pop existing footer fields if they exist
     total_movimientos = summary.pop("total_movimientos", None)
     apartados_vigentes = summary.pop("apartados_vigentes", None)
+    cuadro_resumen = summary.pop("cuadro_resumen", None)
     
     # Insert transaction_details (will be appended at current end)
     summary["transaction_details"] = {
@@ -68,6 +69,10 @@ def inject_external_transactions_to_output(
         summary["total_movimientos"] = total_movimientos
     if apartados_vigentes:
         summary["apartados_vigentes"] = apartados_vigentes
+        
+    # Re-insert Cuadro Resumen at the VERY END (per user request)
+    if cuadro_resumen:
+        summary["cuadro_resumen"] = cuadro_resumen
     
     return output_data
 

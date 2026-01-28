@@ -1066,7 +1066,7 @@ class DataExtractor:
                         cuadro_resumen.append(item)
                     return cuadro_resumen
 
-    def _reconstruct_page_rows(self, page_data: Dict[str, Any]) -> List[str]:
+    def _reconstruct_page_rows(self, page_data: Dict[str, Any], y_tolerance: float = 10) -> List[str]:
         """
         Reconstruct strings component by component based on visual Y-alignment.
         Solves issue where text blocks are columnar or out of order.
@@ -1107,7 +1107,8 @@ class DataExtractor:
         
         # Tolerance increased to 10 (approx 1/3 to 1/2 line height) to match misaligned columns
         # Previous value of 5 caused splitting of "Concepto" and "Cantidad" blocks
-        tolerance = 10 
+        # Tolerance used for clustering
+        tolerance = y_tolerance 
         
         for line in all_lines[1:]:
             if abs(line["y_center"] - row_y) < tolerance:
@@ -1198,50 +1199,51 @@ class DataExtractor:
                          continue
 
                     # Parse Row: Concepto | Cantidad | % | Columna
-                    # Regex strategy: Look for the structured suffix
-                    # Example: "Saldo Inicial 12,383.20 5.29% A"
-                    # Regex: [Concepto] [Amount] [Pct] [Col]
+                    # Regex strategy: Look for the structured pattern ANYWHERE in the line
+                    # This handles "Chart Noise" on the right side (e.g., "( + ) A")
+                    # Pattern: [Amount] [Space] [Percent] [Space] [ColumnChar]
                     
                     import re
-                    # Match end of line: Amount Pct Col
-                    # Amount: 12,383.20 or -67,300.00
-                    # Pct: 5.29% or -28.78% or 100.00%
-                    # Col: A, B, C... or single char/word
                     
-                    # 1. Extract Column (Last word)
-                    col_match = re.search(r'\s+([A-Z0-9]+)$', clean_line)
-                    if col_match:
-                        columna = col_match.group(1)
-                        remaining = clean_line[:col_match.start()].strip()
-                        
-                        # 2. Extract Percentage
-                        pct_match = re.search(r'\s+([-\d\.]+%)\s*$', remaining)
-                        if pct_match:
-                            pct = pct_match.group(1)
-                            remaining = remaining[:pct_match.start()].strip()
-                            
-                            # 3. Extract Amount
-                            amt_match = re.search(r'\s+([-\d,]+\.\d{2})\s*$', remaining)
-                            if amt_match:
-                                amount = amt_match.group(1)
-                                concepto = remaining[:amt_match.start()].strip()
-                                
-                                item = {
-                                    "Concepto": concepto,
-                                    "Cantidad": amount,
-                                    "Porcentaje": pct,
-                                    "Columna": columna
-                                }
-                                cuadro_resumen.append(item)
-                                print(f"  -> Extracted: {item}")
-                                continue
+                    # Regex:
+                    # Amount: 12,383.20 (allow spaces: 4, 884. 42)
+                    # Percentage: 5.29% (allow spaces: 100. 00 %)
+                    # Column: Single Char A-Z or Digit
+                    # We terminate the Column match immediately to avoid eating into chart labels
                     
-                    # If regex failed, check if it's the "Saldo Final" row which might look differnet?
-                    # Screenshot: "Saldo Final 106,382.65 45.50% G" - Same format.
+                    # Construction:
+                    # Group 1 (Amount): [-\d\.,\s]+\d (Ends with digit)
+                    # Group 2 (Pct):    [-\d\.,\s]+%
+                    # Group 3 (Col):    [A-Z0-9]
                     
-                    # Fallback: maybe spaces are weird?
-                    # Just store raw if we are sure we are in table
-                    # cuadro_resumen.append({"raw_row": clean_line})
+                    pattern = r'(?P<amount>[-\d\.,\s]+\d)\s+(?P<pct>[-\d\.,\s]+%)\s+(?P<col>[A-Z0-9])'
+                    
+                    match = re.search(pattern, clean_line)
+                    if match:
+                         # Verify Amount is mostly digits/punctuation
+                         raw_amount = match.group("amount")
+                         if any(c.isdigit() for c in raw_amount):
+                             # Extract values
+                             amount = raw_amount.replace(" ", "")
+                             pct = match.group("pct").replace(" ", "")
+                             columna = match.group("col")
+                             
+                             # Concepto is everything before the match
+                             concepto = clean_line[:match.start()].strip()
+                             
+                             item = {
+                                 "Concepto": concepto,
+                                 "Cantidad": amount,
+                                 "Porcentaje": pct,
+                                 "Columna": columna
+                             }
+                             cuadro_resumen.append(item)
+                             print(f"  -> Extracted (Pattern): {item}")
+                             continue
+
+                    print(f"  -> Failed to parse row: '{clean_line}'")
+                    # Fallback: if strict parsing failed, retain raw row
+                    cuadro_resumen.append({"raw_row": clean_line})
 
             if cuadro_resumen:
                 return cuadro_resumen
@@ -1347,27 +1349,31 @@ class DataExtractor:
             if "Comportamiento" in text:
                 # 使用原文作为key
                 # Saldo Anterior
-                match_sa = re.search(r"Saldo Anterior\s*\n\s*([0-9,]+\.?\d*)", text)
-                if match_sa: data["Saldo Anterior"] = match_sa.group(1)  # 保留逗号
+                match_sa = re.search(r"Saldo Anterior\s*(?:\(+\))?\s*(?:\n|:)?\s*([0-9,]+\.?\d*)", text)
+                if match_sa: data["Saldo Anterior"] = match_sa.group(1) 
                 
-                # Saldo Final
-                match_sf = re.search(r"Saldo Final\s*\n\s*([0-9,]+\.?\d*)", text)
-                if match_sf: data["Saldo Final"] = match_sf.group(1)  # 保留逗号
+                # Saldo Final (Problem 1 Fix)
+                # Matches "Saldo Final" or "Saldo Final (+)" followed by optional colon/newline and amount
+                # Fixed regex: correctly escape parens and plus: (?:\(\+\))?
+                # Also allow extra spaces inside parens like ( + )
+                match_sf = re.search(r"Saldo Final\s*(?:\([\+\s]+\))?\s*(?:\n|:)?\s*([0-9,]+\.?\d*)", text)
+                if match_sf: data["Saldo Final"] = match_sf.group(1)
                 
                 # Depósitos / Abonos (+) - 合并格式为"数量 空格 金额"
-                match_dep = re.search(r"Depósitos / Abonos \(\+\)\s*\n\s*(\d+)\s*\n\s*([0-9,]+\.?\d*)", text)
+                # Regex allows optional (+) and newlines
+                match_dep = re.search(r"Depósitos / Abonos (?:\(\+\))?\s*\n\s*(\d+)\s*\n\s*([0-9,]+\.?\d*)", text)
                 if match_dep: 
                     data["Depósitos / Abonos (+)"] = f"{match_dep.group(1)}  {match_dep.group(2)}"
                 
                 # Retiros / Cargos (-) - 合并格式
-                match_ret = re.search(r"Retiros / Cargos \(-\)\s*\n\s*(\d+)\s*\n\s*([0-9,]+\.?\d*)", text)
+                match_ret = re.search(r"Retiros / Cargos (?:\(-\))?\s*\n\s*(\d+)\s*\n\s*([0-9,]+\.?\d*)", text)
                 if match_ret:
                     data["Retiros / Cargos (-)"] = f"{match_ret.group(1)}  {match_ret.group(2)}"
                 
                 # Saldo Promedio Mínimo Mensual
-                match_min = re.search(r"Saldo Promedio Mínimo Mensual:\s*\n\s*([0-9,]+\.?\d*)", text)
+                match_min = re.search(r"Saldo Promedio Mínimo Mensual(?::)?\s*(?:\n)?\s*([0-9,]+\.?\d*)", text)
                 if match_min:
-                    data["Saldo Promedio Mínimo Mensual"] = match_min.group(1)  # 保留逗号
+                    data["Saldo Promedio Mínimo Mensual"] = match_min.group(1)
                 
                 if data:
                     return data
@@ -1636,7 +1642,12 @@ class DataExtractor:
         
         patterns = {
             "No. de Cuenta": r"No\.\s+de\s+Cuenta\s+([\d]+)",
-            "No. de Cliente": r"No\.\s+de\s+Cliente\s+([\d]+)",
+            # Relaxed regex:
+            # 1. "No." can be "No", "No.", "N."
+            # 2. Separator can be space, dot, colon
+            # 3. Value can contain spaces/dots/dashes (e.g. "B 023 7524")
+            # CRITICAL FIX: Use [ \t] instead of \s to avoid matching newlines and eating next row (RFC)
+            "No. de Cliente": r"No[\.\s]*de\s+Cliente[:\.\s]*([A-Z0-9]+(?:[ \t\.\-][A-Z0-9]+)*)",
             "PAGINA": r"PAGINA\s+(\d+\s*/\s*\d+)"
         }
         
@@ -1691,7 +1702,8 @@ class DataExtractor:
             "Periodo": r"Periodo\s+DEL\s+([\d/]+)\s+AL\s+([\d/]+)",
             "Fecha de Corte": r"Fecha\s+de\s+Corte\s+([\d/]+)",
             "No. de Cuenta": r"No\.\s+de\s+Cuenta\s+([\d]+)",
-            "No. de Cliente": r"No\.\s+de\s+Cliente\s+([\d]+)",
+            # Updated to robust regex (alphanumeric, no newlines)
+            "No. de Cliente": r"No[\.\s]*de\s+Cliente[:\.\s]*([A-Z0-9]+(?:[ \t\.\-][A-Z0-9]+)*)",
             "R.F.C": r"R\.F\.C\s+([A-Z0-9]+)",
             "No. Cuenta CLABE": r"No\.\s+Cuenta\s+CLABE\s+([\d\s]+)"
         }
@@ -1847,28 +1859,136 @@ class DataExtractor:
             
             # 提取 "Otros productos incluidos en el estado de cuenta (inversiones)" 表格
             if "Otros productos incluidos" in text or "inversiones" in text:
-                # 提取表格字段 - 使用原文key
-                table_data = {}
-                table_fields = ["Contrato", "Producto", "Tasa de Interés anual", 
-                               "GAT Nominal", "GAT Real", "Total de comisiones"]
+                inv_table = []
                 
-                for field in table_fields:
-                    # 查找字段后的值（通常是N/A或具体值）
-                    pattern = re.escape(field) + r"\s+(N/A|[\d,\.]+)"
-                    match = re.search(pattern, text, re.IGNORECASE)
-                    if match:
-                        table_data[field] = match.group(1)
-                    else:
-                        # 如果没找到，默认为N/A
-                        table_data[field] = "N/A"
-                
-                if table_data:
-                    data["Otros productos incluidos en el estado de cuenta (inversiones)"] = table_data
+                # Strategy: Try strict tolerance (5) first for dense tables. 
+                # If that fails (returns empty), try standard tolerance (10) for loose tables.
+                for tolerance in [5, 10]:
+                    if inv_table: 
+                        break # Stop if we successfully extracted data
+                        
+                    # Use robust visual row reconstruction
+                    rows = self._reconstruct_page_rows(page, y_tolerance=tolerance)
+                    in_table = False
+                    
+                    for line in rows:
+                        clean_line = line.strip().upper()
+                        
+                        # Table Start Trigger: Headers
+                        if "CONTRATO" in clean_line and "PRODUCTO" in clean_line:
+                            in_table = True
+                            continue
+                        # Alternative Trigger
+                        if "CONTRATO" in clean_line and "TASA" in clean_line:
+                            in_table = True
+                            continue
+                            
+                        if in_table:
+                            # Stop at next section header or end triggers
+                            if "TOTAL DE APARTADOS" in clean_line:
+                                break
+                            if "SALDO GLOBAL" in clean_line: # Stop if we hit the footer amount
+                                break
+                            if "DETALLE DE MOVIMIENTOS" in clean_line:
+                                break
+                            if "OPER" in clean_line and "LIQ" in clean_line: # Transaction header
+                                break
+                                
+                            # Filter Headers (Redundant check but safe)
+                            if "CONTRATO" in clean_line or "GAT RELEASE" in clean_line or "ANTES DE IMPUESTOS" in clean_line:
+                                continue
+                            # Footer legal text
+                            if "GAT REAL ES EL RENDIMIENTO" in clean_line:
+                                continue
+                            
+                            # Parse Row Data
+                            tokens = line.split()
+                            if len(tokens) >= 3: 
+                                 # Heuristic: First token is Contrato
+                                 # MUST be digits or "N/A"
+                                 contrato = tokens[0]
+                                 
+                                 # Strict Validation
+                                 # Handle variations of N/A (e.g. N/A, NA, N.A.)
+                                 is_valid_contrato = contrato.isdigit() or "N/A" in contrato.upper() or contrato.upper() == "NA"
+                                 if not is_valid_contrato:
+                                     # This is the key fix: Skip any row where first col isn't ID or N/A
+                                     # This filters out "21/JUN", "BBVA", "Saldo", etc.
+                                     continue
+
+                                 # Last token is Total Comisiones (often N/A)
+                                 total_com = tokens[-1]
+                                 
+                                 # GAT Real (2nd last)
+                                 gat_real = tokens[-2]
+                                 
+                                 # GAT Nominal (3rd last)
+                                 gat_nom = tokens[-3]
+                                 
+                                 # Tasa (4th last) - Usually identifies itself with %
+                                 tasa = "N/A"
+                                 # Search for token containing % working backwards
+                                 tasa_idx = -1
+                                 for i in range(len(tokens)-4, 0, -1):
+                                     if "%" in tokens[i]:
+                                         tasa = tokens[i]
+                                         tasa_idx = i
+                                         break
+                                     if tokens[i] == "%":
+                                          tasa = "%"
+                                          tasa_idx = i
+                                          break
+                                 
+                                 # Product is everything between Contrato and Tasa
+                                 producto = ""
+                                 if tasa_idx != -1:
+                                     products_tokens = tokens[1:tasa_idx]
+                                     producto = " ".join(products_tokens)
+                                 else:
+                                     # Fallback: tokens[1:-3]
+                                     parsed_mid = tokens[1:-3]
+                                     if parsed_mid and parsed_mid[0] == '%':
+                                          tasa = '%'
+                                          producto = "" # Empty
+                                     else:
+                                          producto = " ".join(parsed_mid)
+
+                                 item = {
+                                     "Contrato": contrato,
+                                     "Producto": producto,
+                                     "Tasa de Interés anual": tasa,
+                                     "GAT Nominal": gat_nom,
+                                     "GAT Real": gat_real,
+                                     "Total de comisiones": total_com
+                                 }
+                                 inv_table.append(item)
+
+                if inv_table:
+                    # Return as a dictionary wrapper to match schema but containing list
+                    # Schema says Dict[str, Any], so we can put a list inside
+                    data["Otros productos incluidos en el estado de cuenta (inversiones)"] = inv_table
             
-            # 提取 "Total de Apartados en Global"
-            match_total = re.search(r"Total\s+de\s+Apartados\s+en\s+Global\s*[:\s]*\$?\s*([\d\s,\.]+)", text, re.IGNORECASE)
-            if match_total:
-                # 保留原始格式
-                data["Total de Apartados en Global"] = f"$ {match_total.group(1).strip()}"
+            # 提取 "Total de Apartados" 和 "Saldo Global"
+            # Screenshot shows they are on separate lines:
+            # Total de Apartados       03
+            # Saldo Global             $ 26.00
+            
+            # 1. Total de Apartados
+            match_apartados = re.search(r"Total\s+de\s+Apartados(?!\s+en\s+Global)(?:\s+en\s+Global)?\s*[:\s]*(\d+)", text, re.IGNORECASE)
+            if match_apartados:
+                 data["Total de Apartados"] = match_apartados.group(1)
+
+            # 2. Saldo Global
+            # CRITICAL FIX: Use [ \t] instead of \s to avoid capturing newlines and values from subsequent lines
+            # Must capture ONLY on the same line as the label
+            match_global = re.search(r"Saldo\s+Global\s*[:\s]*\$?\s*([\d,\.]+(?:[ \t]+[\d,\.]+)*)", text, re.IGNORECASE)
+            if match_global:
+                 data["Saldo Global"] = f"$ {match_global.group(1).strip()}"
+            
+            # Fallback for old legacy format "Total de Apartados en Global" if above missed
+            if "Total de Apartados" not in data and "Saldo Global" not in data:
+                 match_total = re.search(r"Total\s+de\s+Apartados\s+en\s+Global\s*[:\s]*\$?\s*([\d\s,\.]+)", text, re.IGNORECASE)
+                 if match_total:
+                     data["Total de Apartados en Global"] = f"$ {match_total.group(1).strip()}"
         
         return data if data else None
