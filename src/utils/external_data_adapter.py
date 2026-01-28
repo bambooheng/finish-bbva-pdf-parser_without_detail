@@ -106,3 +106,135 @@ def validate_external_transaction_format(external_data: Dict[str, Any]) -> bool:
             return False
     
     return True
+def filter_transactions_by_period(
+    external_data: Dict[str, Any],
+    metadata: Dict[str, Any]
+) -> Dict[str, Any]:
+    """
+    Filter external transactions to include only those falling within the document's period.
+    Used for multi-statement PDFs where we split extraction but have a single external transaction file.
+    
+    Args:
+        external_data: Full external transaction data
+        metadata: Extracted metadata from the current sub-document (containing period info)
+        
+    Returns:
+        Filtered external transaction data structure
+    """
+    import copy
+    from datetime import datetime
+    
+    # Clone to avoid mutating original
+    filtered_data = copy.deepcopy(external_data)
+    
+    # Extract period from metadata
+    period_start = metadata.get("period_start")
+    period_end = metadata.get("period_end")
+    
+    if not period_start or not period_end:
+        print("Warning: No period found in metadata, including ALL transactions")
+        return filtered_data
+        
+    print(f"Filtering transactions for period: {period_start} to {period_end}")
+    
+    # Helper to parse dates
+    def parse_date(date_obj):
+        if isinstance(date_obj, str):
+            # Try ISO format YYYY-MM-DD
+            try:
+                return datetime.strptime(date_obj, "%Y-%m-%d").date()
+            except ValueError:
+                return None
+        return date_obj # Assume it's already a date object if not string? Or risky.
+        
+    start_dt = parse_date(period_start)
+    end_dt = parse_date(period_end)
+    
+    if not start_dt or not end_dt:
+        print("Warning: Could not parse period dates, including ALL transactions")
+        return filtered_data
+
+    # Filter Logic
+    # External data structure: pages -> rows -> fecha_oper (DD/MMM) or fecha_oper_complete (YYYY-MM-DD)
+    total_included = 0
+    total_excluded = 0
+    
+    filtered_pages = []
+    
+    # Helper to parse fecha_oper like "05/JUN" to full date using period year
+    def parse_partial_date(fecha_oper_str, period_year_start, period_year_end):
+        """Parse DD/MMM format to full date using period context."""
+        if not fecha_oper_str:
+            return None
+        
+        # Month name mapping (Spanish)
+        month_map = {
+            'ENE': 1, 'FEB': 2, 'MAR': 3, 'ABR': 4, 'MAY': 5, 'JUN': 6,
+            'JUL': 7, 'AGO': 8, 'SEP': 9, 'OCT': 10, 'NOV': 11, 'DIC': 12
+        }
+        
+        # Parse DD/MMM format
+        parts = fecha_oper_str.split('/')
+        if len(parts) != 2:
+            return None
+        
+        try:
+            day = int(parts[0])
+            month_abbr = parts[1].upper()
+            month = month_map.get(month_abbr)
+            
+            if not month:
+                return None
+            
+            # Determine year: if month >= start_month, use start year; else use end year
+            start_month = start_dt.month
+            
+            if month >= start_month:
+                year = period_year_start
+            else:
+                year = period_year_end
+            
+            from datetime import datetime
+            return datetime(year, month, day).date()
+        except (ValueError, AttributeError):
+            return None
+    
+    period_year_start = start_dt.year if start_dt else None
+    period_year_end = end_dt.year if end_dt else None
+    
+    for page in filtered_data.get("pages", []):
+        new_rows = []
+        for row in page.get("rows", []):
+            # Try fecha_oper_complete first (full ISO date)
+            fecha_oper_str = row.get("fecha_oper_complete", "")
+            
+            txn_date = None
+            if fecha_oper_str:
+                txn_date = parse_date(fecha_oper_str)
+            
+            # Fallback: use fecha_oper (DD/MMM) with period year context
+            if not txn_date and period_year_start and period_year_end:
+                fecha_oper_partial = row.get("fecha_oper", "")
+                if fecha_oper_partial:
+                    txn_date = parse_partial_date(fecha_oper_partial, period_year_start, period_year_end)
+            
+            if txn_date:
+                if start_dt <= txn_date <= end_dt:
+                    new_rows.append(row)
+                    total_included += 1
+                else:
+                    total_excluded += 1
+            else:
+                # If no date found, exclude it (safer than including)
+                total_excluded += 1
+        
+        # Only keep page if it has relevant rows
+        if new_rows:
+            page["rows"] = new_rows
+            filtered_pages.append(page)
+            
+    filtered_data["pages"] = filtered_pages
+    filtered_data["total_rows"] = total_included
+    
+    print(f"Transaction Filtering: Included {total_included}, Excluded {total_excluded}")
+    return filtered_data

@@ -1,0 +1,354 @@
+{
+  "source_file": "MSN20251028359银行流水1",
+  "document_type": "A",
+  "total_pages": 7,
+  "total_rows": 34,
+  "sessions": 0,
+  "pages": [
+    {
+      "page": 0,
+      "rows": [
+        {
+          "fecha_oper": "03/JUL",
+          "fecha_liq": "01/JUL",
+          "descripcion": "SERVICIOSMODERNOSJILOT",
+          "referencia": "******2410 RFC: SMJ 0101158R6 18:31 AUT: 097247",
+          "cargos": 1676.47,
+          "abonos": 0.0,
+          "saldo_operacion": 160868.01,
+          "saldo_liquidacion": 160868.01
+        },
+        {
+          "fecha_oper": "05/JUL",
+          "fecha_liq": "07/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO 0060782423 BNET 0460107182 Silicones",
+          "referencia": "",
+          "cargos": 16182.0,
+          "abonos": 0.0,
+          "saldo_operacion": 144686.01,
+          "saldo_liquidacion": 159494.47
+        },
+        {
+          "fecha_oper": "07/JUL",
+          "fecha_liq": "04/JUL",
+          "descripcion": "SERV DEL CANTABRICO",
+          "referencia": "******2410 RFC: SCA 8903139X7 11:04 AUT: 0CRV8T",
+          "cargos": 1373.54,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "07/JUL",
+          "fecha_liq": "07/JUL",
+          "descripcion": "SPEI ENVIADO SANTANDER 0033484832 014 0707250Herramientas 00014180655107788777 BNET01002507070033484832 HERRAMIENTAS JK",
+          "referencia": "",
+          "cargos": 8725.74,
+          "abonos": 0.0,
+          "saldo_operacion": 134586.73,
+          "saldo_liquidacion": 133082.8
+        },
+        {
+          "fecha_oper": "08/JUL",
+          "fecha_liq": "07/JUL",
+          "descripcion": "BP ORQUIDEA",
+          "referencia": "******2410 RFC: BES 160503J91 18:02 AUT: 198LEW",
+          "cargos": 1503.93,
+          "abonos": 0.0,
+          "saldo_operacion": 133082.8,
+          "saldo_liquidacion": 133082.8
+        },
+        {
+          "fecha_oper": "09/JUL",
+          "fecha_liq": "09/JUL",
+          "descripcion": "SERV BANCA INTERNET OPS SERV BCA IN",
+          "referencia": "",
+          "cargos": 15.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "09/JUL",
+          "fecha_liq": "09/JUL",
+          "descripcion": "IVA COM SERV BCA INTERNET IVA COM SERV BC",
+          "referencia": "",
+          "cargos": 2.4,
+          "abonos": 0.0,
+          "saldo_operacion": 133065.4,
+          "saldo_liquidacion": 133065.4
+        },
+        {
+          "fecha_oper": "10/JUL",
+          "fecha_liq": "10/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO 0097117530 BNET 0133529169 Pago diferen de fa",
+          "referencia": "",
+          "cargos": 1639.2,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "10/JUL",
+          "fecha_liq": "10/JUL",
+          "descripcion": "CABLE Y COMUNICACION17350 CCM010816UK4 Su Pago Gracias 3237419",
+          "referencia": "",
+          "cargos": 865.0,
+          "abonos": 0.0,
+          "saldo_operacion": 130561.2,
+          "saldo_liquidacion": 124221.09
+        },
+        {
+          "fecha_oper": "11/JUL",
+          "fecha_liq": "10/JUL",
+          "descripcion": "MERPAGO*NOHEMIIVONNEM",
+          "referencia": "******2410 RFC: MAG 2105031W3 14:56 AUT: 1WXIRC",
+          "cargos": 4400.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "11/JUL",
+          "fecha_liq": "10/JUL",
+          "descripcion": "SERVICIO PERIBAZ",
+          "referencia": "******2410 RFC: SPE 160517CC6 18:09 AUT: 1YVUNP",
+          "cargos": 1940.11,
+          "abonos": 0.0,
+          "saldo_operacion": 124221.09,
+          "saldo_liquidacion": 120575.53
+        },
+        {
+          "fecha_oper": "14/JUL",
+          "fecha_liq": "11/JUL",
+          "descripcion": "BP ORQUIDEA",
+          "referencia": "******2410 RFC: BES 160503J91 14:56 AUT: 655443",
+          "cargos": 1562.56,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "14/JUL",
+          "fecha_liq": "11/JUL",
+          "descripcion": "HOME DEPOT",
+          "referencia": "******2410 RFC: HDM 001017AS1 18:20 AUT: 674357",
+          "cargos": 2083.0,
+          "abonos": 0.0,
+          "saldo_operacion": 120575.53,
+          "saldo_liquidacion": 119142.68
+        },
+        {
+          "fecha_oper": "15/JUL",
+          "fecha_liq": "15/JUL",
+          "descripcion": "CHEQUE PAGADO NO.",
+          "referencia": "",
+          "cargos": 27970.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "15/JUL",
+          "fecha_liq": "14/JUL",
+          "descripcion": "GAS EL ONCE CUAMATLA",
+          "referencia": "******2410 RFC: SON 080721MN7 20:48 AUT: 736320",
+          "cargos": 1432.85,
+          "abonos": 0.0,
+          "saldo_operacion": 91172.68,
+          "saldo_liquidacion": 91172.68
+        },
+        {
+          "fecha_oper": "18/JUL",
+          "fecha_liq": "18/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO 0077413032 BNET 0107419155 EDWIN ANTONIO",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 13637.59,
+          "saldo_operacion": 104810.27,
+          "saldo_liquidacion": 103349.71
+        },
+        {
+          "fecha_oper": "21/JUL",
+          "fecha_liq": "18/JUL",
+          "descripcion": "GASOL SERV COMBUSA",
+          "referencia": "******2410 RFC: SCO 921014E83 14:32 AUT: 649781",
+          "cargos": 1460.56,
+          "abonos": 0.0,
+          "saldo_operacion": 103349.71,
+          "saldo_liquidacion": 95562.04
+        },
+        {
+          "fecha_oper": "22/JUL",
+          "fecha_liq": "21/JUL",
+          "descripcion": "MERCADO PAGO",
+          "referencia": "******2410 RFC: MAG 2105031W3 02:39 AUT: 029858",
+          "cargos": 7787.67,
+          "abonos": 0.0,
+          "saldo_operacion": 95562.04,
+          "saldo_liquidacion": 93844.87
+        },
+        {
+          "fecha_oper": "23/JUL",
+          "fecha_liq": "23/JUL",
+          "descripcion": "AT&T COMUNICACIONES 21433 CNM980114PI2 CARGO RECURRENTE ATT",
+          "referencia": "",
+          "cargos": 843.53,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "23/JUL",
+          "fecha_liq": "22/JUL",
+          "descripcion": "GASOL BP SAT SMA 2",
+          "referencia": "******2410 RFC: BES 160503J91 15:11 AUT: 162915",
+          "cargos": 1457.17,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "23/JUL",
+          "fecha_liq": "22/JUL",
+          "descripcion": "SERV DEL CANTABRICO",
+          "referencia": "******2410 RFC: SCA 8903139X7 20:20 AUT: 268176",
+          "cargos": 260.0,
+          "abonos": 0.0,
+          "saldo_operacion": 93001.34,
+          "saldo_liquidacion": 93001.34
+        },
+        {
+          "fecha_oper": "28/JUL",
+          "fecha_liq": "25/JUL",
+          "descripcion": "GAS EL ONCE CUAMATLA",
+          "referencia": "******2410 RFC: SON 080721MN7 09:56 AUT: 451806",
+          "cargos": 1485.73,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "28/JUL",
+          "fecha_liq": "25/JUL",
+          "descripcion": "SERV DEL CANTABRICO",
+          "referencia": "******2410 RFC: SCA 8903139X7 18:26 AUT: 814079",
+          "cargos": 1063.72,
+          "abonos": 0.0,
+          "saldo_operacion": 90451.89,
+          "saldo_liquidacion": 75163.31
+        },
+        {
+          "fecha_oper": "29/JUL",
+          "fecha_liq": "29/JUL",
+          "descripcion": "SPEI RECIBIDOSCOTIABANK 0133969035 044 0290725folio fiscal 09834FCA1873 00044180001059308175 2025072940044B36L0000389741682 ZAMUDIO MARTINEZ VICTOR HUGO",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 82941.29,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "29/JUL",
+          "fecha_liq": "29/JUL",
+          "descripcion": "SPEI RECIBIDOSCOTIABANK 0133977330 044 0290725folio fiscal C28F886E7A59 00044180001059308175 2025072940044B36L0000389742071 ZAMUDIO MARTINEZ VICTOR HUGO",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 63925.15,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "29/JUL",
+          "fecha_liq": "28/JUL",
+          "descripcion": "GAS EL ONCE CUAMATLA",
+          "referencia": "******2410 RFC: SON 080721MN7 15:54 AUT: 253165",
+          "cargos": 1392.58,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "29/JUL",
+          "fecha_liq": "28/JUL",
+          "descripcion": "LIVERPOOL SATELITE",
+          "referencia": "******2410 RFC: DLI 931201MI9 20:12 AUT: 676187",
+          "cargos": 1137.5,
+          "abonos": 0.0,
+          "saldo_operacion": 234788.25,
+          "saldo_liquidacion": 222029.75
+        },
+        {
+          "fecha_oper": "30/JUL",
+          "fecha_liq": "30/JUL",
+          "descripcion": "SPEI ENVIADO BANAMEX 0039320378 002 3107250Honorarios cp 00002180095683836100 BNET01002507310039320378 ERIKA FERNANDEZ CASILLAS",
+          "referencia": "",
+          "cargos": 3282.8,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "30/JUL",
+          "fecha_liq": "30/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO 0057618647 BNET 0444065476 Herramientas edw",
+          "referencia": "",
+          "cargos": 29045.33,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "30/JUL",
+          "fecha_liq": "28/JUL",
+          "descripcion": "S218 TM SATELITE NAUC",
+          "referencia": "******2410 RFC: TSC 1503258J2 21:50 AUT: 270651",
+          "cargos": 4398.0,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "30/JUL",
+          "fecha_liq": "28/JUL",
+          "descripcion": "AUTOZONE 7188",
+          "referencia": "******2410 RFC: AME 970109GW0 16:14 AUT: 583588",
+          "cargos": 8360.5,
+          "abonos": 0.0,
+          "saldo_operacion": 189701.62,
+          "saldo_liquidacion": 189701.62
+        },
+        {
+          "fecha_oper": "31/JUL",
+          "fecha_liq": "31/JUL",
+          "descripcion": "PAGO CUENTA DE TERCERO 0014028270 BNET 0197588054 Tornifac0415250",
+          "referencia": "",
+          "cargos": 63468.81,
+          "abonos": 0.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "31/JUL",
+          "fecha_liq": "31/JUL",
+          "descripcion": "DEPOSITO EN EFECTIVO 2051DEPOSITO",
+          "referencia": "",
+          "cargos": 0.0,
+          "abonos": 3580.0,
+          "saldo_operacion": 0.0,
+          "saldo_liquidacion": 0.0
+        },
+        {
+          "fecha_oper": "31/JUL",
+          "fecha_liq": "31/JUL",
+          "descripcion": "SPEI ENVIADO SANTANDER 0039712045 014 3107250Guantes 00014180655107788777 BNET01002507310039712045 HERRAMIENTAS JK",
+          "referencia": "",
+          "cargos": 4064.26,
+          "abonos": 0.0,
+          "saldo_operacion": 125748.55,
+          "saldo_liquidacion": 125748.55
+        }
+      ]
+    }
+  ]
+}

@@ -1598,24 +1598,37 @@ class DataExtractor:
         """Find statement period in OCR data."""
         # Look for date range patterns
         import re
-        date_pattern = r'(\d{1,2}/\d{1,2}(/\d{2,4})?)\s*[-–]\s*(\d{1,2}/\d{1,2}(/\d{2,4})?)'
+        
+        # Support multiple date range formats:
+        # 1. Spanish format: "DEL DD/MM/YYYY AL DD/MM/YYYY"
+        # 2. Simple dash format: "DD/MM/YYYY - DD/MM/YYYY" or "DD/MM - DD/MM"
+        date_patterns = [
+            # Spanish format (BBVA Mexico)
+            r'DEL\s+(\d{1,2}/\d{1,2}/\d{2,4})\s+AL\s+(\d{1,2}/\d{1,2}/\d{2,4})',
+            # Dash-separated with full year
+            r'(\d{1,2}/\d{1,2}/\d{2,4})\s*[-–]\s*(\d{1,2}/\d{1,2}/\d{2,4})',
+            # Dash-separated without year (backward compatibility)
+            r'(\d{1,2}/\d{1,2})\s*[-–]\s*(\d{1,2}/\d{1,2})'
+        ]
         
         for page_data in ocr_data.get("pages", []):
             for block in page_data.get("text_blocks", []):
                 text = block.get("text", "")
-                match = re.search(date_pattern, text)
-                if match:
-                    start_str = match.group(1)
-                    end_str = match.group(3)
-                    
-                    start_date = self._parse_date_field(start_str)
-                    end_date = self._parse_date_field(end_str)
-                    
-                    if start_date or end_date:
-                        return {
-                            "start": start_date,
-                            "end": end_date
-                        }
+                
+                for pattern in date_patterns:
+                    match = re.search(pattern, text, re.IGNORECASE)
+                    if match:
+                        start_str = match.group(1)
+                        end_str = match.group(2)
+                        
+                        start_date = self._parse_date_field(start_str)
+                        end_date = self._parse_date_field(end_str)
+                        
+                        if start_date or end_date:
+                            return {
+                                "start": start_date,
+                                "end": end_date
+                            }
         
         return None
 
@@ -1974,16 +1987,19 @@ class DataExtractor:
             # Saldo Global             $ 26.00
             
             # 1. Total de Apartados
-            match_apartados = re.search(r"Total\s+de\s+Apartados(?!\s+en\s+Global)(?:\s+en\s+Global)?\s*[:\s]*(\d+)", text, re.IGNORECASE)
-            if match_apartados:
-                 data["Total de Apartados"] = match_apartados.group(1)
+            if "Total de Apartados" not in data:
+                match_apartados = re.search(r"Total\s+de\s+Apartados(?!\s+en\s+Global)(?:\s+en\s+Global)?\s*[:\s]*(\d+)", text, re.IGNORECASE)
+                if match_apartados:
+                     data["Total de Apartados"] = match_apartados.group(1)
 
             # 2. Saldo Global
             # CRITICAL FIX: Use [ \t] instead of \s to avoid capturing newlines and values from subsequent lines
             # Must capture ONLY on the same line as the label
-            match_global = re.search(r"Saldo\s+Global\s*[:\s]*\$?\s*([\d,\.]+(?:[ \t]+[\d,\.]+)*)", text, re.IGNORECASE)
-            if match_global:
-                 data["Saldo Global"] = f"$ {match_global.group(1).strip()}"
+            # Also ensure we don't overwrite if found on previous pages (e.g. Page 1 vs Page 17)
+            if "Saldo Global" not in data:
+                match_global = re.search(r"Saldo\s+Global\s*[:\s]*\$?\s*([\d,\.]+(?:[ \t]+[\d,\.]+)*)", text, re.IGNORECASE)
+                if match_global:
+                     data["Saldo Global"] = f"$ {match_global.group(1).strip()}"
             
             # Fallback for old legacy format "Total de Apartados en Global" if above missed
             if "Total de Apartados" not in data and "Saldo Global" not in data:

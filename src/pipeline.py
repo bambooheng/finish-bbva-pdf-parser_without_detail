@@ -76,203 +76,260 @@ class BankDocumentPipeline:
     ) -> BankDocument:
         """
         Process a bank PDF document (generic, supports multiple banks).
-        
-        Args:
-            pdf_path: Path to input PDF
-            output_dir: Optional output directory for results
-            validate: Whether to perform validation
-            simplified_output: 是否使用简化输出（默认True，仅输出业务数据+页码）
-            external_transactions_data: 外部流水明细数据（可选，如提供则跳过内部解析）
-            
-        Returns:
-            Complete BankDocument structure
+        Modified to support multi-statement files (single PDF with merged statements).
         """
         print(f"Processing PDF: {pdf_path}")
         
         # Step 1: OCR Processing
         print("Step 1: Performing OCR...")
-        ocr_data = self.ocr_handler.process_pdf(pdf_path)
+        full_ocr_data = self.ocr_handler.process_pdf(pdf_path)
         
-        # Display OCR engine and language information
-        ocr_engine = ocr_data.get("engine", "unknown")
-        ocr_language = ocr_data.get("language", "unknown")
-        print(f"OCR 引擎信息: {ocr_engine}")
-        print(f"OCR 检测到的文档语言: {ocr_language}")
+        # Step 2: Split Logical Documents
+        print("Step 2: Detecting logical document boundaries...")
+        split_ocr_chunks = self._split_ocr_data(full_ocr_data)
         
-        # Extract critical fields for dual verification
-        critical_fields = self.ocr_handler.extract_critical_fields(ocr_data)
-        validated_fields = self.ocr_verifier.validate_critical_fields(
-            critical_fields,
-            self.llm_client
-        )
+        documents = []
         
-        # Step 2: Bank Detection (before layout analysis to get bank-specific config)
-        print("Step 2: Detecting bank...")
-        bank_profile = self.bank_detector.detect_bank(ocr_data)
-        self.bank_config = self.bank_detector.get_bank_config(bank_profile)
-        print(f"Detected bank: {self.bank_config.get('name', bank_profile)}")
-        
-        # Update components with bank config (following prompt: dynamic adaptation)
-        self.layout_analyzer.bank_config = self.bank_config
-        self.table_parser.bank_config = self.bank_config
-        
-        # Step 3: Layout Analysis
-        print("Step 3: Analyzing document layout...")
-        layout_structure = self.layout_analyzer.analyze_document_layout(ocr_data)
-        
-        # Initialize data extractor with bank config
-        self.data_extractor = DataExtractor(bank_config=self.bank_config)
-        
-        # Step 4 & 5: 条件执行 - 根据是否提供外部交易数据
-        if external_transactions_data is None:
-            # 使用内部解析流程
-            print("Step 4: Parsing tables...")
-            tables_data = self.ocr_handler.process_tables(ocr_data)
-            parsed_tables = self.table_parser.parse_bank_tables(tables_data)
+        for i, ocr_data in enumerate(split_ocr_chunks):
+            doc_index = i + 1
+            total_docs = len(split_ocr_chunks)
+            print(f"\n--- Processing Logical Document {doc_index}/{total_docs} ---")
             
-            print("Step 5: Extracting structured data...")
-            structured_data = self.data_extractor.extract_structured_data(
-                layout_structure,
-                parsed_tables,
-                ocr_data
-            )
-        else:
-            # 使用外部交易数据，跳过交易解析
-            print("Step 4: Skipping table parsing (using external transaction data)")
-            print("Step 5: Extracting metadata only (transactions from external source)")
+            # Sub-document naming
+            sub_pdf_name = f"{Path(pdf_path).stem}"
+            if total_docs > 1:
+                sub_pdf_name += f"_part{doc_index}"
             
-            # 仍然需要解析表格以获取account summary信息
-            tables_data = self.ocr_handler.process_tables(ocr_data)
-            parsed_tables = self.table_parser.parse_bank_tables(tables_data)
+            # Display OCR engine and language information
+            ocr_engine = ocr_data.get("engine", "unknown")
+            ocr_language = ocr_data.get("language", "unknown")
+            print(f"OCR 引擎信息: {ocr_engine}")
+            print(f"OCR 检测到的文档语言: {ocr_language}")
             
-            # 提取元数据，不解析交易
-            structured_data = self.data_extractor.extract_metadata_only(
-                layout_structure,
-                parsed_tables,
-                ocr_data
+            # Extract critical fields for dual verification
+            critical_fields = self.ocr_handler.extract_critical_fields(ocr_data)
+            validated_fields = self.ocr_verifier.validate_critical_fields(
+                critical_fields,
+                self.llm_client
             )
-        
-        metadata = self.data_extractor._extract_metadata(ocr_data, self.bank_config)
-        
-        # Step 6: Build Pages
-        print("Step 6: Building page structure...")
-        pages = self._build_pages(ocr_data, layout_structure)
-        
-        # Step 7: Validation
-        validation_metrics = ValidationMetrics(
-            extraction_completeness=0.0,
-            position_accuracy=0.0,
-            content_accuracy=0.0,
-            discrepancy_report=[]
-        )
-        
-        # Build initial document for validation
-        initial_document = BankDocument(
-            metadata=metadata,
-            pages=pages,
-            structured_data=structured_data,
-            validation_metrics=ValidationMetrics(
-                extraction_completeness=0.0,
-                position_accuracy=0.0,
-                content_accuracy=0.0,
-                discrepancy_report=[]
-            )
-        )
-        
-        if validate:
-            print("Step 7: Validating extraction...")
-            # Initial validation can use the document we just built
-            try:
-                validation_report = self.validator.validate_extraction(
-                    pdf_path,
-                    initial_document,
-                    output_dir
+            
+            # Step 3: Bank Detection
+            print("Step 3: Detecting bank...")
+            bank_profile = self.bank_detector.detect_bank(ocr_data)
+            self.bank_config = self.bank_detector.get_bank_config(bank_profile)
+            print(f"Detected bank: {self.bank_config.get('name', bank_profile)}")
+            
+            # Update components with bank config
+            self.layout_analyzer.bank_config = self.bank_config
+            self.table_parser.bank_config = self.bank_config
+            
+            # Step 4: Layout Analysis
+            print("Step 4: Analyzing document layout...")
+            layout_structure = self.layout_analyzer.analyze_document_layout(ocr_data)
+            
+            # Initialize data extractor
+            self.data_extractor = DataExtractor(bank_config=self.bank_config)
+            
+            # Step 5 & 6: Extraction
+            # Check for external data filtering
+            current_external_data = None
+            if external_transactions_data:
+                # Need to extract metadata first to get Year/Period for filtering
+                temp_metadata_obj = self.data_extractor._extract_metadata(ocr_data, self.bank_config)
+                
+                # Convert Metadata object to dict format expected by filter
+                # This ensures period dates are passed with correct keys
+                temp_metadata_dict = {
+                    "period_start": temp_metadata_obj.period.get("start") if temp_metadata_obj.period else None,
+                    "period_end": temp_metadata_obj.period.get("end") if temp_metadata_obj.period else None
+                }
+                
+                # Filter external transactions for this specific sub-document
+                from src.utils.external_data_adapter import filter_transactions_by_period
+                current_external_data = filter_transactions_by_period(
+                    external_transactions_data, 
+                    temp_metadata_dict
                 )
-                # Calculate extraction completeness from document (following prompt: 100% completeness)
-                extraction_completeness = self.validator._calculate_completeness(initial_document)
-                validation_metrics = ValidationMetrics(
-                    extraction_completeness=extraction_completeness,
-                    position_accuracy=0.0,  # Would need detailed position comparison
-                    content_accuracy=validation_report.semantic_accuracy,
-                    discrepancy_report=[d.dict() for d in validation_report.discrepancies]
+                print(f"Filtered {len(current_external_data.get('transactions',[]))} external transactions for Doc {doc_index}")
+
+            if current_external_data is None and external_transactions_data is None:
+                # Internal parsing
+                print("Step 5: Parsing tables...")
+                tables_data = self.ocr_handler.process_tables(ocr_data)
+                parsed_tables = self.table_parser.parse_bank_tables(tables_data)
+                
+                print("Step 6: Extracting structured data...")
+                structured_data = self.data_extractor.extract_structured_data(
+                    layout_structure,
+                    parsed_tables,
+                    ocr_data
                 )
-            except Exception as e:
-                print(f"Warning: Initial validation failed: {e}")
-                validation_metrics = ValidationMetrics(
-                    extraction_completeness=0.0,
-                    position_accuracy=0.0,
-                    content_accuracy=0.0,
-                    discrepancy_report=[{"error": str(e)}]
+            else:
+                # External data path
+                print("Step 5: Skipping table parsing (using filtered external transaction data)")
+                print("Step 6: Extracting metadata only")
+                
+                tables_data = self.ocr_handler.process_tables(ocr_data)
+                parsed_tables = self.table_parser.parse_bank_tables(tables_data)
+                
+                structured_data = self.data_extractor.extract_metadata_only(
+                    layout_structure,
+                    parsed_tables,
+                    ocr_data
                 )
-        else:
+
+            metadata = self.data_extractor._extract_metadata(ocr_data, self.bank_config)
+            
+            # Step 7: Build Pages
+            print("Step 7: Building page structure...")
+            pages = self._build_pages(ocr_data, layout_structure)
+            
+            # Step 8: Validation
             validation_metrics = ValidationMetrics(
                 extraction_completeness=0.0,
                 position_accuracy=0.0,
                 content_accuracy=0.0,
                 discrepancy_report=[]
             )
-        
-        # Build complete document (update with validation if available)
-        document = BankDocument(
-            metadata=metadata,
-            pages=pages,
-            structured_data=structured_data,
-            validation_metrics=validation_metrics
-        )
-        
-        # Step 7: Save output
-        if output_dir:
-            print(f"Step 7: Saving results to {output_dir}...")
-            self._save_results(document, output_dir, pdf_path, simplified_output, external_transactions_data)
-        
-        # Perform final validation with complete document
-        if validate:
-            print("Step 8: Final validation...")
-            final_report = self.validator.validate_extraction(
-                pdf_path,
-                document,
-                output_dir
-            )
-            # Recalculate extraction completeness (must be based on actual extraction, not pixel accuracy)
-            # Following prompt: 100% information capture verification
-            final_completeness = self.validator._calculate_completeness(document)
-            document.validation_metrics = ValidationMetrics(
-                extraction_completeness=final_completeness,
-                position_accuracy=0.0,  # Would need detailed position comparison
-                content_accuracy=final_report.semantic_accuracy,
-                discrepancy_report=[d.dict() for d in final_report.discrepancies]
+            
+            document = BankDocument(
+                metadata=metadata,
+                pages=pages,
+                structured_data=structured_data,
+                validation_metrics=validation_metrics
             )
             
-            if output_dir:
-                self._save_validation_report(final_report, output_dir)
-        
-        # Generate comparison report (automatically after parsing)
-        if output_dir:
-            print("\nStep 9: Generating comparison report...")
-            try:
-                pdf_name = Path(pdf_path).stem
-                structured_json_path = Path(output_dir) / f"{pdf_name}_structured.json"
-                reconstructed_pdf_path = Path(output_dir) / f"{pdf_name}_reconstructed.pdf"
-                validation_report_path = Path(output_dir) / "validation_report.json"
-                
-                # Only generate comparison if structured JSON exists
-                if structured_json_path.exists():
-                    self.comparison_analyzer.generate_comparison_report(
-                        original_pdf_path=pdf_path,
-                        structured_json_path=str(structured_json_path),
-                        reconstructed_pdf_path=str(reconstructed_pdf_path) if reconstructed_pdf_path.exists() else None,
-                        validation_report_path=str(validation_report_path) if validation_report_path.exists() else None,
-                        output_dir=output_dir
+            if validate:
+                print("Step 8: Validating extraction...")
+                try:
+                    # Pass sub-document name to validator if possible, or just validate generic
+                    validation_report = self.validator.validate_extraction(
+                        pdf_path, # Still using original path for ref
+                        document,
+                        output_dir
                     )
-                else:
-                    print("Warning: Structured JSON not found, skipping comparison report")
-            except Exception as e:
-                print(f"Warning: Comparison report generation failed: {e}")
-                import traceback
-                traceback.print_exc()
+                    final_completeness = self.validator._calculate_completeness(document)
+                    document.validation_metrics = ValidationMetrics(
+                        extraction_completeness=final_completeness,
+                        position_accuracy=0.0,
+                        content_accuracy=validation_report.semantic_accuracy,
+                        discrepancy_report=[d.dict() for d in validation_report.discrepancies]
+                    )
+                except Exception as e:
+                    print(f"Warning: Validation failed for Doc {doc_index}: {e}")
+
+            # Step 9: Save output (Per Sub-Document)
+            if output_dir:
+                print(f"Step 9: Saving results for Doc {doc_index}...")
+                
+                # Custom save per sub-document
+                # We need to hack the save method to use sub-filename
+                self._save_results_for_chunk(
+                    document, 
+                    output_dir, 
+                    sub_pdf_name, 
+                    simplified_output, 
+                    current_external_data
+                )
+            
+            documents.append(document)
+
+        print("\nAll logical documents processed!")
+        # Return the last document or a unified wrapper? 
+        # For compatibility with main.py, we return the last one or the first one, 
+        # BUT main.py prints summary. 
+        # Ideally we should return a list, but type hint says BankDocument.
+        # returning the first one is safer for simple single-doc usage, 
+        # but for multi-doc main.py needs update.
+        return documents[-1] if documents else None
+
+    def _split_ocr_data(self, ocr_data: Dict[str, Any]) -> list[Dict[str, Any]]:
+        """
+        Split OCR data into logical documents based on page headers.
+        Trigger: "PAGINA 1 /" or "Estado de Cuenta" on page 1 of a new section.
+        """
+        pages = ocr_data.get("pages", [])
+        if not pages:
+            return []
+
+        chunks = []
+        current_chunk_pages = []
         
-        print("Processing complete!")
-        return document
+        import re
+        
+        for i, page in enumerate(pages):
+            text_blocks = page.get("text_blocks", [])
+            page_text = "\n".join([b.get("text", "") for b in text_blocks])
+            
+            # Detect Start of Document
+            # Logic: If it's the very first page, or if we see "PAGINA 1 /" or similar reset
+            is_start = False
+            if i == 0:
+                is_start = True
+            else:
+                # Check for Page 1 marker
+                if re.search(r"PAGINA\s+1\s+/", page_text, re.IGNORECASE):
+                    is_start = True
+                # Stronger check: "Estado de Cuenta" + "PAGINA 1"
+                elif "Estado de Cuenta" in page_text and "PAGINA 1" in page_text:
+                    is_start = True
+
+            if is_start and current_chunk_pages:
+                # Close previous chunk
+                chunk_data = ocr_data.copy()
+                chunk_data["pages"] = current_chunk_pages
+                chunks.append(chunk_data)
+                current_chunk_pages = []
+
+            # Add page to current chunk
+            # Reset page numbering for each sub-document to ensure correct extraction
+            # Each logical document should start from page 1
+            import copy
+            page_copy = copy.deepcopy(page)
+            
+            # CRITICAL FIX: Reset page_number for split documents
+            # This ensures customer_info and other page-dependent extractions work correctly
+            page_copy["page_number"] = len(current_chunk_pages) + 1
+            
+            current_chunk_pages.append(page_copy)
+
+        # Append last chunk
+        if current_chunk_pages:
+            chunk_data = ocr_data.copy()
+            chunk_data["pages"] = current_chunk_pages
+            chunks.append(chunk_data)
+            
+        print(f"Detected {len(chunks)} logical documents in PDF.")
+        return chunks
+
+    def _save_results_for_chunk(self, document, output_dir, file_stem, simplified_output, external_data):
+        """Helper to save results with custom filename stem."""
+        # This duplicates logic from _save_results but allows custom filename
+        os.makedirs(output_dir, exist_ok=True)
+        json_path = os.path.join(output_dir, f"{file_stem}_structured.json")
+        
+        if simplified_output:
+            output_data = document.to_simplified_dict()
+        else:
+            output_data = document.dict()
+        
+        if external_data:
+             from src.utils.external_data_adapter import inject_external_transactions_to_output
+             output_data = inject_external_transactions_to_output(output_data, external_data)
+        
+        with open(json_path, 'w', encoding='utf-8') as f:
+            json.dump(output_data, f, indent=2, ensure_ascii=False, default=str)
+        print(f"Saved: {json_path}")
+        
+        # Excel
+        transactions = document.structured_data.account_summary.transactions
+        if transactions:
+            excel_path = os.path.join(output_dir, f"{file_stem}_transactions.xlsx")
+            try:
+                self.excel_exporter.export_transactions_to_excel(transactions, excel_path, document)
+                print(f"Exported Excel: {excel_path}")
+            except Exception as e:
+                print(f"Excel export failed: {e}")
     
     def _build_pages(
         self,
