@@ -71,8 +71,7 @@ class BankDocumentPipeline:
         pdf_path: str,
         output_dir: Optional[str] = None,
         validate: bool = True,
-        simplified_output: bool = True,
-        external_transactions_data: Optional[Dict[str, Any]] = None  # 外部流水明细数据
+        simplified_output: bool = True
     ) -> BankDocument:
         """
         Process a bank PDF document (generic, supports multiple banks).
@@ -87,6 +86,24 @@ class BankDocumentPipeline:
         # Step 2: Split Logical Documents
         print("Step 2: Detecting logical document boundaries...")
         split_ocr_chunks = self._split_ocr_data(full_ocr_data)
+        
+        # Step 2b: Extract ALL transactions once (before loop for efficiency)
+        print("Step 2b: Pre-extracting transaction details for entire PDF...")
+        all_transactions_result = None
+        from src.transaction_extractor import TransactionExtractorDispatcher
+        
+        tx_extractor = TransactionExtractorDispatcher()
+        all_transactions_result, _ = tx_extractor.extract(
+            pdf_path=pdf_path,
+            output_dir=None,
+            verbose=True
+        )
+        
+        if all_transactions_result:
+            total_tx = all_transactions_result.get("total_rows", 0)
+            print(f"✓ Pre-extracted {total_tx} total transactions from entire PDF")
+        else:
+            print("⚠ No transactions found in PDF")
         
         documents = []
         
@@ -131,54 +148,51 @@ class BankDocumentPipeline:
             self.data_extractor = DataExtractor(bank_config=self.bank_config)
             
             # Step 5 & 6: Extraction
-            # Check for external data filtering
-            current_external_data = None
-            if external_transactions_data:
-                # Need to extract metadata first to get Year/Period for filtering
-                temp_metadata_obj = self.data_extractor._extract_metadata(ocr_data, self.bank_config)
+            print("Step 5: Parsing tables...")
+            tables_data = self.ocr_handler.process_tables(ocr_data)
+            parsed_tables = self.table_parser.parse_bank_tables(tables_data)
+            
+            print("Step 6: Extracting structured data (without transaction details)...")
+            structured_data = self.data_extractor.extract_metadata_only(
+                layout_structure,
+                parsed_tables,
+                ocr_data
+            )
+            
+            # Extract metadata early (needed for transaction filtering)
+            metadata = self.data_extractor._extract_metadata(ocr_data, self.bank_config)
+            
+            # Step 6b: Filter transaction details for this logical document
+            print(f"Step 6b: Filtering transactions for Doc {doc_index}...")
+            
+            # Use date-based filtering (NOT page-based - grid extractor doesn't preserve PDF pages)
+            if all_transactions_result:
+                from src.utils.external_data_adapter import filter_transactions_by_period
                 
-                # Convert Metadata object to dict format expected by filter
-                # This ensures period dates are passed with correct keys
-                temp_metadata_dict = {
-                    "period_start": temp_metadata_obj.period.get("start") if temp_metadata_obj.period else None,
-                    "period_end": temp_metadata_obj.period.get("end") if temp_metadata_obj.period else None
+                # Prepare metadata dict for filter (expects period_start and period_end keys)
+                filter_metadata = {
+                    "period_start": metadata.period['start'] if metadata and metadata.period else None,
+                    "period_end": metadata.period['end'] if metadata and metadata.period else None,
                 }
                 
-                # Filter external transactions for this specific sub-document
-                from src.utils.external_data_adapter import filter_transactions_by_period
-                current_external_data = filter_transactions_by_period(
-                    external_transactions_data, 
-                    temp_metadata_dict
-                )
-                print(f"Filtered {len(current_external_data.get('transactions',[]))} external transactions for Doc {doc_index}")
-
-            if current_external_data is None and external_transactions_data is None:
-                # Internal parsing
-                print("Step 5: Parsing tables...")
-                tables_data = self.ocr_handler.process_tables(ocr_data)
-                parsed_tables = self.table_parser.parse_bank_tables(tables_data)
+                print(f"[DEBUG] Filtering by period: {filter_metadata.get('period_start')} to {filter_metadata.get('period_end')}")
                 
-                print("Step 6: Extracting structured data...")
-                structured_data = self.data_extractor.extract_structured_data(
-                    layout_structure,
-                    parsed_tables,
-                    ocr_data
+                # Filter transactions by date range
+                filtered_transactions = filter_transactions_by_period(
+                    all_transactions_result,
+                    filter_metadata
                 )
+                
+                structured_data.account_summary.raw_transaction_data = filtered_transactions
+                
+                if filtered_transactions:
+                    total_rows = filtered_transactions.get("total_rows", 0)
+                    print(f"✓ Filtered {total_rows} transactions for this period")
+                else:
+                    print(f"⚠ No transactions found in this period")
             else:
-                # External data path
-                print("Step 5: Skipping table parsing (using filtered external transaction data)")
-                print("Step 6: Extracting metadata only")
-                
-                tables_data = self.ocr_handler.process_tables(ocr_data)
-                parsed_tables = self.table_parser.parse_bank_tables(tables_data)
-                
-                structured_data = self.data_extractor.extract_metadata_only(
-                    layout_structure,
-                    parsed_tables,
-                    ocr_data
-                )
-
-            metadata = self.data_extractor._extract_metadata(ocr_data, self.bank_config)
+                print("⚠ No transaction data available for filtering")
+                structured_data.account_summary.raw_transaction_data = None
             
             # Step 7: Build Pages
             print("Step 7: Building page structure...")
@@ -229,7 +243,7 @@ class BankDocumentPipeline:
                     output_dir, 
                     sub_pdf_name, 
                     simplified_output, 
-                    current_external_data
+                    None  # No external data anymore
                 )
             
             documents.append(document)
@@ -287,7 +301,11 @@ class BankDocumentPipeline:
             import copy
             page_copy = copy.deepcopy(page)
             
-            # CRITICAL FIX: Reset page_number for split documents
+            # CRITICAL: Preserve original PDF page number for transaction filtering
+            # This allows us to filter transactions by actual PDF page range
+            page_copy["original_page_number"] = page.get("page_number", i + 1)
+            
+            # Reset page_number for split documents
             # This ensures customer_info and other page-dependent extractions work correctly
             page_copy["page_number"] = len(current_chunk_pages) + 1
             

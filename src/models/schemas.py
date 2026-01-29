@@ -168,6 +168,8 @@ class AccountSummary(BaseModel):
     withdrawals: Optional[Decimal] = None
     final_balance: Optional[Decimal] = None
     transactions: List[Transaction] = []
+    # Raw transaction data from grid extractor (preserves original format)
+    raw_transaction_data: Optional[Dict[str, Any]] = None
     # Store original table headers for dynamic Excel export (following prompt: no hardcoding)
     transaction_table_headers: Optional[List[str]] = None  # Original column headers from transaction table
     
@@ -296,16 +298,21 @@ class BankDocument(BaseModel):
         if account_summary.otros_productos:
             simplified["structured_data"]["account_summary"]["otros_productos"] = account_summary.otros_productos
         
-        # 7. Transactions Header
-        if account_summary.transaction_table_headers:
-            simplified["structured_data"]["account_summary"]["transaction_table_headers"] = \
-                account_summary.transaction_table_headers
+        # 7. Transactions Header (skip - not needed for raw format)
+        # if account_summary.transaction_table_headers:
+        #     simplified["structured_data"]["account_summary"]["transaction_table_headers"] = \
+        #         account_summary.transaction_table_headers
         
-        # 8. Transactions (Body)
-        simplified["structured_data"]["account_summary"]["transactions"] = [
-            t.to_simplified_dict() for t in account_summary.transactions
-        ]
+        # 8. Transactions (Body) - REMOVED to avoid duplication with raw_transaction_data
+        # User wants only raw_transaction_data format
+        # simplified["structured_data"]["account_summary"]["transactions"] = [
+        #     t.to_simplified_dict() for t in account_summary.transactions
+        # ]
         
+        # 8b. Raw Transaction Data (Grid extractor original format - preserves JSON structure)
+        if account_summary.raw_transaction_data:
+            simplified["structured_data"]["account_summary"]["raw_transaction_data"] = account_summary.raw_transaction_data
+            
         # 9. Total Movimientos (Footer - AFTER transactions per User Request)
         if account_summary.total_movimientos:
              simplified["structured_data"]["account_summary"]["total_movimientos"] = account_summary.total_movimientos

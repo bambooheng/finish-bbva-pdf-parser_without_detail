@@ -56,11 +56,6 @@ def main():
         help="Path to config file (default: config.yaml)"
     )
     
-    parser.add_argument(
-        "--external-transactions",
-        type=str,
-        help="外部流水明细JSON文件路径（可选，如提供则跳过内部解析）"
-    )
     
     args = parser.parse_args()
     
@@ -78,21 +73,11 @@ def main():
     
     # Process PDF
     try:
-        # 加载外部交易数据（如果提供）
-        external_data = None
-        if args.external_transactions:
-            import json
-            print(f"Loading external transaction data from: {args.external_transactions}")
-            with open(args.external_transactions, 'r', encoding='utf-8') as f:
-                external_data = json.load(f)
-            print(f"✓ Loaded external transaction data")
-        
         document = pipeline.process_pdf(
             pdf_path=args.input,
             output_dir=args.output,
             validate=not args.no_validate,
-            simplified_output=not args.full_output,  # 默认简化输出
-            external_transactions_data=external_data  # 外部交易数据
+            simplified_output=not args.full_output  # 默认简化输出
         )
         
         # Print summary
